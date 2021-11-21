@@ -8,9 +8,10 @@ My plan is to refactor it slowly for two year (2021-2022) then to start making a
 Until, I decide a license for the project, it is open source and free to use under beerware license.  
 But I keep all right on projet until I can decided myself.   
 
-If you do a commercial use of this tool contact me.   
+If you do a commercial use of this tool contact me.    
+- [Go to Discord: Any questions or talk](http://eloistree.page.link/talk)  
 If you do and don't contact me. At least send me some beer or coffee some time:   
-https://ko-fi.com/eloistree  
+- [Sending me a ☕ or a  🍺 in appreciation.](https://ko-fi.com/E1E21QCY5)   
 
 My the code be with you.
 
