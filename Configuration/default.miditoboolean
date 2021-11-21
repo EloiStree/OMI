@@ -1,0 +1,35 @@
+
+MPK Mini Play♦Note♦C2♦NoteOne♦SetTrue
+MPK Mini Play♦Note♦26♦NoteTwo♦SetTrue
+
+MPK Mini Play♦NoteVelocity♦E2♦0.0001♦0.1♦GentleJumping♦SetTrue
+MPK Mini Play♦NoteVelocity♦E2♦0♦0♦NoJumping♦SetTrue
+MPK Mini Play♦NoteVelocity♦E2♦0.1♦0.9♦SimpleJump♦SetTrue
+MPK Mini Play♦NoteVelocity♦E2♦0.9♦1♦DoubleJump♦SetTrue
+
+MPK Mini Play♦CC♦48♦0.1♦0.4♦AttackMode♦SetTrue
+MPK Mini Play♦CC♦48♦0.0♦0.1♦FullAttackMode♦SetTrue
+MPK Mini Play♦CC♦48♦0.6♦0.9♦DefenseMode♦SetTrue
+MPK Mini Play♦CC♦48♦0.9♦1♦FullDefenseMode♦SetTrue
+MPK Mini Play♦CC♦48♦0.4♦0.6♦NeutralMode♦SetTrue
+
+MPK Mini Play♦Shorten♦8339632♦FootSustain♦SetTrue
+MPK Mini Play♦Shorten♦16560♦FootSustain♦SetFalse
+UM-ONE♦Note♦1♦FootPadLeft♦SetTrue
+UM-ONE♦Note♦2♦FootPadRight♦SetTrue
+
+
+UM-ONE♦CC♦27♦0.95♦1.0♦FootPadLeftup♦SetTrue
+UM-ONE♦CC♦27♦0♦0.05♦FootPadLeftDown♦SetTrue
+UM-ONE♦CC♦7♦0.95♦1.0♦FootPadRightUp♦SetTrue
+UM-ONE♦CC♦7♦0♦0.05♦FootPadRightDown♦SetTrue
+
+UM-ONE♦CC♦27♦0.0♦0.2♦FootPadRight0♦SetTrue
+UM-ONE♦CC♦27♦0.2♦0.4♦FootPadRight1♦SetTrue
+UM-ONE♦CC♦27♦0.4♦0.8♦FootPadRight2♦SetTrue
+UM-ONE♦CC♦27♦0.8♦1.0♦FootPadRight3♦SetTrue
+
+
+//MPK Mini Play♦Patch♦5♦0.4♦0.6♦NeutralMode♦SetTrue
+//MPK Mini Play♦Pitch♦5♦0.4♦0.6♦NeutralMode♦SetTrue
+
