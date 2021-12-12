@@ -6944,6 +6944,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7444522769157607956, guid: 6a4fe671b8abc714788181c431d5f8f2, type: 3}
+      propertyPath: m_midiNameId
+      value: Arduino Micro
+      objectReference: {fileID: 0}
     - target: {fileID: 7444522770878136710, guid: 6a4fe671b8abc714788181c431d5f8f2, type: 3}
       propertyPath: m_Name
       value: Listening To Midi

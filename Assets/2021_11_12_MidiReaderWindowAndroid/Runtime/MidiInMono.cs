@@ -75,11 +75,16 @@ public class MidiInMono : MonoBehaviour
 
     public void Update()
     {
-        while (m_pushOnUnityThread.Count > 0) {
-         m_onUnityThreadEvent.Invoke(m_pushOnUnityThread.Dequeue());
-        }
+        PushFromUnityThreadWaitingMidiEvent();
     }
 
+    public void PushFromUnityThreadWaitingMidiEvent()
+    {
+        while (m_pushOnUnityThread.Count > 0)
+        {
+            m_onUnityThreadEvent.Invoke(m_pushOnUnityThread.Dequeue());
+        }
+    }
 
     void HandleErrorMessage(object sender, MidiInMessageEventArgs e)
 
@@ -95,6 +100,8 @@ public class MidiInMono : MonoBehaviour
     {
         m_onListenerThreadEvent.Invoke(e);
         m_pushOnUnityThread.Enqueue(e);
+        MidiOneLinerDebug.GetFrom( e.MidiEvent, out string gline);
+        m_historyDebug.PushIn(gline);
     }
 
 

@@ -7652,6 +7652,17 @@ MonoBehaviour:
   m_docLink: https://github.com/EloiStree/OpenMacroInput/wiki/
   m_linkedButton: {fileID: 118231414}
   m_linkedButtonText: {fileID: 2005982900}
+--- !u!114 &118867248 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2101665756792650333, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+  m_PrefabInstance: {fileID: 1104829783}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84cc086bd506bad4faf5a6413377f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &126072448
 GameObject:
   m_ObjectHideFlags: 0
@@ -11703,7 +11714,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: In 1000|mouseutility:gridclic
+  m_Text: In 1000|mouseutility:gridclick
 --- !u!222 &282621977
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15554,7 +15565,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 931717307}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15977,7 +15988,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 573795544}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.3288265
+  m_Size: 0.16201614
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16770,8 +16781,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1700161505}
   m_HandleRect: {fileID: 1700161504}
   m_Direction: 0
-  m_Value: 0.197
-  m_Size: 0.19999997
+  m_Value: 0.19700003
+  m_Size: 0.2
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17727,7 +17738,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: COM10
 --- !u!222 &588151014
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -31326,6 +31337,235 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2708488698585841394, guid: 41b2ec81869b8a04d94b99a2e2efa116, type: 3}
   m_PrefabInstance: {fileID: 1100910841}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1104829783
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 931550615}
+    m_Modifications:
+    - target: {fileID: 2101665756792650332, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_Name
+      value: MidiIn  (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650333, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_midiNameId
+      value: Arduino Micro (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650333, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_onUnityThreadEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650333, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_onUnityThreadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650333, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_onUnityThreadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 118867248}
+    - target: {fileID: 2101665756792650333, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_onUnityThreadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650333, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_onUnityThreadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650333, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_onUnityThreadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MidiEventFilterMono, be.eloistree.midireaderwindowandroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650333, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_onUnityThreadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650334, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650334, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -314.73596
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650334, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.7843933
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650334, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -195.63333
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650334, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650334, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650334, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650334, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650334, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650334, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650334, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_patchReceived.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onNoteReceived.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_controlReceived.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onPitchReceived.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onShortReceived.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_patchReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onNoteReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_controlReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onPitchReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onShortReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_patchReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1385290801}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onNoteReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1385290801}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_controlReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1385290801}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onPitchReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1385290801}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onShortReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1385290801}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_patchReceived.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onNoteReceived.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_patchReceived.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PushIn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_controlReceived.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onNoteReceived.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PushIn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onPitchReceived.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onShortReceived.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_controlReceived.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PushIn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onPitchReceived.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PushIn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onShortReceived.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PushIn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_patchReceived.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AbstractMidiInRelayMono, be.eloistree.midireaderwindowandroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onNoteReceived.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AbstractMidiInRelayMono, be.eloistree.midireaderwindowandroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_controlReceived.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AbstractMidiInRelayMono, be.eloistree.midireaderwindowandroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onPitchReceived.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AbstractMidiInRelayMono, be.eloistree.midireaderwindowandroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onShortReceived.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AbstractMidiInRelayMono, be.eloistree.midireaderwindowandroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_patchReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onNoteReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_controlReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onPitchReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300041059342453555, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_relay.m_onShortReceived.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
 --- !u!1001 &1110652824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33444,29 +33684,15 @@ MonoBehaviour:
   m_focusWindowName: ReadSerialToJomi Old TextIntent - CurrentScene - PC, Mac & Linux
     Standalone - Unity 2020.3.16f1 Personal* <DX11>
   m_availableWindows:
-  - Game
   - ReadSerialToJomi Old TextIntent - CurrentScene - PC, Mac & Linux Standalone -
     Unity 2020.3.16f1 Personal* <DX11>
-  - ReadSerialToJomi Old TextIntent - Microsoft Visual Studio
-  - 'FTL: Faster Than Light'
-  - C:\Users\OpenMacroInput\Desktop\OMI Come On\ReadSerialToJomi Old TextIntent\Configuration\test.simplecondition
+  - C:\Users\OpenMacroInput\Desktop\OMI Come On\ReadSerialToJomi Old TextIntent\Configuration\default.miditoboolean
     - Notepad++
-  - C:\Users\OpenMacroInput\Desktop\OMI Come On\ReadSerialToJomi Old TextIntent\Configuration
-  - I did a thing - YouTube - Mozilla Firefox
-  - C:\Users\OpenMacroInput\Desktop\OMI Come On\ReadSerialToJomi Old TextIntent\Assets
-  - C:\Users\OpenMacroInput\Desktop\OMI Come On\ReadSerialToJomi Old TextIntent\Assets
-  - C:\Users\OpenMacroInput\Downloads\2021_02_13_FishingFarmerBot (1)\LastBuildUnzipped
-  - Open Macro Input (Java Runtime)
-  - 'Amazon.com: Nord Triple Pedal Triple-Velocity, Motion-Sensing Piano Pedal for
-    Nord Piano 88/Nord Stage 2 : Musical Instruments - Google Chrome'
-  - Mozilla Firefox
+  - Xbox
   - 
-  - ReadSerialToJomi Old TextIntent - Microsoft Visual Studio
-  - C:\Users\OpenMacroInput\Desktop\OMI Come On\ReadSerialToJomi Old TextIntent\Assets\2021_10_03_E
-  - "Studio \u28ECouer \u28CCouvain-La-Neuve - Immoweb - Mozilla Firefox"
-  - C:\Users\OpenMacroInput\Desktop\OMI Come On\ReadSerialToJomi Old TextIntent\Assets\FromWeb
+  - Notepad++ update
   - C:\Users\OpenMacroInput\Desktop\OMI Come On\ReadSerialToJomi Old TextIntent\Configuration
-  - C:\Users\OpenMacroInput\Desktop\MIDI\UnityQuarantineMidi\Unity Quarantine Midi\Assets
+  - Open Macro Input (Java Runtime)
   - NVIDIA GeForce Overlay
   - Microsoft Text Input Application
 --- !u!114 &1229898660
@@ -38769,6 +38995,10 @@ PrefabInstance:
       value: 'MidiIn '
       objectReference: {fileID: 0}
     - target: {fileID: 2101665756792650333, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
+      propertyPath: m_midiNameId
+      value: Arduino Micro
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101665756792650333, guid: 5318e0002049acc4faf75bde52c204ce, type: 3}
       propertyPath: m_onUnityThreadEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -39780,6 +40010,10 @@ PrefabInstance:
     - target: {fileID: 7444522769157607956, guid: 6a4fe671b8abc714788181c431d5f8f2, type: 3}
       propertyPath: m_midiNameId
       value: MPK mini play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444522769157607957, guid: 6a4fe671b8abc714788181c431d5f8f2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7444522770878136710, guid: 6a4fe671b8abc714788181c431d5f8f2, type: 3}
       propertyPath: m_Name
@@ -50933,7 +51167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_target: {fileID: 1907461585}
-  m_portList: []
+  m_portList:
+  - COM10
   m_timeBetweenCheck: 5
 --- !u!114 &1907461585
 MonoBehaviour:
@@ -50983,7 +51218,9 @@ MonoBehaviour:
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
-    m_Options: []
+    m_Options:
+    - m_Text: COM10
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -59510,7 +59747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
       propertyPath: m_60FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
       propertyPath: m_30FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -59522,6 +59759,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
       propertyPath: m_60FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
+      propertyPath: m_60FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
@@ -59537,6 +59778,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 57824550}
     - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
+      propertyPath: m_60FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 25800108}
+    - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
       propertyPath: m_30FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -59546,6 +59791,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
       propertyPath: m_60FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
+      propertyPath: m_60FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
@@ -59561,6 +59810,10 @@ PrefabInstance:
       value: RefreshAndCheckTime
       objectReference: {fileID: 0}
     - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
+      propertyPath: m_60FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Update
+      objectReference: {fileID: 0}
+    - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
       propertyPath: m_30FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ScreenZoneToBooleans, be.eloistree.omiindevversion
       objectReference: {fileID: 0}
@@ -59573,6 +59826,10 @@ PrefabInstance:
       value: TimeOfDayMacroManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
+      propertyPath: m_60FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MidiInMono, be.eloistree.midireaderwindowandroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
       propertyPath: m_30FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -59582,6 +59839,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
       propertyPath: m_60FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 110963910759874512, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
+      propertyPath: m_60FPS.m_unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 110963910759874514, guid: a17c69d88ad41354c887d9eec95527be, type: 3}
