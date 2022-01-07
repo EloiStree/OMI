@@ -1,0 +1,28 @@
+☗name Test the Xbox simulator
+☗callid tddpaintsequence
+☗delay 500
+mouseutility:leftclick:selection
+mouseutility:leftclick:pencil
+mouseutility:leftclick:fill
+mouseutility:leftclick:Colormain1 
+mouseutility:leftclick:Colormain2
+mouseutility:leftclick:Color0Top 
+mouseutility:leftclick:Color0Down
+mouseutility:leftclick:Color1Top 
+mouseutility:leftclick:Color1Down
+mouseutility:leftclick:Color2Top 
+mouseutility:leftclick:Color2Down
+mouseutility:leftclick:Color3Top 
+mouseutility:leftclick:Color3Down
+mouseutility:leftclick:Color4Top 
+mouseutility:leftclick:Color4Down
+mouseutility:leftclick:Color5Top 
+mouseutility:leftclick:Color5Down
+mouseutility:leftclick:Color6Top 
+mouseutility:leftclick:Color6Down
+mouseutility:leftclick:Color7Top 
+mouseutility:leftclick:Color7Down
+mouseutility:leftclick:Color8Top 
+mouseutility:leftclick:Color8Down
+mouseutility:leftclick:Color9Top 
+mouseutility:leftclick:Color9Down

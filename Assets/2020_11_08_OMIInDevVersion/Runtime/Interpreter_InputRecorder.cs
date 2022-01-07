@@ -11,7 +11,7 @@ public class Interpreter_InputRecorder : AbstractInterpreterMono
     public MouseDeltaRecorderTool m_mouseInformation;
     public string m_folderName="SaveMacro";
     public Dictionary<string, TimedCommandLines> m_macroJomi= new Dictionary<string, TimedCommandLines>();
-    public UI_ServerDropdownJavaOMI m_target = new UI_ServerDropdownJavaOMI();
+    public UI_ServerDropdownJavaOMI m_target;//= new UI_ServerDropdownJavaOMI();
     public override bool CanInterpreterUnderstand(ref ICommandLine command)
     {
         return StartWith(ref command, "keyrecord:", true);
@@ -29,7 +29,7 @@ public class Interpreter_InputRecorder : AbstractInterpreterMono
         string[] token = cmd.Split(':');
         bool wasManaged = false;
 
-
+        Debug.Log("Hello World!");
 
         //keyrecord:start
         if (cmdLow.IndexOf("keyrecord:start") == 0 )
@@ -67,7 +67,7 @@ public class Interpreter_InputRecorder : AbstractInterpreterMono
         }
         //keyrecord:play:name  
         else if (cmdLow.IndexOf("keyrecord:play:") == 0 && token.Length >= 3)
-        {
+        { 
             PlayJomiMacro("CurrentKeyRecord");
             wasManaged = true;
         }

@@ -1,0 +1,10 @@
+// Create a named boolean called arduino if the focus application has ' Arduiono ' in it.
+arduino♦ Arduino 
+//Save form visual studio.
+visualstudio♦- Microsoft Visual Studio
+//If you are a bit geeky you can use Regex in here: https://regexr.com/
+notepad♦- [Nn]otepad
+//  \+ is because you are using regexr so if you don't want to play with it keep is Alpha numerical A-z0-9
+notepadplus♦- [Nn]otepad\+\+
+
+paint♦- Paint

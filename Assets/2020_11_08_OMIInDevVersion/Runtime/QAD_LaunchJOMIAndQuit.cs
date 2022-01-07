@@ -20,8 +20,13 @@ public class QAD_LaunchJOMIAndQuit : MonoBehaviour
     public void KillCurrentApp() {
         Application.Quit();
     }
-
+    public string GetUnityExePath()
+    {
+        return Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName);
+    }
     public void RelaunchTheApplication() {
+
+
         Application.OpenURL(GetUnityExePath());
         KillCurrentApp();
     }
@@ -31,9 +36,6 @@ public class QAD_LaunchJOMIAndQuit : MonoBehaviour
         return Directory.GetCurrentDirectory();
     }
 
-    public string GetUnityExePath() {
-
-        return Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName);
-    }
+   
   
 }

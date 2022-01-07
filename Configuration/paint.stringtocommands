@@ -1,0 +1,80 @@
+paint:savemouse♦screenrec:save:mymouse
+paint:recovermouse♦screenrec:recover:mymouse
+p:s♦screenrec:save:mymouse
+p:r♦screenrec:recover:mymouse
+p:h♦mouseutility:leftclick:home
+p:v♦mouseutility:leftclick:view
+p:lr♦In 600|screenrec:recover:mymouse
+//paint:select♦macro:p:s♦In 100|mouseutility:leftclick:lrbt:0.073:0.95♦macro:p:lr
+paint:select♦macro:p:s♦In 100|mouseutility:leftclick:selection♦macro:p:lr
+paint:undo♦jomi: ctrl↓ z↓ z↑ ctrl↑
+paint:redo♦jomi: ctrl↓ y↓ y↑ ctrl↑
+paint:zoom♦jomi: ctrl↓ pageup↓ pageup↑ ctrl↑ 
+paint:unzoom♦jomi: ctrl↓ pagedown↓ pagedown↑ ctrl↑  
+
+
+
+paint:pencil♦macro:p:s♦In 50|mouseutility:leftclick:pencil♦In 100|macro:p:r
+paint:Selection♦macro:p:s♦In 50|mouseutility:leftclick:Selection♦In 100|macro:p:r
+paint:Fill♦macro:p:s♦In 50|mouseutility:leftclick:Fill♦In 100|macro:p:r
+paint:eraser♦macro:p:s♦In 50|mouseutility:leftclick:Eraser♦In 100|macro:p:r
+paint:brush♦macro:p:s♦In 50|mouseutility:leftclick:SelectBrush♦In 100|macro:p:r
+paint:ColorPick♦macro:p:s♦In 50|mouseutility:leftclick:ColorPick♦In 100|macro:p:r
+paint:EditColor♦macro:p:s♦In 50|mouseutility:leftclick:EditColor♦In 100|macro:p:r
+paint:ShapeLine♦macro:p:s♦In 50|mouseutility:leftclick:ShapeLine♦In 100|macro:p:r
+paint:ShapeCircle♦macro:p:s♦In 50|mouseutility:leftclick:ShapeCircle♦In 100|macro:p:r
+paint:ShapeRectangle♦macro:p:s♦In 50|mouseutility:leftclick:ShapeRectangle♦In 100|macro:p:r
+paint:ShapeRoundRectangle♦macro:p:s♦In 50|mouseutility:leftclick:ShapeRoundRectangle♦In 100|macro:p:r
+
+
+paint:ColorPickAndClick♦macro:paint:ColorPick♦In 150|jomiraw:ms:l
+
+
+paint:BrushMenu♦macro:p:s♦In 20|mouseutility:leftclick:BrushMenu♦macro:p:lr
+p:bm♦macro:paint:BrushMenu
+
+paint:BrushDefault♦macro:p:bm♦In 450|mouseutility:leftclick:BrushDefault
+paint:BrushCalli1♦macro:p:bm♦In 450|mouseutility:leftclick:BrushCalli1
+paint:BrushCalli2♦macro:p:bm♦In 450|mouseutility:leftclick:BrushCalli2
+paint:BrushSpray♦macro:p:bm♦In 450|mouseutility:leftclick:BrushSpray
+paint:BrushOil♦macro:p:bm♦In 450|mouseutility:leftclick:BrushOil
+paint:BrushCrayon♦macro:p:bm♦In 450|mouseutility:leftclick:BrushCrayon
+paint:BrushMarker♦macro:p:bm♦In 450|mouseutility:leftclick:BrushMarker
+paint:BrushPencil♦macro:p:bm♦In 450|mouseutility:leftclick:BrushPencil
+paint:BrushWaterColor♦macro:p:bm♦In 450|mouseutility:leftclick:BrushWaterColor
+
+
+
+paint:setcolormain1♦macro:p:s♦In 20|mouseutility:leftclick:Colormain1♦In 200|screenrec:recover:mymouse
+paint:setcolormain2♦macro:p:s♦In 20|mouseutility:leftclick:Colormain2♦In 200|screenrec:recover:mymouse
+p:scm1♦macro:paint:setcolormain1
+p:scm2♦macro:paint:setcolormain2
+
+
+paint:Color0Top ♦macro:p:scm1♦In 100|mouseutility:leftclick:Color0Top
+paint:Color1Top ♦macro:p:scm1♦In 100|mouseutility:leftclick:Color1Top
+paint:Color2Top ♦macro:p:scm1♦In 100|mouseutility:leftclick:Color2Top
+paint:Color3Top ♦macro:p:scm1♦In 100|mouseutility:leftclick:Color3Top
+paint:Color4Top ♦macro:p:scm1♦In 100|mouseutility:leftclick:Color4Top
+paint:Color5Top ♦macro:p:scm1♦In 100|mouseutility:leftclick:Color5Top
+paint:Color6Top ♦macro:p:scm1♦In 100|mouseutility:leftclick:Color6Top
+paint:Color7Top ♦macro:p:scm1♦In 100|mouseutility:leftclick:Color7Top
+paint:Color8Top ♦macro:p:scm1♦In 100|mouseutility:leftclick:Color8Top
+paint:Color9Top ♦macro:p:scm1♦In 100|mouseutility:leftclick:Color9Top
+
+paint:Color0Down ♦macro:p:scm2♦In 100|mouseutility:leftclick:Color0Down
+paint:Color1Down ♦macro:p:scm2♦In 100|mouseutility:leftclick:Color1Down
+paint:Color2Down ♦macro:p:scm2♦In 100|mouseutility:leftclick:Color2Down
+paint:Color3Down ♦macro:p:scm2♦In 100|mouseutility:leftclick:Color3Down
+paint:Color4Down ♦macro:p:scm2♦In 100|mouseutility:leftclick:Color4Down
+paint:Color5Down ♦macro:p:scm2♦In 100|mouseutility:leftclick:Color5Down
+paint:Color6Down ♦macro:p:scm2♦In 100|mouseutility:leftclick:Color6Down
+paint:Color7Down ♦macro:p:scm2♦In 100|mouseutility:leftclick:Color7Down
+paint:Color8Down ♦macro:p:scm2♦In 100|mouseutility:leftclick:Color8Down
+paint:Color9Down ♦macro:p:scm2♦In 100|mouseutility:leftclick:Color9Down
+
+
+paint:rotateleft♦macro:p:s♦In 50|mouseutility:leftclick:RotateMenu♦In 350|jomi: r↓ r↑ ♦In 500|macro:p:r
+paint:rotateright♦macro:p:s♦In 50|mouseutility:leftclick:RotateMenu♦In 350|jomi: l↓ l↑ ♦In 500|macro:p:r
+paint:fliphorizontal♦macro:p:s♦In 50|mouseutility:leftclick:RotateMenu♦In 350|jomi: h↓ h↑ ♦In 500|macro:p:r
+paint:flipvertical♦macro:p:s♦In 50|mouseutility:leftclick:RotateMenu♦In 350|jomi: v↓ v↑ ♦In 500|macro:p:r

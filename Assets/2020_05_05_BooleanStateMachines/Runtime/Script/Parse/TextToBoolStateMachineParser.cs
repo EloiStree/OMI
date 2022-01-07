@@ -86,7 +86,7 @@ public class TextToBoolStateMachineParser {
     public static bool IsClassicParse(string line, out ClassicBoolState classicState)
     {
         classicState = null;
-        bool foundClassicToPrase = Regex.Matches(line,"[^!+a-zA-Z0-9\\s↑↓]").Count<=0;
+        bool foundClassicToPrase = Regex.Matches(line, "[^!+a-zA-Z0-9▸\\s↑↓]").Count<=0;
         if (!foundClassicToPrase) 
             return false;
         //Debug.Log("Parse:" + line);

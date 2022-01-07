@@ -1,0 +1,30 @@
+//rctrl + TriggerTestUp ♦ macro:paint:tdd ♦ ☗TriggerOnTrue
+//rctrl + TriggerTestDown ♦ macro:paint:tdd  ♦ ☗TriggerOnTrue
+rctrl + TriggerTestDown ♦ macro:paint:tdd  ♦ ☗TriggerOnTrue
+
+
+paint + xbu ♦stack:doandgonext:colorlinetop♦ ☗TriggerOnTrue
+paint + xbr ♦stack:doandgonext:colorlinedown♦ ☗TriggerOnTrue
+paint + xbl ♦stack:doandgonext:brush♦ ☗TriggerOnTrue
+paint + xsbr ♦stack:doandgonext:maintool♦ ☗TriggerOnTrue
+paint + xbd ♦stack:doandgonext:mainshape♦ ☗TriggerOnTrue
+paint + xbd ♦stack:doandgonext:mainshape♦ ☗TriggerOnTrue
+paint + joyrightleft ♦macro:paint:undo♦ ☗TriggerOnTrue
+paint + joyrightright ♦macro:paint:redo♦ ☗TriggerOnTrue
+paint + joyrightleft ♦macro:paint:undo♦ ☗LoopOnTrue 200
+paint + joyrightright ♦macro:paint:redo♦ ☗LoopOnTrue 200
+paint + xs ♦macro:paint:ColorPickAndClick♦ ☗TriggerOnTrue
+
+paint + xar ♦macro:paint:rotateleft♦ ☗TriggerOnTrue
+paint + xau ♦macro:paint:rotateright♦ ☗TriggerOnTrue
+paint + xal ♦macro:paint:fliphorizontal♦ ☗TriggerOnTrue
+paint + xad ♦macro:paint:flipvertical♦ ☗TriggerOnTrue
+//home♦jomi:🐁←50 🐁↓50 789> 🐁←50↓50  200> 🐁A←50↓50♦ ☗TriggerOnFalse
+//home♦jomi:🐁A←0.05↓0.95 5000> 🐁A←0.4↓0.6 5000> 🐁←0.1 5000> 🐁↓0.1 5000>  🐁→0.1 5000>  🐁↑0.1 5000>  ♦ ☗TriggerOnFalse
+//home♦jomi:🐁A→0.05↑0.05 5000> 🐁A→0.05↓0.05 5000> 🐁A←0.05↓0.05 5000> 🐁A←0.05↑0.05 5000>  ♦ ☗TriggerOnFalse
+//home♦jomi:🐁A→10↑10 5000> 🐁A→10↓10 5000> 🐁A←10↓10 5000> 🐁A←10↑10 5000>  ♦ ☗TriggerOnFalse
+//home♦jomiraw:mm:0.9px:0.8px♦ ☗TriggerOnTrue
+
+//→  ←  ↑  ↓
+//home♦jomi: (A↑  ctrl +A 80> ctrl+1 (A↓)x3 )x5    🐁R→10↑10 50> 🐁A→10↓10 5000> 🐁A←10↓10 5000> 🐁A←10↑10 5000>  ♦ ☗TriggerOnFalse
+home♦jomi:🐁>💾Map 80> 🐁→100↑100 80> 🐁<💾Map

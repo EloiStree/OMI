@@ -53,6 +53,7 @@ public class Interpreter_ChangeBackGround : AbstractInterpreterMono
             float r, g, b;
             try
             {
+           
 
                 r = float.Parse(tokens[0]);
                 g = float.Parse(tokens[1]);

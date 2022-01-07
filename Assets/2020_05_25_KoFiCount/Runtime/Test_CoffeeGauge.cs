@@ -13,15 +13,25 @@ public class Test_CoffeeGauge : MonoBehaviour
     public CountChange m_countEvent;
     [System.Serializable]
     public class CountChange : UnityEvent<long> { };
-    void Start()
+
+
+    public string m_textId;
+
+    IEnumerator Start()
     {
+
         Refresh();
+        WWW www = new WWW("https://ko-fi.com/widget/counterwidget/" + m_userId);
+        yield return www;
+        m_textId = www.text;
     }
 
     public void Refresh()
     {
+       
 
-        RefreshCount(); RefreshProfile();
+        RefreshCount();
+        RefreshProfile();
     }
     public void RefreshCount()
     {
