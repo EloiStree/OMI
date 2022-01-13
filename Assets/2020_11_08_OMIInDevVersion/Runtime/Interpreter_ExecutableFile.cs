@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Interpreter_ExecutableFile : AbstractInterpreterMono
 {
-    public ExecutableFileRegister m_executableInTheProject;
+    public ExecutablePathManager m_executableInTheProject;
     public override bool CanInterpreterUnderstand(ref ICommandLine command)
     {
         return IsValide(command);
@@ -14,7 +14,7 @@ public class Interpreter_ExecutableFile : AbstractInterpreterMono
 
     private static bool IsValide(ICommandLine command)
     {
-        return command.GetLine().ToLower().Trim().IndexOf("exefile:") == 0;
+        return command.GetLine().ToLower().Trim().IndexOf("exe:") == 0;
     }
 
     public override string GetName()
@@ -28,7 +28,7 @@ public class Interpreter_ExecutableFile : AbstractInterpreterMono
             succedToExecute.StopWithError("Command is not valide");
                 return ;
         }
-        string cmd = command.GetLine().Trim().Substring(8);
+        string cmd = command.GetLine().Trim().Substring("exe:".Length);
         string [] tokens =cmd.Split(':');
         if (tokens.Length == 0)
         {
@@ -38,17 +38,32 @@ public class Interpreter_ExecutableFile : AbstractInterpreterMono
       
 
         List<string> args = tokens.ToList();
-        args.RemoveAt(0);
-        ExecutableFile file;
-        if (m_executableInTheProject.GetExecutableByNameWithExtension(tokens[0], out file))
+        Debug.Log("DD:" + args.Count);
+        Debug.Log("Tokens:" + string.Join("-",tokens));
+        if (args.Count == 1)
         {
-            ExecutableLauncher.LaunchExecutable(file.GetAbsolutePath(), string.Join(" ", args));
+            Debug.Log("Yi:" + args[0]);
+            m_executableInTheProject.TryToLaunch(args[0], true);
+
         }
-        else if (m_executableInTheProject.GetExecutableByName(tokens[0], out file))
+        if (args.Count >= 2)
         {
-            ExecutableLauncher.LaunchExecutable(file.GetAbsolutePath(), string.Join(" ", args));
+            string type = args[0].ToLower().Trim();
+            string value = args[1].Trim();
+            bool hide = Eloi.E_StringUtility.AreEquals(type, "hide") || Eloi.E_StringUtility.AreEquals(type, "h");
+
+            if (args.Count == 2)
+            { 
+                m_executableInTheProject.TryToLaunch(value, hide );
+            }
+            else {
+
+                args.RemoveAt(0);
+                args.RemoveAt(0);
+                m_executableInTheProject.TryToLaunch(value, hide, args);
+            }
+
         }
-        else succedToExecute.StopWithError("Did not find the file:" + cmd);
 
     }
 
