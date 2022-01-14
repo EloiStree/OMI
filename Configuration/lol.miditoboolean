@@ -1,0 +1,85 @@
+
+//General
+MPK Mini Play♦CC♦64♦0.1♦1♦Sustain♦SetTrue
+MPK Mini Play♦Note♦G4♦AdditionalPowerNote♦SetTrue
+MPK Mini Play♦NoteVelocity♦G4♦0♦0♦AdditionalPowerNone♦SetTrue
+MPK Mini Play♦NoteVelocity♦G4♦0.0001♦0.1♦AdditionalPowerLow♦SetTrue
+MPK Mini Play♦NoteVelocity♦G4♦0.1♦0.9♦AdditionalPower♦SetTrue
+MPK Mini Play♦NoteVelocity♦G4♦0.9♦1♦AdditionalPowerHight♦SetTrue
+
+
+MPK Mini Play♦Note♦51♦MidiLeftPinky♦SetTrue
+MPK Mini Play♦Note♦49♦MidiLeftPinkyLeft♦SetTrue
+MPK Mini Play♦Note♦52♦MidiLeftPinkyRight♦SetTrue
+MPK Mini Play♦Note♦54♦MidiLeftRing♦SetTrue
+MPK Mini Play♦Note♦56♦MidiLeftMiddle♦SetTrue
+MPK Mini Play♦Note♦58♦MidiLeftIndex♦SetTrue
+MPK Mini Play♦Note♦59♦MidiLeftThumb♦SetTrue
+MPK Mini Play♦NoteVelocity♦G4♦0.7♦1♦MidiLeftThumbHight♦SetTrue
+
+
+MPK Mini Play♦Note♦64♦MidiRightThumb♦SetTrue
+MPK Mini Play♦Note♦63♦MidiRightIndex♦SetTrue
+MPK Mini Play♦Note♦66♦MidiRightMiddle♦SetTrue
+MPK Mini Play♦Note♦68♦MidiRightRing♦SetTrue
+MPK Mini Play♦Note♦70♦MidiRightPinky♦SetTrue
+ 
+MPK Mini Play♦Note♦62♦MidiRightThumbLeft♦SetTrue
+MPK Mini Play♦Note♦65♦MidiRightThumbRight♦SetTrue
+MPK Mini Play♦Note♦57♦MidiLeftThumbLeft♦SetTrue
+MPK Mini Play♦Note♦60♦MidiLeftThumbRight♦SetTrue
+
+
+MPK Mini Play♦Note♦72♦MidiBorderRight0♦SetTrue
+MPK Mini Play♦Note♦71♦MidiBorderRihgt1♦SetTrue
+MPK Mini Play♦Note♦69♦MidiBorderRight2♦SetTrue
+MPK Mini Play♦Note♦67♦MidiBorderRight3♦SetTrue
+MPK Mini Play♦Note♦70♦MidiBorderBlackRight0♦SetTrue
+MPK Mini Play♦Note♦68♦MidiBorderBlackRihgt1♦SetTrue
+MPK Mini Play♦Note♦66♦MidiBorderBlackRight2♦SetTrue
+
+MPK Mini Play♦Note♦48♦MidiBorderLeft0♦SetTrue
+MPK Mini Play♦Note♦50♦MidiBorderLeft1♦SetTrue
+MPK Mini Play♦Note♦52♦MidiBorderLeft2♦SetTrue
+MPK Mini Play♦Note♦53♦MidiBorderLeft3♦SetTrue
+MPK Mini Play♦Note♦55♦MidiBorderLeft4♦SetTrue
+MPK Mini Play♦Note♦49♦MidiBorderLeftBlack0♦SetTrue
+MPK Mini Play♦Note♦51♦MidiBorderLeftBlack1♦SetTrue
+
+MPK Mini Play♦Note♦49♦MidiBorderBlackLeft0♦SetTrue
+MPK Mini Play♦Note♦51♦MidiBorderBlackLeft1♦SetTrue
+MPK Mini Play♦Note♦54♦MidiBorderBlackLeft2♦SetTrue
+MPK Mini Play♦Note♦55♦MidiBorderBlackLeft3♦SetTrue
+MPK Mini Play♦Note♦56♦MidiBorderBlackLeft4♦SetTrue
+
+MPK Mini Play♦Note♦70♦MidiBorderBlackRight0♦SetTrue
+MPK Mini Play♦Note♦68♦MidiBorderBlackRight1♦SetTrue
+MPK Mini Play♦Note♦66♦MidiBorderBlackRight2♦SetTrue
+MPK Mini Play♦Note♦63♦MidiBorderBlackRight3♦SetTrue
+MPK Mini Play♦Note♦61♦MidiBorderBlackRight4♦SetTrue
+
+
+MPK Mini Play♦Note♦49♦MidiDPower♦SetTrue
+MPK Mini Play♦Note♦51♦MidiFPower♦SetTrue
+MPK Mini Play♦Note♦54♦MidiSPower♦SetTrue
+
+MPK Mini Play♦Note♦64♦MidiMove♦SetTrue
+
+
+
+
+MPK Mini Play♦CC♦48♦0.0♦0.33♦ChoGath♦SetTrue
+MPK Mini Play♦CC♦48♦0.33♦0.66♦Sona♦SetTrue
+MPK Mini Play♦CC♦48♦0.66♦1♦Zoe♦SetTrue
+
+
+MPK Mini Play♦Note♦48♦0.66♦1♦Zoe♦SetTrue
+
+
+
+// Specific to my foot board
+Arduino Micro♦Note♦18♦FootRightDown♦SetFalse
+Arduino Micro♦Note♦19♦FootRightTop♦SetFalse
+Arduino Micro♦Note♦7♦FootLeftDown♦SetFalse
+Arduino Micro♦Note♦8♦FootLeftTop♦SetFalse
+Arduino Micro♦Note♦18♦ZoeCombo♦SetFalse

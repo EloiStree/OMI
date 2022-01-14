@@ -12,9 +12,10 @@ public class FileImport_OmiAsXmlElements : MonoBehaviour
 
     public List<string> m_filesPathFound = new List<string>();
     public List<Omixml> m_xmlFoundAndValide= new List<Omixml>();
-
     public List<MidiConnectionIn> m_midiIn;
     public List<MidiConnectionOut> m_midiOut;
+    public List<JomiUdpTarget> m_jomiUdpTargets;
+    public List<Mouse2booleans> m_mouse2booleans;
     public void Clear() {
         m_filesPathFound.Clear();
     }
@@ -49,6 +50,27 @@ public class FileImport_OmiAsXmlElements : MonoBehaviour
             foreach (var item in omiXml.Midiconnectionout)
             {
                 m_midiOut.Add(new MidiConnectionOut(item.MidiName));
+            }
+            foreach (var item in omiXml.JomiUdpTarget)
+            {
+                m_jomiUdpTargets.Add(new JomiUdpTarget(item.JomiIdName, item.IpAddress, item.portName));
+            }
+            foreach (var item in omiXml.Mouse2Booleans)
+            {
+
+                Mouse2booleans m2b = new Mouse2booleans();
+                 m2b.m_north        = item.m_north     ;
+                 m2b.m_south        = item.m_south     ;
+                 m2b.m_east         = item.m_east      ;
+                 m2b.m_west         = item.m_west      ;
+                 m2b.m_southEast    = item.m_southEast ;
+                 m2b.m_southWest    = item.m_southWest ;
+                 m2b.m_northEast    = item.m_northEast ;
+                 m2b.m_northWest    = item.m_northWest ;
+                 m2b.m_mouseMove    = item.m_mouseMove ;
+                 m2b.m_mouseMoveEndDelayInSeconds = item.m_mouseMoveEndDelayInSeconds;
+
+                 m_mouse2booleans.Add(m2b);
             }
         }
 

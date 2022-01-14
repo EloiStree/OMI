@@ -60,6 +60,12 @@ public class BooleanStateRegisterMono : MonoBehaviour
 
     public void Set(string nameofboolean, bool value, bool createItIfNotFound)
     {
+        if (nameofboolean == null
+            || nameofboolean.Length == 0
+            || nameofboolean.Trim().Length == 0)
+            return;
+
+
         if (!m_register.Contains(nameofboolean))
         {
             if (createItIfNotFound)
@@ -104,7 +110,6 @@ public class BooleanStateRegister
 
     public void Set(string name, bool value) {
         name = name.ToLower();
-
         if (!m_stored.ContainsKey(name)) { 
             m_stored.Add(name, new BooleanState(name, value));
             m_keysRef.Clear();

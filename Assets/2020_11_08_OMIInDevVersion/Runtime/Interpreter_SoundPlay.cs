@@ -38,7 +38,9 @@ public class Interpreter_SoundPlay : AbstractInterpreterMono
         {
             string soundName = token[2].Trim();
             //stack:remove:name  
-            if (cmdLow.IndexOf("sound:shotplay:") == 0)
+            if (cmdLow.IndexOf("sound:shotplay:") == 0
+                || cmdLow.IndexOf("sound:playonce:") == 0
+                || cmdLow.IndexOf("sound:create:") == 0)
             {
                 PlayOnceSound(soundName);
             }

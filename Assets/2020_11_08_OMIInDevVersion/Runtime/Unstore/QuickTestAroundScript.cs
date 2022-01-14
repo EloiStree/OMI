@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,8 @@ public class QuickTestAroundScript : MonoBehaviour
     public string toFind = ".py";
     public string toLaunch = "HelloWorld";
     public bool m_asHidden;
+
+    public string m_startupPath=        Environment.GetFolderPath(Environment.SpecialFolder.Startup);
     public ExecutablePathManager m_executePath;
 
     [ContextMenu("Test")]

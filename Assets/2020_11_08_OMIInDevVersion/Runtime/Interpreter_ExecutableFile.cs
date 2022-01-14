@@ -38,11 +38,8 @@ public class Interpreter_ExecutableFile : AbstractInterpreterMono
       
 
         List<string> args = tokens.ToList();
-        Debug.Log("DD:" + args.Count);
-        Debug.Log("Tokens:" + string.Join("-",tokens));
         if (args.Count == 1)
         {
-            Debug.Log("Yi:" + args[0]);
             m_executableInTheProject.TryToLaunch(args[0], true);
 
         }

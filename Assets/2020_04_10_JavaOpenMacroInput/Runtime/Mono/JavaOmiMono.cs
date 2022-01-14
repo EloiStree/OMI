@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using JavaOpenMacroInput;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,6 +27,11 @@ public class JavaOmiMono : MonoBehaviour
         {
             item.SendShortcutCommands(shortcutCommand);
         }
+    }
+
+    public void KillThreads() {
+
+        JavaOMI.KillAllThreads();
     }
 
 

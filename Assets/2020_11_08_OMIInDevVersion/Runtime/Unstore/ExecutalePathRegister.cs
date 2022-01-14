@@ -45,7 +45,6 @@ public class ExecutalePathRegister : MonoBehaviour
     {
         ExecutablePathAccessInfo exe = new ExecutablePathAccessInfo(path, alias);
 
-        Debug.Log(">1>>" + path + " " + alias);
         AddExecutabe(exe);
     }
 

@@ -35,6 +35,17 @@ namespace JavaOpenMacroInput {
             SendRawCommand("img2clip:"+ url);
         }
 
+        public static void KillAllThreads()
+        {
+            foreach (var item in GetAllRunningRegistered())
+            
+            {
+                item.StopThread();
+
+            }
+
+        }
+
         public void Past(bool shortcutCommand=false)
         {
             if (shortcutCommand)
@@ -526,12 +537,15 @@ namespace JavaOpenMacroInput {
 
         public static void RegisterShortcut(string name, JavaOMI running, bool overrideExistingOne=true)
         {
-            if (!IsServerRegistered(name)) {
+            if (!IsServerRegistered(name))
+            {
                 m_readyToUseRegister.Add(name, running);
 
             }
-            else if (overrideExistingOne)
+            else if (overrideExistingOne) { 
+                
                 m_readyToUseRegister[name] = running;
+            }
 
             NotifyThreadChange(name);
         }

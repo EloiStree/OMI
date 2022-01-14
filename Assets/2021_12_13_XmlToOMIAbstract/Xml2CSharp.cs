@@ -12,7 +12,7 @@ using System.Xml.Serialization;
 
 [System.Serializable]
 [XmlRoot(ElementName = "midiconnectionin")]
-public class Midiconnectionin
+public class XmlMidiconnectionIN
 {
 
 	[XmlAttribute(AttributeName = "midiName")]
@@ -20,7 +20,7 @@ public class Midiconnectionin
 }
 	[System.Serializable]
 	[XmlRoot(ElementName = "midiconnectionout")]
-	public class Midiconnectionout
+	public class XmlMidiconnectionOut
 	{
 
 		[XmlAttribute(AttributeName = "midiName")]
@@ -29,7 +29,7 @@ public class Midiconnectionin
 
 	[System.Serializable]
 	[XmlRoot(ElementName = "analogdigitalcompressioncom")]
-	public class Analogdigitalcompressioncom
+	public class XmlAnalogdigitalcompressioncom
 	{
 
 		[XmlAttribute(AttributeName = "comIdName")]
@@ -45,12 +45,76 @@ public class Midiconnectionin
 	{
 
 		[XmlElement(ElementName = "midiconnectionin")]
-		public List<Midiconnectionin> Midiconnectionin;
+		public List<XmlMidiconnectionIN> Midiconnectionin;
 
 		[XmlElement(ElementName = "midiconnectionout")]
-		public List<Midiconnectionout> Midiconnectionout;
+		public List<XmlMidiconnectionOut> Midiconnectionout;
 
 		[XmlElement(ElementName = "analogdigitalcompressioncom")]
-		public Analogdigitalcompressioncom Analogdigitalcompressioncom;
-	}
+		public List<XmlAnalogdigitalcompressioncom> Analogdigitalcompressioncom;
 
+
+		[XmlElement(ElementName = "jomiudptarget")]
+		public List<XmlJomiUdpTarget> JomiUdpTarget;
+
+		[XmlElement(ElementName = "mouse2booleans")]
+		public List<XmlMouse2booleans> Mouse2Booleans;
+}
+
+[System.Serializable]
+[XmlRoot(ElementName = "jomiudptarget")]
+public class XmlJomiUdpTarget
+{
+
+	[XmlAttribute(AttributeName = "idName")]
+	public string JomiIdName;
+
+	[XmlAttribute(AttributeName = "ip")]
+	public string IpAddress;
+
+	[XmlAttribute(AttributeName = "port")]
+	public string portName;
+
+}
+
+
+[System.Serializable]
+[XmlRoot(ElementName = "mouse2booleans")]
+public class XmlMouse2booleans
+{
+	// <mouse2booleans north = "M0N" south="M0S" west="M0W" east="M0E" 
+	// southWest="M0SW" southEast="M0SE" northWest="M0NW" northEast="M0NE" mouseMove="M0Move" 
+	// noteMovingDelay="0.1" />
+
+	[XmlAttribute(AttributeName = "north")]
+	public string m_north;
+
+	[XmlAttribute(AttributeName = "south")]
+	public string m_south;
+	
+	[XmlAttribute(AttributeName = "east")]
+	public string m_east;
+	
+	[XmlAttribute(AttributeName = "west")]
+	public string m_west;
+
+	[XmlAttribute(AttributeName = "southEast")]
+	public string m_southEast;
+	
+	[XmlAttribute(AttributeName = "southWest")]
+	public string m_southWest;
+	
+	[XmlAttribute(AttributeName = "northEast")]
+	public string m_northEast;
+	
+	[XmlAttribute(AttributeName = "northWest")]
+	public string m_northWest;
+
+	[XmlAttribute(AttributeName = "mouseMove")]
+	public string m_mouseMove;
+
+
+	[XmlAttribute(AttributeName = "mouseMoveEndDelay")]
+	public float m_mouseMoveEndDelayInSeconds = 0.1f;
+
+}

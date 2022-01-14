@@ -91,7 +91,8 @@ public class UDPThreadDispatcher : MonoBehaviour
             }
             catch (Exception e)
             {
-                Debug.Log(e.ToString());
+               Debug.Log(e.ToString());
+                m_wantThreadAlive = false;
             }
         }
     }

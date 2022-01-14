@@ -97,13 +97,13 @@ public class MidiToBooleanRegisterMono : MonoBehaviour
         value.GetSource(out IMidiInSourceGet deviceSource);
         deviceSource.GetSourceDeviceName(out string deviceName);
 
-        Eloi.E_DebugLog.A(shortenId +" - - "+deviceName);
+      //  Eloi.E_DebugLog.A(shortenId +" - - "+deviceName);
 
         IEnumerable<MidiToBooleanObserved.ShortenId> note = m_midiToBooleanRegister.m_shortenId.Where(
               k =>
               Eloi.E_StringUtility.AreEquals(in k.m_midiDeviceName, in deviceName, in ignore, in trim) &&
               k.m_shortenValue== shortenId);
-        Eloi.E_DebugLog.G();
+       // Eloi.E_DebugLog.G();
 
         foreach (var item in note)
         {

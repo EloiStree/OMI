@@ -44,9 +44,11 @@ public class MouseInfoToBooleans : MonoBehaviour
     void Update()
     {
         BooleanStateRegister reg = null;
-        if (m_register == null) return;
+        if (m_register == null) 
+            return;
         m_register.GetRegister(ref reg);
-        if (reg == null) return;
+        if (reg == null)
+            return;
 
         m_mouseInfo.GetMousePositionOnScreen(out m_bot2Top, out m_left2Right);
         m_lastDeltaVertical = m_bot2Top - m_previousBot2Top;

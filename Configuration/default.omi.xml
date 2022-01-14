@@ -1,0 +1,17 @@
+<omixml>
+    <midiconnectionin midiName="Arduino Micro" />
+    <midiconnectionin midiName="MPK mini play" />
+    <midiconnectionout midiName="Microsoft GS Wavetable Synth" />
+	<jomiudptarget idName="Local" ip="127.0.0.1" port="2501" />
+	<!-- <jomiudptarget idName="Remote" ip="192.168.1.1" port="2501"  /> -->
+	 
+	
+
+    <!-- This standard is one I created before learning midi -->
+    <analogdigitalcompressioncom comIdName="COM20" nomenclatureName="FootPattern" />
+	
+	<mouse2booleans north="M▸N" south="M▸S" west="M▸W" east="M▸E" 
+	southWest="M▸SW" southEast="M▸SE" northWest="M▸NW" northEast="M▸NE" mouseMove="M▸Move" 
+	mouseMoveEndDelay="0.1" />
+
+</omixml>

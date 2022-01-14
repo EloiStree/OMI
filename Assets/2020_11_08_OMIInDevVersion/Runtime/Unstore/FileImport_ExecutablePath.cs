@@ -2,19 +2,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 
 public class FileImport_ExecutablePath : MonoBehaviour
 {
+    public bool m_importWindowShortcutPath=true;
     public ExecutalePathRegister m_register;
+    public string m_path;
+    public string[] m_windowShortcuts;
     public void ClearRegister()
     {
 
         m_register.Clear();
+       
+    }
+
+    public void ImportWindowShortCut() {
+        m_path = Environment.GetFolderPath(Environment.SpecialFolder.Startup)+"\\..";
+        if (Directory.Exists(m_path)) { 
+            m_windowShortcuts = Directory.GetFiles(m_path,"*",SearchOption.AllDirectories);
+            m_windowShortcuts = m_windowShortcuts.Where(k => File.Exists(k)).ToArray();
+        }
+        if (m_importWindowShortcutPath)
+            Load(m_windowShortcuts);
     }
 
     public void Load(params string[] filePath)
     {
+       
         for (int i = 0; i < filePath.Length; i++)
         {
             if (File.Exists(filePath[i]))
@@ -26,6 +42,8 @@ public class FileImport_ExecutablePath : MonoBehaviour
                     m_register.AddFromPath(filePath[i], "");
             }
         }
+
+      
     }
 
     private void PushLaunchableFileInfo(string textToLoad)

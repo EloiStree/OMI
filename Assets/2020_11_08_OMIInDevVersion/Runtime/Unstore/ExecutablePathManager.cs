@@ -9,6 +9,7 @@ using System.IO;
 public class ExecutablePathManager : MonoBehaviour
 {
     public ExecutalePathRegister m_register;
+    public SoundFilePlayer m_soundFilePlayer;
 
     public void TryToLaunch(string textToLookFor, bool asHidden)
     {
@@ -28,6 +29,8 @@ public class ExecutablePathManager : MonoBehaviour
     public static string m_bat = ".bat";
     public static string m_ahk = ".ahk";
     public static string m_javaJar = ".jar";
+    public static string m_mp3 = ".mp3";
+    public static string m_wav = ".wav";
     public static string m_shortcut = ".lnk";
 
     public void Launch(ExecutablePathAccessInfo item, bool asHidden)
@@ -59,8 +62,14 @@ public class ExecutablePathManager : MonoBehaviour
             cmd = "java -jar  \"" + p + "\"";
             if (args != null && args.Length > 0)
                 cmd += " " + string.Join(" ", args);
-        }
+        }  // music jar
+        else if (E_StringUtility.EndWith(in p, in m_mp3)
+            || E_StringUtility.EndWith(in p, in m_wav))
+        {
 
+            m_soundFilePlayer.PlayOneShot(new ExecutableFile(p));
+            return;
+        }
         // Unkonwn
         else
         {
@@ -70,7 +79,7 @@ public class ExecutablePathManager : MonoBehaviour
 
         }
 
-        Debug.Log("Cmd Start: " + cmd);
+       // Debug.Log("Cmd Start: " + cmd);
         if (asHidden)
             E_LaunchWindowBat.ExecuteCommandHiddenWithReturnInThread(directory, cmd);
         else E_LaunchWindowBat.CreateAndExecuteBatFileInThread(
@@ -79,7 +88,7 @@ public class ExecutablePathManager : MonoBehaviour
         
         
 
-        Debug.Log("Cmd stop: " + cmd);
+       // Debug.Log("Cmd stop: " + cmd);
     }
 
     internal void TryToLaunch(string textToLookFor, bool asHidden, List<string> args)
