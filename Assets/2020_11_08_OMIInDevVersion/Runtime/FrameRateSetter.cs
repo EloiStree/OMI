@@ -20,7 +20,6 @@ public class FrameRateSetter : MonoBehaviour
     {
         try
         {
-
             SetFrameRateOfTheApp(int.Parse(frameAsString));
         }
         catch (Exception e) { }

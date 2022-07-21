@@ -45,7 +45,7 @@ public class Interpreter_Time : AbstractInterpreterMono
         timeAsString = GetNumbers(command.Substring(0, timeCommandSpliterIndex).ToLower().Substring(2).Replace(",",".").Trim());
         cmdToCall = command.Substring(timeCommandSpliterIndex+1).Trim();
         //Debug.Log("Time: " + timeAsString + "  Cmd: " + cmdToCall);
-        toCallOnTime = new CommandLine(cmdToCall);
+        toCallOnTime = new CommandLine(cmdToCall.Trim());
         bool inSecond = timeAsString.IndexOf(".")>=0 || timeAsString.IndexOf("s") > 0 || timeAsString.IndexOf("sec") > 0 || timeAsString.IndexOf("second") > 0;
         double value=0;
 

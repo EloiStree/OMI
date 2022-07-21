@@ -47,7 +47,7 @@ public class ExecutablePathManager : MonoBehaviour
         string p = item.GetPath().ToLower();
         IMetaAbsolutePathFileGet file = new MetaAbsolutePathFile(p);
         IMetaAbsolutePathDirectoryGet directory;
-        E_FileAndFolderUtility.GetDirectoryFromPath(in file, out directory);
+        E_FileAndFolderUtility.GetDirectoryPathFromPath(in file, out directory);
         string cmd = "";
         // Python
         if (E_StringUtility.EndWith(in p, in m_python))
@@ -84,7 +84,9 @@ public class ExecutablePathManager : MonoBehaviour
             E_LaunchWindowBat.ExecuteCommandHiddenWithReturnInThread(directory, cmd);
         else E_LaunchWindowBat.CreateAndExecuteBatFileInThread(
             new MetaAbsolutePathDirectory(Application.temporaryCachePath)
-            , new MetaFileNameWithoutExtension("" + ((int)(UnityEngine.Random.value * 1000000))), false, new string[] { cmd });
+            , new MetaFileNameWithoutExtension("" + ((int)(UnityEngine.Random.value * 1000000)))
+            , false, 
+            new string[] { cmd });
         
         
 

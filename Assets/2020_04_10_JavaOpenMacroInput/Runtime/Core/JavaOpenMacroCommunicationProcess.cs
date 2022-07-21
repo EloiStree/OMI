@@ -28,7 +28,16 @@ namespace JavaOpenMacroInput {
                  SendRawCommand("clipboard:cut");
         }
 
-      
+        public static void Clear()
+        {
+            foreach (var id in GetAllRunningNameRegistered())
+            {
+              JavaOMI omi=  GetRegistered(id);
+              omi.StopThread();
+              m_readyToUseRegister.Remove(id);
+
+            }
+        }
 
         public void ImageUrlToClipboard(string url)
         {

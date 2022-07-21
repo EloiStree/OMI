@@ -72,11 +72,13 @@ public class TDD_MacroAddAndPlay : MonoBehaviour
     }
 }
 
-public class NameListOfCommandLinesRegister {
+public class NameListOfCommandLinesRegister
+{
 
     private Dictionary<string, NamedListOfCommandLines> m_registered = new Dictionary<string, NamedListOfCommandLines>();
 
-    public bool GetList(string nameId, out NamedListOfCommandLines foundList) {
+    public bool GetList(string nameId, out NamedListOfCommandLines foundList)
+    {
         bool hasList = m_registered.ContainsKey(nameId);
         if (hasList)
             foundList = m_registered[nameId];
@@ -124,7 +126,7 @@ public class NameListOfCommandLinesRegister {
 
     public void Clear()
     {
-         m_registered.Clear();
+        m_registered.Clear();
     }
 
     public int GetCount()
@@ -134,7 +136,79 @@ public class NameListOfCommandLinesRegister {
 
     public NamedListOfCommandLines[] GetNameRegisteredFull()
     {
-       return m_registered.Values.ToArray();
+        return m_registered.Values.ToArray();
+    }
+}
+
+
+
+
+
+public class CharListOfCommandLinesRegister
+{
+
+    private Dictionary<char, CharToCommands> m_registered = new Dictionary<char, CharToCommands>();
+
+    public bool GetList(char charValue, out CharToCommands foundList)
+    {
+        bool hasList = m_registered.ContainsKey(charValue);
+        if (hasList)
+            foundList = m_registered[charValue];
+        else foundList = null;
+        return hasList;
+    }
+
+    public void AddList(char charValue, CharToCommands listOfCommands)
+    {
+        if (m_registered.ContainsKey(charValue))
+            m_registered[charValue] = listOfCommands;
+        else
+            m_registered.Add(charValue, listOfCommands);
+    }
+
+    public char[] GetNameRegistered()
+    {
+        return m_registered.Keys.ToArray();
+    }
+
+    public bool GetCommandLinesOf(char charValue, out List<ICommandLine> lines)
+    {
+
+        lines = null;
+        CharToCommands listOfCommands;
+        if (GetList(charValue, out listOfCommands))
+        {
+            lines = listOfCommands.GetCommands();
+            return true;
+        }
+        return false;
+    }
+    public bool GetCommandLinesOf(char charValue, out CharToCommands lines)
+    {
+
+        lines = null;
+        CharToCommands listOfCommands;
+        if (GetList(charValue, out listOfCommands))
+        {
+            lines = listOfCommands;
+            return true;
+        }
+        return false;
+    }
+
+    public void Clear()
+    {
+        m_registered.Clear();
+    }
+
+    public int GetCount()
+    {
+        return m_registered.Keys.Count;
+    }
+
+    public CharToCommands[] GetNameRegisteredFull()
+    {
+        return m_registered.Values.ToArray();
     }
 }
 

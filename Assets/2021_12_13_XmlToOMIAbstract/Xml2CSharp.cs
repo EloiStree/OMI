@@ -54,8 +54,12 @@ public class XmlMidiconnectionIN
 		public List<XmlAnalogdigitalcompressioncom> Analogdigitalcompressioncom;
 
 
-		[XmlElement(ElementName = "jomiudptarget")]
-		public List<XmlJomiUdpTarget> JomiUdpTarget;
+	[XmlElement(ElementName = "jomiudptarget")]
+	public List<XmlJomiUdpTarget> JomiUdpTarget;
+
+	[XmlElement(ElementName = "xomiudptarget")]
+	public List<XmlXomiUdpTarget> XomiUdpTarget;
+
 
 		[XmlElement(ElementName = "mouse2booleans")]
 		public List<XmlMouse2booleans> Mouse2Booleans;
@@ -68,6 +72,21 @@ public class XmlJomiUdpTarget
 
 	[XmlAttribute(AttributeName = "idName")]
 	public string JomiIdName;
+
+	[XmlAttribute(AttributeName = "ip")]
+	public string IpAddress;
+
+	[XmlAttribute(AttributeName = "port")]
+	public string portName;
+
+}
+[System.Serializable]
+[XmlRoot(ElementName = "xomiudptarget")]
+public class XmlXomiUdpTarget
+{
+
+	[XmlAttribute(AttributeName = "idName")]
+	public string XomiIdName;
 
 	[XmlAttribute(AttributeName = "ip")]
 	public string IpAddress;
@@ -117,4 +136,13 @@ public class XmlMouse2booleans
 	[XmlAttribute(AttributeName = "mouseMoveEndDelay")]
 	public float m_mouseMoveEndDelayInSeconds = 0.1f;
 
+
+	[XmlAttribute(AttributeName = "wheelLeft")]
+	public string m_wheelLeft;
+	[XmlAttribute(AttributeName = "wheelUp")]
+	public string m_wheelUp;
+	[XmlAttribute(AttributeName = "wheelDown")]
+	public string m_wheelDown;
+	[XmlAttribute(AttributeName = "wheelRight")]
+	public string m_wheelRight;
 }

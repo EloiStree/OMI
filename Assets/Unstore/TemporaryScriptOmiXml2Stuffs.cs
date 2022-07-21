@@ -14,7 +14,17 @@ public class TemporaryScriptOmiXml2Stuffs : MonoBehaviour
 
 
     public MouseInfoToBooleansDirectionMono m_mouse;
+    public MouseWheelEventToBoolean m_mouseWheel;
 
+    public UDPThreadSender m_xomiSender;
+
+
+
+    public void Clear() {
+
+        JavaOMI.Clear();
+        m_midiInListeners.Clear();
+    }
 
     public void ApplyImport() {
 
@@ -29,10 +39,11 @@ public class TemporaryScriptOmiXml2Stuffs : MonoBehaviour
             item.GetTargetIdName(out string udpTargetName);
             Eloi.E_CodeTag.DirtyCode.Info("Here I should manage the override but I am not. Like killing or checking that I am not killing the same target that before.");
             Eloi.E_CodeTag.SleepyCode.Info("I was a bit sleepy when I was coding this part. Be warn. Problem is that it is an important part.");
-            if (   E_StringUtility.IsFilled(in item.m_ipAddress)
+            if (E_StringUtility.IsFilled(in item.m_ipAddress)
                 && E_StringUtility.IsFilled(in item.m_idName)
-                && int.TryParse(item.m_port, out int port)) {
-               JavaOMI previous=  JavaOMI.GetRegistered(item.m_idName);
+                && int.TryParse(item.m_port, out int port))
+            {
+                JavaOMI previous = JavaOMI.GetRegistered(item.m_idName);
                 if (previous != null)
                     previous.StopThread();
 
@@ -41,11 +52,24 @@ public class TemporaryScriptOmiXml2Stuffs : MonoBehaviour
                             item.m_ipAddress,
                             port, m_threadPriority
                             ));
-                
-                JavaOMI.RegisterShortcut( udpTargetName,jomi ,true);
+
+                JavaOMI.RegisterShortcut(udpTargetName, jomi, true);
 
             }
         }
+        foreach (var item in m_import.m_xomiUdpTargets)
+        {
+            m_xomiSender.Clear();
+           item.GetTargetIdName(out string udpTargetName);
+           if (E_StringUtility.IsFilled(in item.m_ipAddress)
+                && E_StringUtility.IsFilled(in item.m_idName)
+                && int.TryParse(item.m_port, out int port))
+            {
+                m_xomiSender.AddAlias(new IpSingleAlias(item.m_idName, item.m_ipAddress , port ));
+            }
+
+        }
+        m_xomiSender.ResetTheTargetFromAlias();
 
         foreach (var item in m_import.m_mouse2booleans)
         {
@@ -59,6 +83,11 @@ public class TemporaryScriptOmiXml2Stuffs : MonoBehaviour
             m_mouse.m_mouseOrientation.m_NW = item.m_northWest;
             m_mouse.m_mouseMovingNamed = item.m_mouseMove;
             m_mouse.m_mouseMovingEndDelay = item.m_mouseMoveEndDelayInSeconds;
+
+            m_mouseWheel.m_mouseWheelLeft = item.m_wheelLeft;
+            m_mouseWheel.m_mouseWheelRight = item.m_wheelRight;
+            m_mouseWheel.m_mouseWheelUp = item.m_wheelUp;
+            m_mouseWheel.m_mouseWheelDown = item.m_wheelDown;
         }
 
     }

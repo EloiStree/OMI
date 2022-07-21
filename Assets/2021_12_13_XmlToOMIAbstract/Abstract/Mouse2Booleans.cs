@@ -32,7 +32,15 @@ public class Mouse2booleans: IMouse2Booleans
 	public string m_northEast = "";
 	public string m_northWest = "";
 	public string m_mouseMove = "";
-	public float  m_mouseMoveEndDelayInSeconds=0.1f;
+    public string m_wheelRight = "";
+    public string m_wheelLeft = "";
+    public string m_wheelUp = "";
+    public string m_wheelDown = "";
+
+
+    public float  m_mouseMoveEndDelayInSeconds=0.1f;
+
+
 
     public void GetEastLabel(out string label)
     {
@@ -80,6 +88,29 @@ public class Mouse2booleans: IMouse2Booleans
     }
 
     public void GetWestLabel(out string label)
-    {        label = m_west;
+    {
+        label = m_west;
     }
+
+    public void GetWheelUp(out string label)
+    {
+        label = m_wheelUp;
+
+    }
+    public void GetWheelDown(out string label)
+    {
+        label = m_wheelDown;
+
+    }
+    public void GetWheelRight(out string label)
+    {
+        label = m_wheelRight;
+
+    }
+    public void GetWheelLeft(out string label)
+    {
+        label = m_wheelLeft;
+
+    }
+   
 }

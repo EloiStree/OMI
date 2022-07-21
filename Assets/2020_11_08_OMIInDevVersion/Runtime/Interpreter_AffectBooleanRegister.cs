@@ -1,6 +1,7 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 
 public class Interpreter_AffectBooleanRegister : AbstractInterpreterMono
@@ -12,7 +13,7 @@ public class Interpreter_AffectBooleanRegister : AbstractInterpreterMono
 
         return StartWith(ref command, "bool:", true) || StartWith(ref command, "boolswitch:", true) || StartWith(ref command, "boolgroup:", true);
     }
-
+                  
     public override string GetName()
     {
         return "Affect boolean register";
@@ -27,7 +28,44 @@ public class Interpreter_AffectBooleanRegister : AbstractInterpreterMono
             string action = tokens[0].Trim(), name = tokens[1].Trim();
             if (!string.IsNullOrWhiteSpace(action) && !string.IsNullOrWhiteSpace(name) )
             {
-                if (tokens.Length == 3 )
+                //"bool: a🀲 b c d "
+                //"bool: a 🀸 b c d "
+
+                if (tokens.Length == 2 && tokens[1].Length>=3)
+                {
+                   
+                    string dominotext = tokens[1];
+                    bool falseTrueDominor= Regex.IsMatch(dominotext,".*🀲.*"); ;
+                    int dominoIndex = dominotext.IndexOf("🀲");
+                    if (dominoIndex > -1)
+                    {
+                        string left = dominotext.Substring(0, dominoIndex);
+                        string right = dominotext.Substring(dominoIndex + 2 );
+                        string[] boolLeft = left.Split(' ');
+                        string[] boolRight = right.Split(' ');
+                        for (int i = 0; i < boolLeft.Length; i++)
+                        {
+                            if (boolLeft[i].Trim().Length > 0)
+                            {
+                                m_booleanRegister.Set(boolLeft[i].Trim() , !falseTrueDominor, !falseTrueDominor);
+                            }
+
+                        }
+                        for (int i = 0; i < boolRight.Length; i++)
+                        {
+                            if (boolRight[i].Trim().Length > 0)
+                            {
+                                m_booleanRegister.Set(boolRight[i].Trim(), falseTrueDominor, falseTrueDominor);
+                            }
+
+                        }
+                    }
+
+
+
+                }
+
+                    if (tokens.Length == 3 )
                 {
                     string  value = tokens[2].Trim();
 

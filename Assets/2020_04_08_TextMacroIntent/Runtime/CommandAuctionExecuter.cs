@@ -11,7 +11,8 @@ public class CommandAuctionExecuter : MonoBehaviour
     public TimeThreadMono m_timeThread;
     public CommandAuctionCoroutineExecuter m_coroutineCmdManager;
 
-    internal void ExecuteStringCommand(string text)
+    
+    public void ExecuteStringCommand(string text)
     {
         Execute(new CommandLine(text));
     }
@@ -63,6 +64,10 @@ public class CommandAuctionExecuter : MonoBehaviour
         IInterpreter interpret;
         if (m_auction.SeekForFirstTaker(command.GetLine(), out interpret))
             interpret.TranslateToActions(ref command);
+    }
+    public void Execute(char text)
+    {
+        Execute(new CommandLine("" + text));
     }
     public void Execute(string command)
     {

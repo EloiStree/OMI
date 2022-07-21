@@ -23,7 +23,8 @@
         "be.eloistree.textmacrointent",
         "be.eloistree.timethread",
         "be.eloistree.readserialport",
-        "be.eloistree.generaltoolbox"
+        "be.eloistree.generaltoolbox",
+        "be.eloistree.udpthreadsender"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

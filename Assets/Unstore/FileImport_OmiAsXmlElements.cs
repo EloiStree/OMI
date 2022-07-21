@@ -15,9 +15,18 @@ public class FileImport_OmiAsXmlElements : MonoBehaviour
     public List<MidiConnectionIn> m_midiIn;
     public List<MidiConnectionOut> m_midiOut;
     public List<JomiUdpTarget> m_jomiUdpTargets;
+    public List<XomiUdpTarget> m_xomiUdpTargets;
     public List<Mouse2booleans> m_mouse2booleans;
     public void Clear() {
         m_filesPathFound.Clear();
+        m_filesPathFound.Clear();
+        m_xmlFoundAndValide.Clear();
+        m_midiIn.Clear();
+        m_midiOut.Clear();
+        m_jomiUdpTargets.Clear();
+        m_xomiUdpTargets.Clear();
+        m_mouse2booleans.Clear();
+
     }
 
     public void TryToImportAllFiles(string[] filesPath)
@@ -55,6 +64,10 @@ public class FileImport_OmiAsXmlElements : MonoBehaviour
             {
                 m_jomiUdpTargets.Add(new JomiUdpTarget(item.JomiIdName, item.IpAddress, item.portName));
             }
+            foreach (var item in omiXml.XomiUdpTarget)
+            {
+                m_xomiUdpTargets.Add(new XomiUdpTarget(item.XomiIdName, item.IpAddress, item.portName));
+            }
             foreach (var item in omiXml.Mouse2Booleans)
             {
 
@@ -63,12 +76,16 @@ public class FileImport_OmiAsXmlElements : MonoBehaviour
                  m2b.m_south        = item.m_south     ;
                  m2b.m_east         = item.m_east      ;
                  m2b.m_west         = item.m_west      ;
-                 m2b.m_southEast    = item.m_southEast ;
-                 m2b.m_southWest    = item.m_southWest ;
-                 m2b.m_northEast    = item.m_northEast ;
-                 m2b.m_northWest    = item.m_northWest ;
-                 m2b.m_mouseMove    = item.m_mouseMove ;
-                 m2b.m_mouseMoveEndDelayInSeconds = item.m_mouseMoveEndDelayInSeconds;
+                 m2b.m_southEast    = item.m_southEast;
+                m2b.m_southWest = item.m_southWest;
+                m2b.m_northEast = item.m_northEast;
+                m2b.m_northWest = item.m_northWest;
+                m2b.m_mouseMove = item.m_mouseMove;
+                 m2b.m_wheelLeft    = item.m_wheelLeft  ;
+                 m2b.m_wheelUp      = item.m_wheelUp    ;
+                 m2b.m_wheelDown    = item.m_wheelDown  ;
+                 m2b.m_wheelRight   = item.m_wheelRight;
+                m2b.m_mouseMoveEndDelayInSeconds = item.m_mouseMoveEndDelayInSeconds;
 
                  m_mouse2booleans.Add(m2b);
             }

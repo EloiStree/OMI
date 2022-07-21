@@ -18,6 +18,13 @@ MPK Mini Play♦Shorten♦16560♦FootSustain♦SetFalse
 UM-ONE♦Note♦1♦FootPadLeft♦SetTrue
 UM-ONE♦Note♦2♦FootPadRight♦SetTrue
 
+
+
+MPK Mini Play♦Note♦48♦Demo0♦SetTrue
+MPK Mini Play♦Note♦50♦Demo1♦SetTrue
+MPK Mini Play♦Note♦52♦Demo2♦SetTrue
+MPK Mini Play♦Note♦53♦Demo3♦SetTrue
+
 // C CD D DD E F FD G GD A AD B C
 // Note C
 MPK Mini Play♦NoteVelocity♦48♦0.0♦0.00001♦LeftCNone♦SetTrue
@@ -75,6 +82,8 @@ MPK Mini Play♦NoteVelocity♦58♦0.0♦0.000001♦LeftADNone♦SetTrue
 MPK Mini Play♦NoteVelocity♦58♦0.00001♦0.1♦LeftADLow♦SetTrue
 MPK Mini Play♦NoteVelocity♦58♦0.1♦0.9♦LeftADMid♦SetTrue
 MPK Mini Play♦NoteVelocity♦58♦0.9♦1.0♦LeftADHight♦SetTrue
+
+
 
 
 

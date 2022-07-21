@@ -25,6 +25,16 @@ public class ManageMidiInListenersMono : MonoBehaviour
         CreateMidi(midiName);
     }
 
+    public void Clear()
+    {
+        foreach (var item in m_midiInListener)
+        {
+            
+            DestroyImmediate(item.m_createdListener.gameObject);
+        }
+        m_midiInListener.Clear();
+    }
+
     private void CreateMidi(string midiName)
     {
         GameObject created = GameObject.Instantiate(m_prefabListener, m_midiInParent);

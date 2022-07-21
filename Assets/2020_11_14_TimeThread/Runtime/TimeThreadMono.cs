@@ -13,6 +13,7 @@ public class TimeThreadMono : MonoBehaviour
     public int m_sleepTimeInMs=10;
     public bool m_autoStart = true;
     public float m_timeBetweenUpdateInMs = 50;
+    public long m_frameUnityPingCount;
 
     private void Awake()
     {
@@ -27,6 +28,7 @@ public class TimeThreadMono : MonoBehaviour
 
         FlushByPinging(ref m_toPingAsapInUnityThread);
         CheckForLoopPing(PingThreadType.InUnityThread);
+        m_frameUnityPingCount++;
     }
 
 
