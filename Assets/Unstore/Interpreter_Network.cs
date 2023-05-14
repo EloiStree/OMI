@@ -24,9 +24,9 @@ public class Interpreter_Network : AbstractInterpreterMono
         int startIndex = 0;
         if (s.IndexOf("udp ") == 0)
             startIndex = 4;
-        int endIndex = s.IndexOf("|") ;
+        int endIndex = s.IndexOf("|");
+        Debug.Log("DD:" + s + "DD");
 
-        //Debug.Log("DD:" + s + "DD" );
         if (startIndex > 1 && endIndex > startIndex && endIndex+1<s.Length)
         {
             string target = s.Substring(startIndex, endIndex - startIndex);
@@ -35,6 +35,7 @@ public class Interpreter_Network : AbstractInterpreterMono
             if (target == "all" || target.Trim().Length == 0)
                 m_sender.AddMessageToSendToAll(value);
             else { 
+                Debug.Log("TT: " + target +" "+ s + " TT");
                 m_sender.TryToSend(target, value);
             
             }

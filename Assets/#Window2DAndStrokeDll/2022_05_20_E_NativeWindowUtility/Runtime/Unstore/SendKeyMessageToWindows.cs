@@ -55,7 +55,7 @@ public class SendKeyMessageToWindows
     }
 
 
-    internal static void SendKeyDownToProcessChildren(User32PostMessageKeyEnum Key, IntPtrWrapGet processId, in bool usePost = true)
+    public static void SendKeyDownToProcessChildren(User32PostMessageKeyEnum Key, IntPtrWrapGet processId, in bool usePost = true)
     {
         IntPtrWrapGet[] prs = WindowIntPtrUtility.GetProcessIdChildrenWindows(processId);
         if (prs.Length <= 0) return;
@@ -67,7 +67,7 @@ public class SendKeyMessageToWindows
 
 
     }
-    internal static void SendKeyUpToProcessChildren(User32PostMessageKeyEnum Key, IntPtrWrapGet processId, in bool usePost = true)
+    public static void SendKeyUpToProcessChildren(User32PostMessageKeyEnum Key, IntPtrWrapGet processId, in bool usePost = true)
     {
         IntPtrWrapGet[] prs = WindowIntPtrUtility.GetProcessIdChildrenWindows(processId);
         if (prs.Length <= 0) return;
@@ -188,7 +188,7 @@ public class SendKeyMessageToWindows
     }
 
 
-    internal static void RequestPastActionBroadcast(IntPtrWrapGet processId, bool andRemoveV = true)
+    public static void RequestPastActionBroadcast(IntPtrWrapGet processId, bool andRemoveV = true)
     {
         SendKeyDown(User32PostMessageKeyEnum.VK_LCONTROL, processId, true);
         SendKeyDown(User32PostMessageKeyEnum.VK_V, processId, true);

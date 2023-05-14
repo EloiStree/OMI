@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
-public class SendKeyMessageToWindowsDLL
+public class SendKeyMessageToAppWithUser32
 {
     #region USER32
     [DllImport("user32.dll", SetLastError = true)]
@@ -17,9 +17,6 @@ public class SendKeyMessageToWindowsDLL
     [DllImport("User32.dll", CharSet = CharSet.Auto, SetLastError = true)]
     public static extern int SendMessage(IntPtr hWnd, uint msg, int wParam, IntPtr lParam);
     #endregion
-
-
-
     #region CONST
     private const Int32 WM_KEYDOWN = 0x0100;
     private const Int32 WM_KEYUP = 0x0101;
@@ -64,7 +61,7 @@ public class SendKeyMessageToWindowsDLL
     }
 
 
-    internal static void SendKeyDownToProcessChildren(User32PostMessageKeyEnum Key, IntPtrWrapGet processId, in bool usePost = true)
+    public static void SendKeyDownToProcessChildren(User32PostMessageKeyEnum Key, IntPtrWrapGet processId, in bool usePost = true)
     {
         try
         {
@@ -81,7 +78,7 @@ public class SendKeyMessageToWindowsDLL
             Eloi.E_CodeTag.DirtyCode.DirtyCatch();
         }
     }
-    internal static void SendKeyUpToProcessChildren(User32PostMessageKeyEnum Key, IntPtrWrapGet processId, in bool usePost = true)
+    public static void SendKeyUpToProcessChildren(User32PostMessageKeyEnum Key, IntPtrWrapGet processId, in bool usePost = true)
     {
         try
         {

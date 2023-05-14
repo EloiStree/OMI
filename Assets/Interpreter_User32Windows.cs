@@ -10,10 +10,10 @@ public class Interpreter_User32Windows : AbstractInterpreterMono
     public override bool CanInterpreterUnderstand(ref ICommandLine icommand)
     {
 
-        string command = icommand.GetLine().Trim();
-        return command.ToLower().Trim().StartsWith("user32:") ||
-        command.ToLower().Trim().StartsWith("w32:") ||
-        command.ToLower().Trim().StartsWith("womi:");
+        string command = icommand.GetLine().ToLower().Trim();
+        return command.StartsWith("user32:") ||
+        command.StartsWith("w32:") ||
+        command.StartsWith("womi:");
     }
 
 
@@ -35,7 +35,6 @@ public class Interpreter_User32Windows : AbstractInterpreterMono
         if (Eloi.E_StringUtility.AreEquals(tokens[0], "womi")) {
 
             PushToParseOMISentence(tokens[1]);
-
             succedToExecute.SetAsFinished(true);
             return;
         }
@@ -43,10 +42,12 @@ public class Interpreter_User32Windows : AbstractInterpreterMono
         if ( tokens.Length == 2) {
 
             string value = tokens[1];
-            if (Eloi.E_StringUtility.AreEquals(value, "Hide"))
+            //w32:hide
+            if (Eloi.E_StringUtility.AreEquals(value, "Hide", true, true))
                 User32ActionAbstractCatchToExecute.PushAction(
                 new Action_HideProcessId(WindowIntPtrUtility.GetCurrentProcessId()));
-            if (Eloi.E_StringUtility.AreEquals(value, "Show"))
+            //w32:show
+            if (Eloi.E_StringUtility.AreEquals(value, "Show",true, true))
             User32ActionAbstractCatchToExecute.PushAction(
             new Action_ShowProcessId(WindowIntPtrUtility.GetCurrentProcessId()));
         }
@@ -63,10 +64,7 @@ public class Interpreter_User32Windows : AbstractInterpreterMono
                 {
                     TryToParseAsRealKey(value);
                 }
-                else if (Eloi.E_StringUtility.AreEquals(label, "mouse"))
-                {
-                    TryToParseAsRealMouse(value);
-                }
+               
             }
             else if (tokens.Length == 5 &&
                 (Eloi.E_StringUtility.AreEquals(isPost, "post") ||
@@ -77,19 +75,12 @@ public class Interpreter_User32Windows : AbstractInterpreterMono
                 string value = tokens[4];
                 if (Eloi.E_StringUtility.AreEquals(label, "key"))
                 {
-
                     TryToParseAsPostKey(target,value);
-                    Debug.Log(">>test:" + value);
                 }
-                else if (Eloi.E_StringUtility.AreEquals(label, "mouse"))
-                {
-                    TryToParseAsPostMouse(target, value);
-                }
+               
             }
 
         }
-
-
         succedToExecute.SetAsFinished(true);
     }
 
@@ -98,10 +89,7 @@ public class Interpreter_User32Windows : AbstractInterpreterMono
     public bool ContainStroke(in string text) { return text.IndexOf("↕") > -1; }
 
 
-    private void TryToParseAsPostMouse(string target, string value)
-    {
-        throw new NotImplementedException();
-    }
+  
 
     private void TryToParseAsPostKey(string target, string value)
     {
@@ -152,11 +140,7 @@ public class Interpreter_User32Windows : AbstractInterpreterMono
         return value;
     }
 
-    private void TryToParseAsRealMouse(string value)
-    {
-        throw new NotImplementedException();
-    }
-
+   
   
     private void PushToParseOMISentence(string sentenceShortToParse)
     {

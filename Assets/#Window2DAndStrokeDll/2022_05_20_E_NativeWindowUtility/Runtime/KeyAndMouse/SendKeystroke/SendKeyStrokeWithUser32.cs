@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using static MouseOperations;
 
-public class SendKeyStrokeToComputerDLL
+public class SendKeyStrokeWithUser32
 {
     [Flags]
     public enum SendInputEventType : uint

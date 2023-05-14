@@ -33,7 +33,7 @@ public class ProcessIdWithChildGroupInfo
         m_childrens = childrens;
     }
 
-    internal void GetListOfPointers(out List<IntPtrWrapGet> pointers, bool withParent=true)
+    public void GetListOfPointers(out List<IntPtrWrapGet> pointers, bool withParent=true)
     {
         List<IntPtrWrapGet> result = m_childrens.Select(k => IntPtrTemp.Int(k.m_childId.GetProcessId())).ToList();
         if(withParent)

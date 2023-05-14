@@ -53,13 +53,14 @@ public class User32BoardcastUtilityToThread {
     public static void HeavyTryParseAndSendToProcesses( string processNameId, User32PostMessageKeyEnum whatToCast)
     {
        
-            ProcessesAccessInScene.Instance.FetchListOfProcessesBasedOnName(processNameId,
-                out GroupOfProcessesParentToChildrens info, false);
+            ProcessesAccessInScene.Instance.GetProcessesBasedOnName(processNameId,
+                out List<IProcessMainInfoGet> info);
 
-            for (int i = 0; i < info.m_processesAndChildrens.Count; i++)
+            for (int i = 0; i < info.Count; i++)
             {
+            info[i].GetProcessParent(out IntPtrWrapGet parent);
                 WindowIntPtrUtility.FetchFirstChildrenThatHasDimension(
-                    info.m_processesAndChildrens[i].m_parent,
+                    parent.GetAsInt(),
                     out bool foundchild, out IntPtrWrapGet target);
                 TryParseAndSendToProcess(target, whatToCast);
             }
@@ -92,7 +93,7 @@ public class User32BoardcastUtilityToThread {
         
     }
 
-    internal static void CopyPastChatText(IntPtrWrapGet processId, string text)
+    public static void CopyPastChatText(IntPtrWrapGet processId, string text)
     {
         IntPtrTemp t = new IntPtrTemp(processId);
 

@@ -28,14 +28,14 @@ public class FetchWindowOfProcessBasedOnNameMono : MonoBehaviour
     }
 
     [ContextMenu("Frech Info")]
-    private void FetchWindowsInfoWithParams()
+    public void FetchWindowsInfoWithParams()
     {
-        FetchWindowInfoUtility.FetchInfoForTargetProcses(m_processes, m_processNameToFetch, m_reloadOnFetch
+        FetchWindowInfoUtility.FetchInfoForTargetProcess(m_processes, m_processNameToFetch, m_reloadOnFetch
             , out m_fetchWindowInfo);
         m_relayRefresh.Invoke(m_fetchWindowInfo);
     }
 
-    internal void Fetch(in int processId, out bool found,
+    public void Fetch(in int processId, out bool found,
         out DeductedInfoOfWindowSizeWithSource info)
     {
         found = false;
@@ -135,31 +135,24 @@ public class FetchWindowInfoUtility {
         }
     }
 
-    public static void FetchInfoForTargetProcses(ProcessesAccessMono access,string processNameToFetch,  bool realoadOnFetch,
+    public static void FetchInfoForTargetProcess(ProcessesAccessMono access,
+        string processNameToFetch, 
+        bool realoadOnFetch,
         out FetchWindowOfProcessBasedOnName windowProcessName)
     {
         windowProcessName = new FetchWindowOfProcessBasedOnName();
         windowProcessName.m_processNameToFetch = processNameToFetch;
-         GroupOfProcessesParentToChildrens groupOfProcess;
-        // WindowIntPtrUtility.
-        access.FetchListOfProcessesBasedOnName(
-               processNameToFetch,
-                out groupOfProcess,
-                realoadOnFetch);
-
         windowProcessName.m_fetchedWindowInfo.Clear();
-        List<ProcessIdWithChildGroupInfo> process = groupOfProcess.m_processesAndChildrens;
+        access.GetProcessesBasedOnName(processNameToFetch, out List<IProcessMainInfoGet> process);
         foreach (var item in process)
         {
-            item.GetListOfPointers(out List<IntPtrWrapGet> pointers, true);
-            foreach (var itemPtr in pointers)
-            {
-                FetchWindowInfoUtility.Get(itemPtr, out WindowIntPtrUtility.RectPadValue rect);
+            item.GetDisplayChildrenComputed(out IntPtrWrapGet ptr);
+                FetchWindowInfoUtility.Get(ptr, out WindowIntPtrUtility.RectPadValue rect);
                 if (rect.IsNotZero())
                 {
-                    windowProcessName.m_fetchedWindowInfo.Add(new DeductedInfoOfWindowSizeWithSource(itemPtr, rect));
+                    windowProcessName.m_fetchedWindowInfo.Add(new DeductedInfoOfWindowSizeWithSource(ptr, rect));
                 }
-            }
+            
         }
     }
 

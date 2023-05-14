@@ -1,0 +1,62 @@
+DodgeLeft♦  winkey:p:s   ♦winkey:p:d  ♦ in 80| winkey:p:space ♦ in 500|winkey:r:space ♦ in 500| winkey:r:d♦ in 500| winkey:r:s
+DodgeRight♦  winkey:p:f  ♦ winkey:p:d  ♦in 80| winkey:p:space♦ in 500|winkey:r:space  ♦ in 500| winkey:r:d♦ in 500| winkey:r:f
+DodgeBack♦  winkey:p:d  ♦ in 80| winkey:p:space ♦in 200|  winkey:p:lcontrol ♦ in 500|winkey:r:space ♦ in 500| winkey:r:d ♦ in 600|  winkey:r:lcontrol
+
+DodgeBackStart ♦  winkey:p:d  ♦  winkey:p:space ♦ in 80|  winkey:p:lcontrol
+DodgeBackEnd ♦  winkey:r:space ♦  winkey:r:d ♦ in 95|  winkey:r:lcontrol
+
+
+moveforwarddown♦winkey:p:e
+moveforwardup♦winkey:r:e
+movebackdown♦winkey:p:d
+movebackup♦winkey:r:d
+moveleftdown♦winkey:p:s
+moveleftup♦winkey:r:s
+moverightdown♦winkey:p:f
+moverightup♦winkey:r:f
+
+
+rotateupstart♦winkey:p:i
+rotateupend♦winkey:r:i
+rotatedownstart♦winkey:p:o
+rotatedownend♦winkey:r:o
+rotateleftstart♦winkey:p:k
+rotateleftend♦winkey:r:k
+rotaterightstart♦winkey:p:l
+rotaterightend♦winkey:r:l
+
+rotateup♦winkey:p:i♦ in 10| winkey:r:i
+rotatedown♦winkey:p:o♦ in 10| winkey:r:o
+rotateleft♦winkey:p:k♦ in 10| winkey:r:k
+rotateright♦winkey:p:l♦ in 10| winkey:r:l
+
+
+parry♦winkey:p:u♦ in 10| winkey:r:u
+feint♦winkey:p:j♦ in 10| winkey:r:j
+attackforward♦winkey:p:v♦ in 10| winkey:r:v
+attackleft♦winkey:p:b♦ in 10| winkey:r:b
+attackright♦winkey:p:n♦ in 10| winkey:r:n
+attackright♦winkey:p:l♦ in 10| winkey:r:n
+attackright♦winkey:p:n♦ in 10| winkey:r:n
+
+
+crouch♦winkey:p:lcontrol♦ in 10| winkey:r:lcontrol
+
+crouchstart ♦winkey:p:lcontrol
+crouchend ♦winkey:r:lcontrol
+
+fetchdistance♦winkey:p:1♦ in 10| winkey:r:1 ♦winkey:p:2♦ in 10| winkey:r:2 ♦winkey:p:3♦ in 10| winkey:r:3 
+fetchfist♦winkey:p:5♦ in 10| winkey:r:5
+fetchstolen♦winkey:p:4♦ in 10| winkey:r:3
+fetchfist♦winkey:p:5♦ in 10| winkey:r:5
+fetchstolenorfist♦winkey:p:5♦ in 10| winkey:r:5 ♦ in 50|winkey:p:4♦ in 80| winkey:r:4
+use♦winkey:p:r♦ in 10| winkey:r:r
+drop♦winkey:p:g♦ in 10| winkey:r:g
+kick♦winkey:p:q♦ in 10| winkey:r:q
+switchmode♦winkey:p:t♦ in 10| winkey:r:t
+
+
+feinattack♦winkey:p:lbutton♦ in 100 | winkey:p:j♦ in 200| winkey:r:j♦ in 200| winkey:r:lbutton
+
+
+

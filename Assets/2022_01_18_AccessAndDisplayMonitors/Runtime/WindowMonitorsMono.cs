@@ -281,7 +281,7 @@ public class WindowMonitorsMono : MonoBehaviour
         public int m_width;
         public int m_height;
 
-        internal void SetDimension(int x_left2Right, int y_top2Bot, int width, int height)
+        public void SetDimension(int x_left2Right, int y_top2Bot, int width, int height)
         {
             m_x_left2Right = x_left2Right;
             m_y_top2Bot = y_top2Bot;
@@ -302,7 +302,7 @@ public class WindowMonitorsMono : MonoBehaviour
             GetCornerDownRight(out corners[3]);
         }
 
-        internal void GetCenter(out PixelPosition_L2R_T2B center)
+        public void GetCenter(out PixelPosition_L2R_T2B center)
         {
             GetCornerTopLeft(out PixelPosition_L2R_T2B topLeft);
             GetCornerDownRight(out PixelPosition_L2R_T2B downRight);
@@ -321,16 +321,17 @@ public class WindowMonitorsMono : MonoBehaviour
         // SET NATIVE TO ABSTRACT
         m_nativeInfoGiven.m_nativeInformation = WindowMonitorsInformation.m_devices.ToArray();
         m_processInfo.m_monitorInformation.Clear();
-
-
+        for (int i = 0; i < m_nativeInfoGiven.m_nativeInformation.Length; i++)
+        {
+            m_processInfo.m_monitorInformation.Add(new RawMonitorInformation());
+        }
 
         for (int i = 0; i < m_nativeInfoGiven.m_nativeInformation.Length; i++)
         {
 
             WindowMonitorsInformation.MonitorInformation m = m_nativeInfoGiven.m_nativeInformation[i];
-                if (m.m_display.StateFlags != 0)
+                if (m.m_display.StateFlags != 0 )
                 {
-                    m_processInfo.m_monitorInformation.Add(new RawMonitorInformation());
                     m_processInfo.m_monitorInformation[i].m_deviceName = (m.m_display.DeviceName);
                     m_processInfo.m_monitorInformation[i].SetDimension(m.m_devMode.dmPositionX, m.m_devMode.dmPositionY
                             , m.m_devMode.dmPelsWidth, m.m_devMode.dmPelsHeight);

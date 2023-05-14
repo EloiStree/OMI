@@ -68,6 +68,9 @@ public struct IntPtrTemp : IntPtrWrapGet
 public struct IntPtrProcessId : IntPtrWrapGet
 {
     public int m_pointer;
+    public static IntPtrProcessId Zero= new IntPtrProcessId(0);
+    public static int ZeroInt=0;
+
     public IntPtrProcessId(int pointer) { m_pointer = pointer;  }
     public IntPtrProcessId(IntPtr pointer) { m_pointer = (int)pointer; }
     public IntPtrProcessId(IntPtrWrapGet pointer)

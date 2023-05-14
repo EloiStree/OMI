@@ -1,6 +1,8 @@
 <omixml>
     <midiconnectionin midiName="Arduino Micro" />
     <midiconnectionin midiName="MPK mini play" />
+    <midiconnectionin midiName="Arduino Leonardo" />
+    
     <midiconnectionout midiName="Microsoft GS Wavetable Synth" />
 
     <!-- This standar is one I created before learning midi -->

@@ -1,0 +1,6 @@
+leftcomputer♦192.168.0.240♦2505
+rightcomputer♦192.168.0.139♦2505
+sidecomputer♦leftcomputer♦rightcomputer
+
+//udp leftcomputer|jomi:a↓ 80> a↑
+//udp leftcomputer|ks:a

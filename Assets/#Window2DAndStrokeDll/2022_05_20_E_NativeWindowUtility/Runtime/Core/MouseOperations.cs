@@ -74,7 +74,7 @@ public class MouseOperations
         return currentMousePoint;
     }
 
-    internal static void MouseEventWithCurrentPosition(MouseEventFlags eventType)
+    public static void MouseEventWithCurrentPosition(MouseEventFlags eventType)
     {
         MousePoint mp = GetCursorPosition();
         MouseEvent(eventType, mp);

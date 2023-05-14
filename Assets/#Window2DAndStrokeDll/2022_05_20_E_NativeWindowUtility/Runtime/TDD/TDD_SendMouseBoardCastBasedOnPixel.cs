@@ -92,7 +92,7 @@ public class PostMouseUtility {
         SendMouseActionDirect(processId, x, y, useForground, usePost, 
             Eloi.E_EnumUtility.LeftRightMidEnum.Left, Eloi.E_EnumUtility.PressionTypeEnum.Press);
     }
-    internal static void MoveTo(IntPtrWrapGet processId, int x, int y, bool useForground, bool usePost)
+    public static void MoveTo(IntPtrWrapGet processId, int x, int y, bool useForground, bool usePost)
     {
         if (useForground)
         {
@@ -164,25 +164,25 @@ public class PostMouseUtility {
     [DllImport("user32.dll")]
     static extern bool ClientToScreen(IntPtr hWnd, ref WindowIntPtrUtility.Point lpPoint);
 
-    internal static void SendMouseMiddleUpDirect(IntPtrWrapGet processId, int x, int y, bool useForground = true, bool usePost = true)
+    public static void SendMouseMiddleUpDirect(IntPtrWrapGet processId, int x, int y, bool useForground = true, bool usePost = true)
     {
         SendMouseActionDirect(processId, x, y, useForground, usePost,
                Eloi.E_EnumUtility.LeftRightMidEnum.Middle, Eloi.E_EnumUtility.PressionTypeEnum.Release);
     }
 
-    internal static void SendMouseMiddleDownDirect(IntPtrWrapGet processId, int x, int y, bool useForground = true, bool usePost = true)
+    public static void SendMouseMiddleDownDirect(IntPtrWrapGet processId, int x, int y, bool useForground = true, bool usePost = true)
     {
         SendMouseActionDirect(processId, x, y, useForground, usePost,
                Eloi.E_EnumUtility.LeftRightMidEnum.Middle, Eloi.E_EnumUtility.PressionTypeEnum.Press);
     }
 
-    internal static void SendMouseRightUpDirect(IntPtrWrapGet processId, int x, int y, bool useForground = true, bool usePost = true)
+    public static void SendMouseRightUpDirect(IntPtrWrapGet processId, int x, int y, bool useForground = true, bool usePost = true)
     {
         SendMouseActionDirect(processId, x, y, useForground, usePost,
                Eloi.E_EnumUtility.LeftRightMidEnum.Right, Eloi.E_EnumUtility.PressionTypeEnum.Release);
     }
 
-    internal static void SendMouseRightDownDirect(IntPtrWrapGet processId, int x, int y, bool useForground = true, bool usePost = true)
+    public static void SendMouseRightDownDirect(IntPtrWrapGet processId, int x, int y, bool useForground = true, bool usePost = true)
     {
         SendMouseActionDirect(processId, x, y, useForground, usePost,
                Eloi.E_EnumUtility.LeftRightMidEnum.Right, Eloi.E_EnumUtility.PressionTypeEnum.Press);

@@ -18,9 +18,9 @@ public class User32KeyStrokeManager
         in bool usePost=true)
     {
         if (User32PressionType.Press == pressionType)
-            SendKeyMessageToWindowsDLL.SendKeyDown(in key, pointer, in usePost);
+            SendKeyMessageToAppWithUser32.SendKeyDown(in key, pointer, in usePost);
         else
-            SendKeyMessageToWindowsDLL.SendKeyUp(in key, pointer, in usePost);
+            SendKeyMessageToAppWithUser32.SendKeyUp(in key, pointer, in usePost);
     }
     public static void SendKeyStroke(
         in IntPtrWrapGet pointer,
@@ -29,18 +29,18 @@ public class User32KeyStrokeManager
     {
         WindowIntPtrUtility.SetForegroundWindow(pointer.GetAsIntPtr());
         if (User32PressionType.Press == pressionType)
-            SendKeyStrokeToComputerDLL.KeyPress(key);
+            SendKeyStrokeWithUser32.KeyPress(key);
         else
-            SendKeyStrokeToComputerDLL.KeyRelease(key);
+            SendKeyStrokeWithUser32.KeyRelease(key);
     }
     public static void SendKeyStroke(
        in User32KeyboardStrokeCodeEnum key,
        in User32PressionType pressionType)
     {
         if (User32PressionType.Press == pressionType)
-            SendKeyStrokeToComputerDLL.KeyPress(key);
+            SendKeyStrokeWithUser32.KeyPress(key);
         else
-            SendKeyStrokeToComputerDLL.KeyRelease(key);
+            SendKeyStrokeWithUser32.KeyRelease(key);
     }
 
     public static User32KeyboardStrokeCodeEnum LeftControl = User32KeyboardStrokeCodeEnum.LCONTROL;

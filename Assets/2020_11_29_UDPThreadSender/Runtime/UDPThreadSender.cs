@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class UDPThreadSender : MonoBehaviour
 {
-    public int m_messageInQueue=0;
+   // public int m_messageInQueue=0;
     public Queue<MessageToAll> m_toSendPackageToAll = new Queue<MessageToAll>();
     public Queue<MessageToIpPort> m_toSendPackageToTarget= new Queue<MessageToIpPort>();
 
@@ -81,7 +81,6 @@ public class UDPThreadSender : MonoBehaviour
     private void AddMessageToSend(MessageToIpPort message)
     {
         m_toSendPackageToTarget.Enqueue(message); 
-        m_messageInQueue = m_toSendPackageToTarget.Count;
     }
     public void TryToSend(string target, string value)
     {
@@ -108,7 +107,7 @@ public class UDPThreadSender : MonoBehaviour
                 AddAlias(alias);
             }
         }
-        //Debug.Log("O:" + target + " V:" + value + "<>");
+        Debug.Log("O:" + target + " V:" + value + " A:" + alias + "<>");
 
         if (alias!=null)
             AddMessageToSend(new MessageToIpPort(value, ref alias.m_ref));
@@ -124,7 +123,6 @@ public class UDPThreadSender : MonoBehaviour
                 groupOfAlias = m_groupAlias[i];
                 return true;
             }
-
         }
         return false;
     }
@@ -217,8 +215,6 @@ public class UDPThreadSender : MonoBehaviour
                 {
 
                     SendMessageTo(targetIp.m_ipPort, targetIp.m_message);
-
-
                     //Debug.Log("O:" + targetIp.m_ipPort.m_ip+"|"+targetIp.m_ipPort.m_port+ " V:" + targetIp.m_message + "<>");
                 }
             }
@@ -266,6 +262,8 @@ public class UDPThreadSender : MonoBehaviour
     }
 
     public string m_lastSent;
+    public string m_lastIp;
+    public string m_lastPort;
     [TextArea(0, 5)]
     public string m_lastException;
     public static string GetIpId(string ip, int port)
@@ -283,6 +281,8 @@ public class UDPThreadSender : MonoBehaviour
     public void SendMessageTo(string ip, int port, string message)
     {
         m_lastSent = message;
+        m_lastIp = ip;
+        m_lastPort = ""+port;
         UdpClientState client = GetClient(ip, port);
         Byte[] sendBytes  = Encoding.UTF8.GetBytes(message);
         try

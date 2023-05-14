@@ -175,15 +175,6 @@ public class AnalogPortCompressionObserver {
         SerialPortRequestCommunication defaultSetter = m_defaultSetterValue.GetCopy();
         defaultSetter.m_portId = portId;
         UnityThreadPortCommunication thread = null;
-        if (!m_establishConnections.ContainsKey(portId))
-        { 
-            m_establishConnections[portId] = thread = new UnityThreadPortCommunication(defaultSetter, false);
-        }
-        else {
-            UnityThreadPortCommunication reco;
-            m_establishConnections[portId].CloseAndGetReconnection(out reco, false);
-            m_establishConnections[portId]= thread = reco;
-        }
 
         if (!m_collectedCompression.ContainsKey(portId)) {
             m_collectedCompression.Add(portId, new AnalogDigitalCompression());

@@ -10,9 +10,6 @@ public class UI2User32_BroadcastToProcessName : MonoBehaviour
 
     public void Push()
     {
-
-
-
         User32BoardcastUtilityToThread.HeavyTryParseAndSendToProcesses(m_processId.text, m_whatToCast.text);
     }
 }
