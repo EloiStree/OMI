@@ -3,8 +3,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.IO.Ports;
 using UnityEngine;
+using static SerialPortGateEnums;
 
 public class FileImport_SerialPortGate : MonoBehaviour
 {

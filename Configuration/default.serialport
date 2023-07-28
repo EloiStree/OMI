@@ -1,6 +1,6 @@
 //alias♦serialport♦baudrate♦databits♦parity♦stopbits
-xRight♦COM28♦9600♦8♦None♦One
-xLeft♦COM7♦9600♦8♦None♦One
+xRight♦COM48♦9600♦8♦None♦One
+xLeft♦COM36♦9600♦8♦None♦One
 //NanoRead♦COM12♦9600♦8♦None♦One
 
 ☗Read♦NanoRead♦DigitalAnalogInput

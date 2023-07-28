@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using UnityEngine;
@@ -68,7 +67,7 @@ public class SerialPortOpenCloseNotification
     public void RefreshComListInfo()
     {
         m_previousPort = m_currentPort.ToArray();
-        m_currentPort = SerialPort.GetPortNames().Distinct().ToArray();
+        m_currentPort = SerialPortLayer.GetPortNames().Distinct().ToArray();
         m_newPort = (m_currentPort.ToArray().Except(m_previousPort)).ToArray();
         m_lostPort = (m_previousPort.ToArray().Except(m_currentPort)).ToArray();
     }

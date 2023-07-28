@@ -1,15 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO.Ports;
 using System.Linq;
-using System.Management;
 using UnityEngine;
+using static SerialPortGateEnums;
 
 public class Test_InOutSerialPortMono : MonoBehaviour
 {
 
-    public Dictionary<string, SerialPort> m_openedPort = new Dictionary<string, SerialPort>();
+    public Dictionary<string, SerialPortLayer> m_openedPort = new Dictionary<string, SerialPortLayer>();
 
 
     public void SendTextToTarget(in string text, in string portName = "COM1",
@@ -21,8 +20,7 @@ public class Test_InOutSerialPortMono : MonoBehaviour
         if (!m_openedPort.ContainsKey(portName)) {
             try
             {
-
-                SerialPort serialPort = new SerialPort(portName, baudRate, parity, dataBits, stopBits);
+                SerialPortLayer serialPort =SerialPortAbstractLayerStatic.CreateFromSpecificPlatform(portName, baudRate, parity, dataBits, stopBits);
                 serialPort.Open();
                 m_openedPort.Add(portName.ToString(), serialPort);
             }
@@ -54,7 +52,7 @@ public class Test_InOutSerialPortMono : MonoBehaviour
         string[] keys = m_openedPort.Keys.ToArray();
         foreach (var item in keys)
         {
-            SerialPort p = m_openedPort[item];
+            SerialPortLayer p = m_openedPort[item];
             try
             {
                 if (p != null) {

@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO.Ports;
 using System.Threading;
 using UnityEngine;
 
@@ -100,7 +99,7 @@ public class SerialPortReaderThreadListener {
     public string m_serialPortId;
     public Queue<string> m_receivedMessage = new Queue<string>();
 
-    private SerialPort m_givenPortConnection;
+    private SerialPortLayer m_givenPortConnection;
     private Thread m_createdThread;
     private bool m_isRunning = false;
 
@@ -161,7 +160,7 @@ public class SerialPortReaderThreadListener {
             Thread.Sleep(100);
             try
             {
-                if (m_givenPortConnection != null && m_givenPortConnection.IsOpen)
+                if (m_givenPortConnection != null && m_givenPortConnection.IsOpen())
                 {
                     string data = m_givenPortConnection.ReadLine();
                     if (!string.IsNullOrEmpty(data))
