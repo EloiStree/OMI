@@ -1,0 +1,8 @@
+//diablo + LeftUpFoot♦.♦ ☗ExitTime 1000 ☗TriggerOnExit ♦macro:all:map
+//diablo + LeftUpFoot♦..♦ ☗ExitTime 1500 ☗TriggerOnExit ♦macro:all:mount
+//diablo + LeftUpFoot♦...♦ ☗ExitTime 1500 ☗TriggerOnFound ♦macro:all:inventory  
+
+
+diablo + WMFire ♦.♦  ☗ExitTime 300 ☗TriggerOnExit ♦macro:all:power6
+diablo + WMFire ♦..♦  ☗ExitTime 1000 ☗TriggerOnFound  ♦ macro:all:dash
+diablo + WMFire ♦...♦  ☗ExitTime 2000 ☗TriggerOnFound ♦ macro:all:heal

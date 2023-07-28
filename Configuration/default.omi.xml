@@ -2,6 +2,7 @@
     <midiconnectionin midiName="Arduino Micro" />
     <midiconnectionin midiName="MPK mini play" />
     <midiconnectionin midiName="Arduino Leonardo" />
+    <midiconnectionin midiName="CircuitPython Audio" />
     
     <midiconnectionout midiName="Microsoft GS Wavetable Synth" />
 

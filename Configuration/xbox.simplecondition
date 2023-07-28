@@ -1,9 +1,9 @@
 
-wow +  xm↓1000 + xal ♦ winutility:savefocusas:bot2 ♦ ☗TriggerOnTrue
-wow +  xm↓1000 +  xar ♦ winutility:savefocusas:bot3 ♦ ☗TriggerOnTrue
-wow +  xm↓1000 + xad ♦ winutility:savefocusas:bot4 ♦ ☗TriggerOnTrue
-wow +  xm↓1000 +  xau  ♦ winutility:savefocusas:bot5 ♦ ☗TriggerOnTrue
-wow +  xm↓1000 +  !xau + !xad + !xal + !xar  ♦ winutility:savefocusas:bot1 ♦ ☗TriggerOnTrue
+//wow +  xm↓1000 + xal ♦ winutility:savefocusas:bot2 ♦ ☗TriggerOnTrue
+//wow +  xm↓1000 +  xar ♦ winutility:savefocusas:bot3 ♦ ☗TriggerOnTrue
+//wow +  xm↓1000 + xad ♦ winutility:savefocusas:bot4 ♦ ☗TriggerOnTrue
+//wow +  xm↓1000 +  xau  ♦ winutility:savefocusas:bot5 ♦ ☗TriggerOnTrue
+//wow +  xm↓1000 +  !xau + !xad + !xal + !xar  ♦ winutility:savefocusas:bot1 ♦ ☗TriggerOnTrue
 
 //!xm + xal ♦ macro:bot:select2 ♦ ☗TriggerOnTrue
 //!xm + xar ♦ macro:bot:select3 ♦ ☗TriggerOnTrue

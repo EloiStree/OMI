@@ -34,7 +34,7 @@ public class UI_ServerDropdownJavaOMI : MonoBehaviour
     }
     private void RefreshDropdown(string runningThreadName)
     {
-        Debug.Log("RefreshDropdown");
+        //Debug.Log("RefreshDropdown");
         m_linked.ClearOptions();
         if(m_useAllOption)
             m_linked.options.Add(new Dropdown.OptionData("All"));

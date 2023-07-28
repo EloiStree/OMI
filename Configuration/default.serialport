@@ -1,0 +1,8 @@
+//alias♦serialport♦baudrate♦databits♦parity♦stopbits
+xRight♦COM28♦9600♦8♦None♦One
+xLeft♦COM7♦9600♦8♦None♦One
+//NanoRead♦COM12♦9600♦8♦None♦One
+
+☗Read♦NanoRead♦DigitalAnalogInput
+
+☗Group♦AllXbox♦XboxOne♦XboxTwo♦XboxThree♦XboxFour♦xLeft♦xRight

@@ -1,0 +1,1 @@
+information about how the user can donate to the creator of this file format and or intrepretor.

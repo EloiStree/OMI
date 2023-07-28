@@ -1,0 +1,1 @@
+Some information of the way to write content in it

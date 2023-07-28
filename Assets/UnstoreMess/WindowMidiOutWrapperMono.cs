@@ -1,4 +1,5 @@
 using NAudio.Midi;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,5 +23,10 @@ public class WindowMidiOutWrapperMono : MonoBehaviour
     private void Reset()
     {
         m_midiOut = GetComponent<MidiOutMono>();
+    }
+
+    internal void ReleaseAll()
+    {
+        m_midiOut.ReleaseAll();
     }
 }

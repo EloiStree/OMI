@@ -1,0 +1,34 @@
+ùùùù
+    <textholder textid="GITS1" >
+    All things change in a dynamic environment.µ
+     Your effort to remain what you are is what limits you.
+    </textholder>
+ù
+  <textholder textid="GITS2" >
+    Any way you look at it, all the information that a person accumulates in a lifetime is just a drop in the bucket.
+    </textholder>
+ù
+ <textholder textid="GITS3" >
+And can you offer me proof of your existence?
+How can you, when neither modern science nor philosophy can explain what life is?
+    </textholder>
+▤▤▤▤▤▤▤▤▤▤▤▤▤▤
+
+<gptcontext id="TranslateENFR">
+You are a university teacher in international language.
+You need to translate the following text for young adult from english to french.
+</gptcontext >ù
+ù
+<gptcontext id="TranslateFREN">
+You are a university teacher in international language.
+You need to translate the following text for young adult from english to french.
+</gptcontext >
+ù
+<gptcontext id="SpellingFR">
+Tu es un enseignant de la langue francaise et tu dois corriger le text suivant.
+</gptcontext >
+ù
+<gptcontext id="SpellingEN">
+You are a teacher of the english language and you must translate the following text.
+</gptcontext >
+

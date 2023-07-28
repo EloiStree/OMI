@@ -274,17 +274,26 @@ public class UDPThreadSender : MonoBehaviour
     {
         return ip + '|' + port;
     }
-    public void SendMessageTo(TargetIpPort target, string message)
+    public void SendMessageTo(TargetIpPort target, string message, bool isUtf8OrUnicode=true)
     {
-        SendMessageTo(target.m_ip, target.m_port, message);
+        SendMessageTo(target.m_ip, target.m_port, message, isUtf8OrUnicode);
     }
-    public void SendMessageTo(string ip, int port, string message)
+    public void SendMessageTo(string ipPort, string message, bool isUtf8OrUnicode = true)
+    {
+        string [] t =ipPort.Split(':');
+        if (t.Length >= 2) {
+            if (int.TryParse(t[1], out int port)) { 
+                SendMessageTo(t[0] , port , message, isUtf8OrUnicode);
+            }
+        }
+    }
+    public void SendMessageTo(string ip, int port, string message, bool isUtf8OrUnicode)
     {
         m_lastSent = message;
         m_lastIp = ip;
         m_lastPort = ""+port;
         UdpClientState client = GetClient(ip, port);
-        Byte[] sendBytes  = Encoding.UTF8.GetBytes(message);
+        Byte[] sendBytes  = isUtf8OrUnicode ? Encoding.UTF8.GetBytes(message): Encoding.Unicode.GetBytes(message);
         try
         {
             client.m_client.Send(sendBytes, sendBytes.Length);

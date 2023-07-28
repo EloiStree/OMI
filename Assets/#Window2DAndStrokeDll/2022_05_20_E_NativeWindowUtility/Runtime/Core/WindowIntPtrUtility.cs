@@ -34,23 +34,23 @@ public class WindowIntPtrUtility
     #region USER32
 
 
-    #region Title
+    //#region Title
 
-        public static  string GetWindowTitle(IntPtrWrapGet hWn)
-        {
-            return GetWindowTitle(hWn.GetAsIntPtr());
-        }
-        public static string GetWindowTitle(IntPtr hWn)
-        {   
-        object LParam = new object();
-        int WParam = 0;
-        StringBuilder title = new StringBuilder(1024);
-        SendMessage(hWn, 0x000D, WParam, LParam);
-        GetWindowText(hWn, title, title.Capacity);
-        return title.ToString();
+    //    public static  string GetWindowTitle(IntPtrWrapGet hWn)
+    //    {
+    //        return GetWindowTitle(hWn.GetAsIntPtr());
+    //    }
+    //    public static string GetWindowTitle(IntPtr hWn)
+    //    {   
+    //    object LParam = new object();
+    //    int WParam = 0;
+    //    StringBuilder title = new StringBuilder(1024);
+    //    SendMessage(hWn, 0x000D, WParam, LParam);
+    //    GetWindowText(hWn, title, title.Capacity);
+    //    return title.ToString();
 
-    }
-    #endregion Title
+    //}
+    //#endregion Title
 
 
 

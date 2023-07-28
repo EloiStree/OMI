@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Media;
 using UnityEngine;
 
 public class Interpreter_SoundPlay : AbstractInterpreterMono
@@ -32,7 +31,7 @@ public class Interpreter_SoundPlay : AbstractInterpreterMono
         }
 
         string cmd = command.GetLine().Trim();
-        string cmdLow = command.GetLine().ToLower();
+        string cmdLow = command.GetLine().ToLower().Trim();
         string[] token = cmd.Split(':');
         if (token.Length >= 3)
         {
@@ -59,22 +58,25 @@ public class Interpreter_SoundPlay : AbstractInterpreterMono
         }
         if (token.Length ==2)
         {
-            PlayOnceSound(token[1].Trim());
             if (cmdLow.IndexOf("sound:play") == 0)
             {
                 m_player.Play();
             }
-            if (cmdLow.IndexOf("sound:pause") == 0)
+            else if (cmdLow.IndexOf("sound:pause") == 0)
             {
                 m_player.Pause();
             }
-            if (cmdLow.IndexOf("sound:stop") == 0)
+            else if (cmdLow.IndexOf("sound:stop") == 0)
             {
                 m_player.Stop();
             }
-            if (cmdLow.IndexOf("sound:switchpause") == 0)
+            else if (cmdLow.IndexOf("sound:switchpause") == 0)
             {
                 m_player.SwitchPause();
+            }
+            else {
+
+                PlayOnceSound(token[1]);
             }
         }
 

@@ -38,21 +38,35 @@ public class Interpreter_MidiOut : AbstractInterpreterMono
         {
             string toFilter = cmd.Substring("midi:".Length);
             string[] p = toFilter.Split(' ');
-            long value = 0;
             for (int i = 0; i < p.Length; i++)
             {
-                if (p[i].Trim().Length > 0)
+                string token = p[i].Trim().ToLower();
+                if (token == "release" || token == "r") {
+                    m_midiWindowOut.ReleaseAll();
+                }
+                else if (token.Length > 0)
                 {
-                    if (CharIntegerToValue(p[i], 'c', out value))
-                        channel = value;
-                    if (CharIntegerToValue(p[i], 'n', out value))
-                        noteNumber = value;
-                    if (CharIntegerToValue(p[i], 'd', out value))
-                        duration = value;
-                    if (CharIntegerToValue(p[i], 'v', out value))
-                        velocity = value;
-                    if (CharIntegerToValue(p[i], 't', out value))
-                        abosluteTime = value;
+                    if (token == "cr")
+                        channel = UnityEngine.Random.Range(1, 16);
+                    else if (token == "nr")
+                        noteNumber = UnityEngine.Random.Range(0, 127);
+                    else if (token == "tr")
+                        abosluteTime = UnityEngine.Random.Range(0, 800);
+                    else if (token == "dr")
+                        duration = UnityEngine.Random.Range(100, 800);
+                    else if (token == "vr")
+                        velocity = UnityEngine.Random.Range(0, 127);
+
+                    else if (CharIntegerToValue(token, 'c', out long valueC))
+                        channel = valueC;
+                    else if (CharIntegerToValue(token, 'n', out long valueN))
+                        noteNumber = valueN;
+                    else if (CharIntegerToValue(token, 'd', out long valueD))
+                        duration = valueD;
+                    else if (CharIntegerToValue(token, 'v', out long valueV))
+                        velocity = valueV;
+                    else if (CharIntegerToValue(token, 't', out long valueT))
+                        abosluteTime = valueT;
 
                     try
                     {
@@ -66,7 +80,7 @@ public class Interpreter_MidiOut : AbstractInterpreterMono
                 }
 
             }
-
+            
         }
         if (cmd.IndexOf("midiraw:") == 0)
         {

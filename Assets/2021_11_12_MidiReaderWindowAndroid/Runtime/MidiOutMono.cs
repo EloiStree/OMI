@@ -35,6 +35,16 @@ public class MidiOutMono : MonoBehaviour
         return m_midiOut;
     }
 
+    public void ReleaseAll()
+    {
+        for (int i = 1; i <= 16; i++)
+        {
+            ControlChangeEvent allNotesOff = new ControlChangeEvent(0, i, MidiController.AllNotesOff, 1);
+            m_midiOut.Send(allNotesOff.GetAsShortMessage());
+        }
+   
+    }
+
     public bool IsUsable()
     {
         return m_found && m_connected && m_midiOut != null;

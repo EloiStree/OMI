@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.Events;
 using static WindowIntPtrUtility;
@@ -354,8 +353,8 @@ public class ProcessesAccessMono : MonoBehaviour
 
         if (info.HasDisplayChildren()) {
             info.GetDisplayChildrenComputed(out IntPtrWrapGet display);
-            if(display != null) 
-            WindowIntPtrUtility.GetWindowTitle(display);
+            //if(display != null) 
+            //WindowIntPtrUtility.GetWindowTitle(display);
 
         }
     }

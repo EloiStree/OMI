@@ -6,6 +6,8 @@ using UnityEngine;
 
 public interface IInterpreter
 {
+    public bool IsInterpreterActive();
+    public void SetInterpreterActive(bool setAsActive);
     bool CanInterpreterUnderstand(ref ICommandLine command);
     string WhatWillYouDoWith(ref ICommandLine command);
     string ExpectedCommandFormat();
@@ -22,6 +24,7 @@ public interface IInterpreter
 
 public abstract class AbstractInterpreterMono : MonoBehaviour, IInterpreter
 {
+    public bool m_isInterpreterActive=true;
     /// <summary>
     /// Help to know if the interpreter can deal with the given command line.
     /// </summary>
@@ -137,6 +140,16 @@ public abstract class AbstractInterpreterMono : MonoBehaviour, IInterpreter
     public string GetCreatorOfTheInterpreterContactInfo()
     {
         return m_creatorContactInfo;
+    }
+
+    public bool IsInterpreterActive()
+    {
+        return m_isInterpreterActive;
+    }
+
+    public void SetInterpreterActive(bool setAsActive)
+    {
+        m_isInterpreterActive = setAsActive;
     }
 }
 

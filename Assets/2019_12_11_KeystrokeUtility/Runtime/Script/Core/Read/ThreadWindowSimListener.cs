@@ -6,7 +6,6 @@ using System.Linq;
 using WindowsInput.Native;
 using System.Threading;
 using WindowsInput;
-using System.Security.Policy;
 
 public class ThreadWindowSimListener : KeyboardReadMono, IKeyboardRead
 {

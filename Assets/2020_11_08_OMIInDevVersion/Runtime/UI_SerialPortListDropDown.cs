@@ -20,9 +20,15 @@ public class UI_SerialPortListDropDown : MonoBehaviour
     {
         Refresh();
     }
+
+    public void SetSerialPortListWithStringArray(string [] portList) {
+
+        m_portList = portList;
+    }
+
     private void Refresh()
     {
-        m_portList = SerialPortUtility.GetListOfAvailaiblePort().ToArray();
+        //m_portList = SerialPortUtility.GetListOfAvailaiblePort().ToArray();
         m_target.ClearOptions();
         m_target.AddOptions(m_portList.ToList());
     }

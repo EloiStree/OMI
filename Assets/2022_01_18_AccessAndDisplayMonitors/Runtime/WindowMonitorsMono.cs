@@ -448,7 +448,7 @@ public class WindowMonitorsMono : MonoBehaviour
        
         m_resultInfo.m_cursorAsPercent.m_x_left2RightPct = m_resultInfo.m_cursorAsPx.m_x_left2RightPx  / (float)m_resultInfo.m_totalWidthPx;
         m_resultInfo.m_cursorAsPercent.m_y_bot2topPct = m_resultInfo.m_cursorAsPx.m_y_bot2topPx / (float)m_resultInfo.m_totalHeightPx;
-
+        RefreshMousePositionInScren();
     }
 
     [System.Serializable]
@@ -466,4 +466,40 @@ public class WindowMonitorsMono : MonoBehaviour
         public double m_widthPercent;
         public double m_heightPercent;
     }
+
+
+    [System.Serializable]
+
+    public class MousePercentPositionInDisplay {
+        public string m_displayName="";
+        public PercentPosition_L2R_B2T m_mousePositionAbsoluteIn = new PercentPosition_L2R_B2T();
+        public PercentPosition_L2R_B2T m_mousePositionRelativeIn = new PercentPosition_L2R_B2T();
+        public PercentMonitorInformatoRelative_L2RB2T m_displayPosition = new PercentMonitorInformatoRelative_L2RB2T();
+    }
+
+    public MousePercentPositionInDisplay [] m_mousePositionInScreens= new MousePercentPositionInDisplay[0];
+
+    public void RefreshMousePositionInScren() {
+        PercentPosition_L2R_B2T cursor = m_resultInfo.m_cursorAsPercent;
+        if (m_mousePositionInScreens.Length != m_resultInfo.m_monitorsAsPercent.Length) { 
+            m_mousePositionInScreens= new MousePercentPositionInDisplay[m_resultInfo.m_monitorsAsPercent.Length];
+           
+            for (int i = 0; i < m_resultInfo.m_monitorsAsPercent.Length; i++)
+            {
+                m_mousePositionInScreens[i] = new MousePercentPositionInDisplay();
+                m_mousePositionInScreens[i].m_mousePositionAbsoluteIn = cursor;
+                m_mousePositionInScreens[i].m_displayName = m_resultInfo.m_monitorsAsPercent[i].m_deviceName;
+                m_mousePositionInScreens[i].m_displayPosition = m_resultInfo.m_monitorsAsPercent[i];
+            }
+        }
+        for (int i = 0; i < m_resultInfo.m_monitorsAsPercent.Length; i++)
+        {
+            m_mousePositionInScreens[i].m_mousePositionRelativeIn.m_x_left2RightPct =
+                (cursor.m_x_left2RightPct - m_mousePositionInScreens[i].m_displayPosition.m_x_left2RightPct) / m_resultInfo.m_monitorsAsPercent[i].m_widthPct;
+            m_mousePositionInScreens[i].m_mousePositionRelativeIn.m_y_bot2topPct =
+                (cursor.m_y_bot2topPct - m_mousePositionInScreens[i].m_displayPosition.m_y_bot2topPct) / m_resultInfo.m_monitorsAsPercent[i].m_heightPct;
+        }
+    }
+
+
 }

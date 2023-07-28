@@ -1,8 +1,30 @@
 
 
+CircuitPython Audio♦Note♦68♦LeftDownFoot♦SetFalse
+CircuitPython Audio♦Note♦67♦RightDownFoot♦SetFalse
+CircuitPython Audio♦Note♦69♦LeftUpFoot♦SetFalse
+CircuitPython Audio♦Note♦70♦RightUpFoot♦SetFalse
+
 Arduino Leonardo♦Note♦F4♦RightDownFoot♦SetTrue
 Arduino Leonardo♦Note♦G4♦RightUpFoot♦SetTrue
 Arduino Leonardo♦Note♦C4♦Pedal♦SetTrue
+
+MPK Mini Play♦Note♦48♦BeatTopLeftLeft♦SetTrue
+MPK Mini Play♦Note♦45♦BeatTopLeft♦SetTrue
+MPK Mini Play♦Note♦36♦BeatDownLeftLeft♦SetTrue
+MPK Mini Play♦Note♦38♦BeatDownLeft♦SetTrue
+
+MPK Mini Play♦Note♦49♦BeatTopRightRight♦SetTrue
+MPK Mini Play♦Note♦51♦BeatTopRight♦SetTrue
+MPK Mini Play♦Note♦46♦BeatDownRightRight♦SetTrue
+MPK Mini Play♦Note♦42♦BeatDownRight♦SetTrue
+
+
+MPK Mini Play♦CC♦50♦0.0♦0.3♦FocusLeft♦SetTrue
+MPK Mini Play♦CC♦50♦0.3♦0.7♦FocusMiddle♦SetTrue
+MPK Mini Play♦CC♦50♦0.7♦0.9♦FocusRight♦SetTrue
+MPK Mini Play♦CC♦50♦0.9♦0.1♦FocusAll♦SetTrue
+
 
 
 MPK Mini Play♦Note♦48♦LR0♦SetTrue

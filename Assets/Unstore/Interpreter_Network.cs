@@ -25,7 +25,7 @@ public class Interpreter_Network : AbstractInterpreterMono
         if (s.IndexOf("udp ") == 0)
             startIndex = 4;
         int endIndex = s.IndexOf("|");
-        Debug.Log("DD:" + s + "DD");
+       // Debug.Log("DD:" + s + "DD");
 
         if (startIndex > 1 && endIndex > startIndex && endIndex+1<s.Length)
         {
