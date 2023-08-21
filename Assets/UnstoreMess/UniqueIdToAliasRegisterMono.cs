@@ -8,7 +8,7 @@ public class UniqueIdToAliasRegisterMono : MonoBehaviour
     public GroupOfUniqueIdToAlias m_groupOfAlias;
     public bool m_ignoreCase=true;
 
-    public void AddComToAlias(string com, params string[] alias)
+    public void AddToAlias(string com, params string[] alias)
     {
         m_groupOfAlias.GetById(com, m_ignoreCase, out bool found, out UniqueIdToListOfAlias link);
         if (found)
@@ -16,7 +16,7 @@ public class UniqueIdToAliasRegisterMono : MonoBehaviour
         else m_groupOfAlias.m_registeredIdToAlias.Add(new UniqueIdToListOfAlias(com, alias));
 
     }
-    public void AddComToAlias(string com, IEnumerable<string> alias)
+    public void AddToAlias(string com, IEnumerable<string> alias)
     {
         m_groupOfAlias.GetById(com, m_ignoreCase, out bool found, out UniqueIdToListOfAlias link);
         if (found)

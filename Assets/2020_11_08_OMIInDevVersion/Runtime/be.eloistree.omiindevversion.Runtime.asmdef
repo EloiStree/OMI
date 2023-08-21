@@ -24,7 +24,8 @@
         "be.eloistree.timethread",
         "be.eloistree.readserialport",
         "be.eloistree.generaltoolbox",
-        "be.eloistree.udpthreadsender"
+        "be.eloistree.udpthreadsender",
+        "be.eloistree.shogitileline"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

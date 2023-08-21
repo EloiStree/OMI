@@ -24,53 +24,114 @@ LeftUpFoot♦macro:current:ml♦ ☗TriggerOnTrue
 !RightUpFoot♦macro:all:astop♦ ☗TriggerOnFalse 
 
 
+afkfoot + X2BD♦ bool:afkfoot:true ♦ ☗TriggerOnTrue
 
 
 //UDP
-afkfoot + X2SBL ♦ udp all|sbl.  ♦ ☗TriggerOnTrue
-afkfoot + X2SBL ♦ udp all|sbl'  ♦ ☗TriggerOnFalse
-afkfoot + X2SBR♦ udp all|sbr.  ♦ ☗TriggerOnTrue
-afkfoot + X2SBR♦ udp all|sbr'  ♦ ☗TriggerOnFalse
-afkfoot + X2BL♦ udp all|bl.  ♦ ☗TriggerOnTrue
-afkfoot + X2BL♦ udp all|bl'  ♦ ☗TriggerOnFalse
-afkfoot + X2BR♦ udp all|br.  ♦ ☗TriggerOnTrue
-afkfoot + X2BR♦ udp all|br'  ♦ ☗TriggerOnFalse
-afkfoot + X2BU♦ udp all|bu.  ♦ ☗TriggerOnTrue
-afkfoot + X2BU♦ udp all|bu'  ♦ ☗TriggerOnFalse
-afkfoot + X2BD♦ udp all|bd.  ♦ ☗TriggerOnTrue
-afkfoot + X2BD♦ udp all|bd'  ♦ ☗TriggerOnFalse
-afkfoot + X2AL♦ udp all|al.  ♦ ☗TriggerOnTrue
-afkfoot + X2AL♦ udp all|al'  ♦ ☗TriggerOnFalse
-afkfoot + X2AR♦ udp all|ar.  ♦ ☗TriggerOnTrue
-afkfoot + X2AR♦ udp all|ar'  ♦ ☗TriggerOnFalse
-afkfoot + X2AU♦ udp all|au.  ♦ ☗TriggerOnTrue
-afkfoot + X2AU♦ udp all|au'  ♦ ☗TriggerOnFalse
-afkfoot + X2AD♦ udp all|ad.  ♦ ☗TriggerOnTrue
-afkfoot + X2AD♦ udp all|ad'  ♦ ☗TriggerOnFalse
-afkfoot + X2M♦ udp all|ml.  ♦ ☗TriggerOnTrue
-afkfoot + X2M♦ udp all|ml'  ♦ ☗TriggerOnFalse
-afkfoot + X2S♦ udp all|mr.  ♦ ☗TriggerOnTrue
-afkfoot + X2S♦ udp all|mr'  ♦ ☗TriggerOnFalse
-afkfoot + X2JL♦ udp all|jl.  ♦ ☗TriggerOnTrue
-afkfoot + X2JL♦ udp all|jl'  ♦ ☗TriggerOnFalse
-afkfoot + X2JR♦ udp all|jr.  ♦ ☗TriggerOnTrue
-afkfoot + X2JR♦ udp all|jr'  ♦ ☗TriggerOnFalse
-afkfoot + X2TL♦ udp all|tl.  ♦ ☗TriggerOnTrue
-afkfoot + X2TL♦ udp all|tl'  ♦ ☗TriggerOnFalse
-afkfoot + X2TR♦ udp all|tr.  ♦ ☗TriggerOnTrue
-afkfoot + X2TR♦ udp all|tr'  ♦ ☗TriggerOnFalse
-afkfoot + X2JoyLeftLeft ♦ udp all|jlh%-1.0  ♦ ☗TriggerOnTrue
-afkfoot + X2JoyLeftRight ♦ udp all|jlh%1.0  ♦ ☗TriggerOnTrue
-afkfoot + X2jlHNeutral ♦ udp all|jlh%0  ♦ ☗TriggerOnTrue
-afkfoot + X2JoyLeftUp ♦ udp all|jlv%1.0  ♦ ☗TriggerOnTrue
-afkfoot + X2JoyLeftDown♦ udp all|jlv%-1.0  ♦ ☗TriggerOnTrue
-afkfoot + X2jlVNeutral♦ udp all|jlv%0  ♦ ☗TriggerOnTrue
-afkfoot + X2JoyRightLeft ♦ udp all|jrh%-1.0  ♦ ☗TriggerOnTrue
-afkfoot + X2JoyRightRight ♦ udp all|jrh%1.0  ♦ ☗TriggerOnTrue
-afkfoot + X2jrHNeutral ♦ udp all|jrh%0  ♦ ☗TriggerOnTrue
-afkfoot + X2JoyRightUp ♦ udp all|jrv%1.0  ♦ ☗TriggerOnTrue
-afkfoot + X2JoyRightDown♦ udp all|jrv%-1.0  ♦ ☗TriggerOnTrue
-afkfoot + X2jrVNeutral♦ udp all|jrv%0  ♦ ☗TriggerOnTrue
+ X2SBL ♦ udp all|sbl.  ♦ ☗TriggerOnTrue
+ X2SBL ♦ udp all|sbl'  ♦ ☗TriggerOnFalse
+ X2SBR♦ udp all|sbr.  ♦ ☗TriggerOnTrue
+ X2SBR♦ udp all|sbr'  ♦ ☗TriggerOnFalse
+ X2BL♦ udp all|bl.  ♦ ☗TriggerOnTrue
+ X2BL♦ udp all|bl'  ♦ ☗TriggerOnFalse
+ X2BR♦ udp all|br.  ♦ ☗TriggerOnTrue
+ X2BR♦ udp all|br'  ♦ ☗TriggerOnFalse
+ X2BU♦ udp all|bu.  ♦ ☗TriggerOnTrue
+ X2BU♦ udp all|bu'  ♦ ☗TriggerOnFalse
+ X2BD♦ udp all|bd.  ♦ ☗TriggerOnTrue
+ X2BD♦ udp all|bd'  ♦ ☗TriggerOnFalse
+ X2AL♦ udp all|al.  ♦ ☗TriggerOnTrue
+ X2AL♦ udp all|al'  ♦ ☗TriggerOnFalse
+ X2AR♦ udp all|ar.  ♦ ☗TriggerOnTrue
+ X2AR♦ udp all|ar'  ♦ ☗TriggerOnFalse
+ X2AU♦ udp all|au.  ♦ ☗TriggerOnTrue
+ X2AU♦ udp all|au'  ♦ ☗TriggerOnFalse
+ X2AD♦ udp all|ad.  ♦ ☗TriggerOnTrue
+ X2AD♦ udp all|ad'  ♦ ☗TriggerOnFalse
+ X2M♦ udp all|ml.  ♦ ☗TriggerOnTrue
+ X2M♦ udp all|ml'  ♦ ☗TriggerOnFalse
+ X2S♦ udp all|mr.  ♦ ☗TriggerOnTrue
+ X2S♦ udp all|mr'  ♦ ☗TriggerOnFalse
+ X2JL♦ udp all|jl.  ♦ ☗TriggerOnTrue
+ X2JL♦ udp all|jl'  ♦ ☗TriggerOnFalse
+ X2JR♦ udp all|jr.  ♦ ☗TriggerOnTrue
+ X2JR♦ udp all|jr'  ♦ ☗TriggerOnFalse
+ X2TL♦ udp all|tl.  ♦ ☗TriggerOnTrue
+ X2TL♦ udp all|tl'  ♦ ☗TriggerOnFalse
+ X2TR♦ udp all|tr.  ♦ ☗TriggerOnTrue
+ X2TR♦ udp all|tr'  ♦ ☗TriggerOnFalse
+ X2JoyLeftLeft ♦ udp all|jlh%-1.0  ♦ ☗TriggerOnTrue
+ X2JoyLeftRight ♦ udp all|jlh%1.0  ♦ ☗TriggerOnTrue
+ X2jlHNeutral ♦ udp all|jlh%0  ♦ ☗TriggerOnTrue
+ X2JoyLeftUp ♦ udp all|jlv%1.0  ♦ ☗TriggerOnTrue
+ X2JoyLeftDown♦ udp all|jlv%-1.0  ♦ ☗TriggerOnTrue
+ X2jlVNeutral♦ udp all|jlv%0  ♦ ☗TriggerOnTrue
+ X2JoyRightLeft ♦ udp all|jrh%-1.0  ♦ ☗TriggerOnTrue
+ X2JoyRightRight ♦ udp all|jrh%1.0  ♦ ☗TriggerOnTrue
+ X2jrHNeutral ♦ udp all|jrh%0  ♦ ☗TriggerOnTrue
+ X2JoyRightUp ♦ udp all|jrv%1.0  ♦ ☗TriggerOnTrue
+ X2JoyRightDown♦ udp all|jrv%-1.0  ♦ ☗TriggerOnTrue
+ X2jrVNeutral♦ udp all|jrv%0  ♦ ☗TriggerOnTrue
+
+
+keyj ♦ serial allxbox|a. ;  ♦ ☗TriggerOnTrue
+keyj ♦ serial allxbox|a' ;  ♦ ☗TriggerOnFalse
+
+keyk ♦ serial allxbox|b. ;  ♦ ☗TriggerOnTrue
+keyk ♦ serial allxbox|b' ;  ♦ ☗TriggerOnFalse
+
+keyl ♦ serial allxbox|Y. ;  ♦ ☗TriggerOnTrue
+keyl ♦ serial allxbox|Y' ;  ♦ ☗TriggerOnFalse
+
+keym ♦ serial allxbox|x. ;  ♦ ☗TriggerOnTrue
+keym ♦ serial allxbox|x' ;  ♦ ☗TriggerOnFalse
+
+//ble
+
+X2SBL ♦ ble|all|sbl.  ;♦ ☗TriggerOnTrue
+X2SBL ♦ ble|all|sbl'  ;♦ ☗TriggerOnFalse
+X2SBR♦  ble|all|sbr.  ;♦ ☗TriggerOnTrue
+X2SBR♦  ble|all|sbr'  ;♦ ☗TriggerOnFalse
+X2BL♦   ble|all|bl.  ;♦ ☗TriggerOnTrue
+X2BL♦   ble|all|bl'  ;♦ ☗TriggerOnFalse
+X2BR♦   ble|all|br.  ;♦ ☗TriggerOnTrue
+X2BR♦   ble|all|br'  ;♦ ☗TriggerOnFalse
+X2BU♦   ble|all|bu.  ;♦ ☗TriggerOnTrue
+X2BU♦   ble|all|bu'  ;♦ ☗TriggerOnFalse
+X2BD♦   ble|all|bd.  ;♦ ☗TriggerOnTrue
+X2BD♦   ble|all|bd'  ;♦ ☗TriggerOnFalse
+X2AL♦   ble|all|al.  ;♦ ☗TriggerOnTrue
+X2AL♦   ble|all|al'  ;♦ ☗TriggerOnFalse
+X2AR♦   ble|all|ar.  ;♦ ☗TriggerOnTrue
+X2AR♦   ble|all|ar'  ;♦ ☗TriggerOnFalse
+X2AU♦   ble|all|au.  ;♦ ☗TriggerOnTrue
+X2AU♦   ble|all|au'  ;♦ ☗TriggerOnFalse
+X2AD♦   ble|all|ad.  ;♦ ☗TriggerOnTrue
+X2AD♦   ble|all|ad'  ;♦ ☗TriggerOnFalse
+X2M♦    ble|all|ml.  ;♦ ☗TriggerOnTrue
+X2M♦    ble|all|ml'  ;♦ ☗TriggerOnFalse
+X2S♦    ble|all|mr.  ;♦ ☗TriggerOnTrue
+X2S♦    ble|all|mr'  ;♦ ☗TriggerOnFalse
+X2JL♦   ble|all|jl.  ;♦ ☗TriggerOnTrue
+X2JL♦   ble|all|jl'  ;♦ ☗TriggerOnFalse
+X2JR♦   ble|all|jr.  ;♦ ☗TriggerOnTrue
+X2JR♦   ble|all|jr'  ;♦ ☗TriggerOnFalse
+X2TL♦   ble|all|tl.  ;♦ ☗TriggerOnTrue
+X2TL♦   ble|all|tl'  ;♦ ☗TriggerOnFalse
+X2TR♦   ble|all|tr.  ;♦ ☗TriggerOnTrue
+X2TR♦   ble|all|tr'  ;♦ ☗TriggerOnFalse
+X2JoyLeftLeft ♦ ble|all|jlh%-1.0  ;♦ ☗TriggerOnTrue
+X2JoyLeftRight ♦ ble|all|jlh%1.0  ;♦ ☗TriggerOnTrue
+X2jlHNeutral ♦ ble|all|jlh%0  ;♦ ☗TriggerOnTrue
+X2JoyLeftUp ♦ ble|all|jlv%1.0  ;♦ ☗TriggerOnTrue
+X2JoyLeftDown♦ ble|all|jlv%-1.0  ;♦ ☗TriggerOnTrue
+X2jlVNeutral♦ ble|all|jlv%0  ;♦ ☗TriggerOnTrue
+X2JoyRightLeft ♦ ble|all|jrh%-1.0  ;♦ ☗TriggerOnTrue
+X2JoyRightRight ♦ ble|all|jrh%1.0  ;♦ ☗TriggerOnTrue
+X2jrHNeutral ♦ ble|all|jrh%0  ;♦ ☗TriggerOnTrue
+X2JoyRightUp ♦ ble|all|jrv%1.0  ;♦ ☗TriggerOnTrue
+X2JoyRightDown♦ ble|all|jrv%-1.0  ;♦ ☗TriggerOnTrue
+X2jrVNeutral♦ ble|all|jrv%0  ;♦ ☗TriggerOnTrue
 
 
 keyj ♦ serial allxbox|a. ;  ♦ ☗TriggerOnTrue
@@ -86,52 +147,51 @@ keym ♦ serial allxbox|x. ;  ♦ ☗TriggerOnTrue
 keym ♦ serial allxbox|x' ;  ♦ ☗TriggerOnFalse
 
 
-
 //XBOX SERIAL
-afkfoot + X2SBL ♦ serial allxbox|sbl. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2SBL ♦ serial allxbox|sbl' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2SBR♦ serial allxbox|sbr. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2SBR♦ serial allxbox|sbr' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2BL♦ serial allxbox|bl. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2BL♦ serial allxbox|bl' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2BR♦ serial allxbox|br. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2BR♦ serial allxbox|br' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2BU♦ serial allxbox|bu. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2BU♦ serial allxbox|bu' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2BD♦ serial allxbox|bd. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2BD♦ serial allxbox|bd' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2AL♦ serial allxbox|al. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2AL♦ serial allxbox|al' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2AR♦ serial allxbox|ar. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2AR♦ serial allxbox|ar' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2AU♦ serial allxbox|au. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2AU♦ serial allxbox|au' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2AD♦ serial allxbox|ad. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2AD♦ serial allxbox|ad' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2M♦ serial allxbox|ml. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2M♦ serial allxbox|ml' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2S♦ serial allxbox|mr. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2S♦ serial allxbox|mr' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2JL♦ serial allxbox|jl. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2JL♦ serial allxbox|jl' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2JR♦ serial allxbox|jr. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2JR♦ serial allxbox|jr' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2TL♦ serial allxbox|tl. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2TL♦ serial allxbox|tl' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2TR♦ serial allxbox|tr. ;  ♦ ☗TriggerOnTrue
-afkfoot + X2TR♦ serial allxbox|tr' ;  ♦ ☗TriggerOnFalse
-afkfoot + X2JoyLeftLeft ♦ serial allxbox|jlh%-1.0  ; ♦ ☗TriggerOnTrue
-afkfoot + X2JoyLeftRight ♦ serial allxbox|jlh%1.0  ; ♦ ☗TriggerOnTrue
-afkfoot + X2jlHNeutral ♦ serial allxbox|jlh%0  ; ♦ ☗TriggerOnTrue
-afkfoot + X2JoyLeftUp ♦ serial allxbox|jlv%1.0  ; ♦ ☗TriggerOnTrue
-afkfoot + X2JoyLeftDown♦ serial allxbox|jlv%-1.0  ; ♦ ☗TriggerOnTrue
-afkfoot + X2jlVNeutral♦ serial allxbox|jlv%0  ; ♦ ☗TriggerOnTrue
-afkfoot + X2JoyRightLeft ♦ serial allxbox|jrh%-1.0  ♦ ☗TriggerOnTrue
-afkfoot + X2JoyRightRight ♦ serial allxbox|jrh%1.0  ♦ ☗TriggerOnTrue
-afkfoot + X2jrHNeutral ♦ serial allxbox|jrh%0  ♦ ☗TriggerOnTrue
-afkfoot + X2JoyRightUp ♦ serial allxbox|jrv%1.0  ♦ ☗TriggerOnTrue
-afkfoot + X2JoyRightDown♦ serial allxbox|jrv%-1.0  ♦ ☗TriggerOnTrue
-afkfoot + X2jrVNeutral♦ serial allxbox|jrv%0  ♦ ☗TriggerOnTrue
++ X2SBL ♦ serial allxbox|sbl. ;  ♦ ☗TriggerOnTrue
+ X2SBL ♦ serial allxbox|sbl' ;  ♦ ☗TriggerOnFalse
+ X2SBR♦ serial allxbox|sbr. ;  ♦ ☗TriggerOnTrue
+ X2SBR♦ serial allxbox|sbr' ;  ♦ ☗TriggerOnFalse
+ X2BL♦ serial allxbox|bl. ;  ♦ ☗TriggerOnTrue
+ X2BL♦ serial allxbox|bl' ;  ♦ ☗TriggerOnFalse
+ X2BR♦ serial allxbox|br. ;  ♦ ☗TriggerOnTrue
+ X2BR♦ serial allxbox|br' ;  ♦ ☗TriggerOnFalse
+ X2BU♦ serial allxbox|bu. ;  ♦ ☗TriggerOnTrue
+ X2BU♦ serial allxbox|bu' ;  ♦ ☗TriggerOnFalse
+ X2BD♦ serial allxbox|bd. ;  ♦ ☗TriggerOnTrue
+ X2BD♦ serial allxbox|bd' ;  ♦ ☗TriggerOnFalse
+ X2AL♦ serial allxbox|al. ;  ♦ ☗TriggerOnTrue
+ X2AL♦ serial allxbox|al' ;  ♦ ☗TriggerOnFalse
+ X2AR♦ serial allxbox|ar. ;  ♦ ☗TriggerOnTrue
+ X2AR♦ serial allxbox|ar' ;  ♦ ☗TriggerOnFalse
+ X2AU♦ serial allxbox|au. ;  ♦ ☗TriggerOnTrue
+ X2AU♦ serial allxbox|au' ;  ♦ ☗TriggerOnFalse
+ X2AD♦ serial allxbox|ad. ;  ♦ ☗TriggerOnTrue
+ X2AD♦ serial allxbox|ad' ;  ♦ ☗TriggerOnFalse
+ X2M♦ serial allxbox|ml. ;  ♦ ☗TriggerOnTrue
+ X2M♦ serial allxbox|ml' ;  ♦ ☗TriggerOnFalse
+ X2S♦ serial allxbox|mr. ;  ♦ ☗TriggerOnTrue
+ X2S♦ serial allxbox|mr' ;  ♦ ☗TriggerOnFalse
+ X2JL♦ serial allxbox|jl. ;  ♦ ☗TriggerOnTrue
+ X2JL♦ serial allxbox|jl' ;  ♦ ☗TriggerOnFalse
+ X2JR♦ serial allxbox|jr. ;  ♦ ☗TriggerOnTrue
+ X2JR♦ serial allxbox|jr' ;  ♦ ☗TriggerOnFalse
+ X2TL♦ serial allxbox|tl. ;  ♦ ☗TriggerOnTrue
+ X2TL♦ serial allxbox|tl' ;  ♦ ☗TriggerOnFalse
+ X2TR♦ serial allxbox|tr. ;  ♦ ☗TriggerOnTrue
+ X2TR♦ serial allxbox|tr' ;  ♦ ☗TriggerOnFalse
+ X2JoyLeftLeft ♦ serial allxbox|jlh%-1.0  ; ♦ ☗TriggerOnTrue
+ X2JoyLeftRight ♦ serial allxbox|jlh%1.0  ; ♦ ☗TriggerOnTrue
+ X2jlHNeutral ♦ serial allxbox|jlh%0  ; ♦ ☗TriggerOnTrue
+ X2JoyLeftUp ♦ serial allxbox|jlv%1.0  ; ♦ ☗TriggerOnTrue
+ X2JoyLeftDown♦ serial allxbox|jlv%-1.0  ; ♦ ☗TriggerOnTrue
+ X2jlVNeutral♦ serial allxbox|jlv%0  ; ♦ ☗TriggerOnTrue
+ X2JoyRightLeft ♦ serial allxbox|jrh%-1.0  ♦ ☗TriggerOnTrue
+ X2JoyRightRight ♦ serial allxbox|jrh%1.0  ♦ ☗TriggerOnTrue
+ X2jrHNeutral ♦ serial allxbox|jrh%0  ♦ ☗TriggerOnTrue
+ X2JoyRightUp ♦ serial allxbox|jrv%1.0  ♦ ☗TriggerOnTrue
+ X2JoyRightDown♦ serial allxbox|jrv%-1.0  ♦ ☗TriggerOnTrue
+ X2jrVNeutral♦ serial allxbox|jrv%0  ♦ ☗TriggerOnTrue
 
 
 

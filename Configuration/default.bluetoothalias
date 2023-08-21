@@ -1,0 +1,16 @@
+
+
+xRight ♦98:D3:21:F4:8C:24
+xLeft ♦98:D3:11:F8:1C:A1
+
+// First one found
+BIndex0♦HC-06♦0 
+
+//Second one found
+BIndex1♦HC-06♦1 
+
+// First one found
+BIndex♦HC-06 
+
+☗Read♦BIndex♦BluetoothReading
+☗Group♦all♦xLeft♦xRight

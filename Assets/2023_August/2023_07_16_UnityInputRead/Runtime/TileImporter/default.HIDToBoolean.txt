@@ -1,0 +1,11 @@
+/XboxOneGamepadAndroid|>leftStickPress♦a_joystickLeft♦ ☗Inverse
+/XboxOneGamepadAndroid|>rightShoulder♦a_sbr
+/XboxOneGamepadAndroid|>leftShoulder♦a_sbl
+/XboxOneGamepadAndroid|>rightStickPress♦a_joystickright
+/XboxOneGamepadAndroid|>rightStick x♦a_joyRightOnLeft♦ -1 ♦ -0.2
+/XboxOneGamepadAndroid|>rightStick x♦a_joyRightOnRight♦ 0.2 ♦ 1
+/XboxOneGamepadAndroid|>rightStick x♦a_joyRightNotUse♦-0.1♦0.1♦ ☗Inverse
+/XboxOneGamepadAndroid|>rightStick y♦a_joyLRightOnDown♦ -1 ♦ -0.2
+/XboxOneGamepadAndroid|>rightStick y♦a_joyRightOnUp♦ 0.2 ♦ 1
+/XboxOneGamepadAndroid|>leftStick x♦a_joyLeftOnDown♦ -1 ♦ -0.2
+/XboxOneGamepadAndroid|>leftStick y♦a_joyLeftOnUp♦ 0.2 ♦ 1

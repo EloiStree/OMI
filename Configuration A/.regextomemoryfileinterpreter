@@ -1,0 +1,2 @@
+//There are not mutex in unity to sync the read write. So You have to overse and modify a file with date to notify change to flush and execute.
+[Tt]witter:♦ChangeHappenFileName♦AppendCommandLineFile

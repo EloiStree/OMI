@@ -31,9 +31,7 @@ public class FileImporter_Loop : MonoBehaviour
     }
     private void LoadLoopOfFile(string textToLoad, out List<NamedLooperBean> found)
     {
-
         found = new List<NamedLooperBean>();
-
         List<TileLine> tileLines;
         FileTileUtility.GetTile(textToLoad, out tileLines);
         foreach (TileLine tokens in tileLines)

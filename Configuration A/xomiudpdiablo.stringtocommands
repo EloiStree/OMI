@@ -1,0 +1,294 @@
+all:autoattack♦ in 20| macro:all:golem♦ in 100| macro:all:zone♦ in 200| macro:all:boom♦ in 300| macro:all:skeleton
+all:astart♦  udp All | a. ; ♦ serial AllXbox| a.  ;
+all:astop♦  udp All | a' ;♦ serial AllXbox| a' ;
+
+all:zone♦udp All| rt. 30> rt' ; ♦ serial AllXbox| rt. 30> rt' ;
+all:boom♦udp All| x. 30> x' ; ♦ serial AllXbox| x. 30> x' ;
+all:skeleton♦udp All| lt. 30> lt' ; ♦ serial AllXbox| lt. 30> lt' ;
+all:golem♦udp All| rb. 30> rb' ; ♦ serial AllXbox| rb. 30> rb' ;
+all:ulti♦udp All| y. 30> y' ; ♦ serial AllXbox| y. 30> y' ;
+
+udp laptop|x:20 
+
+current:heal ♦  udp 127.0.0.1:2504 |sbl:20 
+current:mount ♦  udp 127.0.0.1:2504 |ar:20
+current:teleport ♦  udp 127.0.0.1:2504 |ad:20
+current:dash ♦  udp 127.0.0.1:2504 |b:20
+current:power1 ♦  udp 127.0.0.1:2504 |y:20
+current:power2 ♦  udp 127.0.0.1:2504 |sbr:20
+current:power3 ♦  udp 127.0.0.1:2504 |tl:20
+current:power4 ♦  udp 127.0.0.1:2504 |tr:20
+current:power5 ♦  udp 127.0.0.1:2504 |a:20
+current:power6 ♦  udp 127.0.0.1:2504 |x:20
+current:map ♦  udp 127.0.0.1:2504 |ml:20 
+current:inventory ♦  udp 127.0.0.1:2504 |mr:20 
+
+current:left ♦  udp 127.0.0.1:2504 |sbl:20 
+current:right ♦  udp 127.0.0.1:2504 |sbr:20 
+current:subleft ♦  udp 127.0.0.1:2504 |tl:20 
+current:subright ♦  udp 127.0.0.1:2504 |tr:20 
+current:arrowleft ♦  udp 127.0.0.1:2504 |al:20 
+current:arrowright ♦  udp 127.0.0.1:2504 |ar:20 
+current:validate ♦  udp 127.0.0.1:2504 |a:20 
+current:cancel ♦  udp 127.0.0.1:2504 |b:20 
+current:a ♦  udp 127.0.0.1:2504 |a:20 
+current:b ♦  udp 127.0.0.1:2504 |b:20 
+current:x ♦  udp 127.0.0.1:2504 |x:20 
+current:y ♦  udp 127.0.0.1:2504 |y:20 
+current:sbl ♦  udp 127.0.0.1:2504  |sbl:20 
+current:sbr ♦  udp 127.0.0.1:2504  |sbr:20 
+current:tl ♦  udp 127.0.0.1:2504   |tl:20 
+current:tr ♦  udp 127.0.0.1:2504   |tr:20 
+current:al ♦  udp 127.0.0.1:2504   |al:20 
+current:ar ♦  udp 127.0.0.1:2504   |ar:20 
+current:au ♦  udp 127.0.0.1:2504   |au:20 
+current:ad ♦  udp 127.0.0.1:2504   |ad:20 
+current:ml ♦  udp 127.0.0.1:2504   |ml:20 
+current:mr ♦  udp 127.0.0.1:2504   |mr:20 
+
+
+tower:heal ♦       udp tower|sbl:20 
+tower:mount ♦      udp tower|ar:20
+tower:teleport ♦   udp tower|ad:20
+tower:dash ♦       udp tower|b:20
+tower:power1 ♦     udp tower|y:20
+tower:power2 ♦     udp tower|sbr:20
+tower:power3 ♦     udp tower|tl:20
+tower:power4 ♦     udp tower|tr:20
+tower:power5 ♦     udp tower|a:20
+tower:power6 ♦     udp tower|x:20
+tower:map ♦        udp tower|ml:20 
+tower:inventory ♦  udp tower|mr:20 
+tower:left ♦       udp tower|sbl:20 
+tower:right ♦      udp tower|sbr:20 
+tower:subleft ♦    udp tower|tl:20 
+tower:subright ♦   udp tower|tr:20 
+tower:arrowleft ♦  udp tower|al:20 
+tower:arrowright ♦ udp tower|ar:20 
+tower:validate ♦   udp tower|a:20 
+tower:cancel ♦     udp tower|b:20 
+tower:a ♦          udp tower|a:20 
+tower:b ♦          udp tower|b:20 
+tower:x ♦          udp tower|x:20 
+tower:y ♦          udp tower|y:20 
+tower:sbl ♦        udp tower  |sbl:20 
+tower:sbr ♦        udp tower  |sbr:20 
+tower:tl ♦         udp tower   |tl:20 
+tower:tr ♦         udp tower   |tr:20 
+tower:al ♦         udp tower   |al:20 
+tower:ar ♦         udp tower   |ar:20 
+tower:au ♦         udp tower   |au:20 
+tower:ad ♦         udp tower   |ad:20 
+tower:ml ♦         udp tower   |ml:20 
+tower:mr ♦         udp tower   |mr:20 
+
+
+
+shadow:heal ♦       udp shadow|sbl:20 
+shadow:mount ♦      udp shadow|ar:20
+shadow:teleport ♦   udp shadow|ad:20
+shadow:dash ♦       udp shadow|b:20
+shadow:power1 ♦     udp shadow|y:20
+shadow:power2 ♦     udp shadow|sbr:20
+shadow:power3 ♦     udp shadow|tl:20
+shadow:power4 ♦     udp shadow|tr:20
+shadow:power5 ♦     udp shadow|a:20
+shadow:power6 ♦     udp shadow|x:20
+shadow:map ♦        udp shadow|ml:20 
+shadow:inventory ♦  udp shadow|mr:20 
+shadow:left ♦       udp shadow|sbl:20 
+shadow:right ♦      udp shadow|sbr:20 
+shadow:subleft ♦    udp shadow|tl:20 
+shadow:subright ♦   udp shadow|tr:20 
+shadow:arrowleft ♦  udp shadow|al:20 
+shadow:arrowright ♦ udp shadow|ar:20 
+shadow:validate ♦   udp shadow|a:20 
+shadow:cancel ♦     udp shadow|b:20 
+shadow:a ♦          udp shadow|a:20 
+shadow:b ♦          udp shadow|b:20 
+shadow:x ♦          udp shadow|x:20 
+shadow:y ♦          udp shadow|y:20 
+shadow:sbl ♦        udp shadow|sbl:20 
+shadow:sbr ♦        udp shadow|sbr:20 
+shadow:tl ♦         udp shadow|tl:20 
+shadow:tr ♦         udp shadow|tr:20 
+shadow:al ♦         udp shadow|al:20 
+shadow:ar ♦         udp shadow|ar:20 
+shadow:au ♦         udp shadow|au:20 
+shadow:ad ♦         udp shadow|ad:20 
+shadow:ml ♦         udp shadow|ml:20 
+shadow:mr ♦         udp shadow|mr:20 
+
+
+all:heal ♦       udp all|sbl:20        ♦ serial AllXbox|sbl. 20> sbl' ;
+all:mount ♦      udp all|ar:20         ♦ serial AllXbox|ar. 20> ar' ;
+all:teleport ♦   udp all|ad:20         ♦ serial AllXbox|ad. 20> ad' ;
+all:dash ♦       udp all|b:20          ♦ serial AllXbox|b. 20> b' ;
+all:power1 ♦     udp all|y:20          ♦ serial AllXbox|y. 20> y' ;
+all:power2 ♦     udp all|sbr:20        ♦ serial AllXbox|sbr. 20> sbr' ;
+all:power3 ♦     udp all|tl:20         ♦ serial AllXbox|tl. 20> tl' ;
+all:power4 ♦     udp all|tr:20         ♦ serial AllXbox|tr. 20> tr' ;
+all:power5 ♦     udp all|a:20          ♦ serial AllXbox|a. 20> a' ;
+all:power6 ♦     udp all|x:20          ♦ serial AllXbox|x. 20> x' ;
+all:map ♦        udp all|ml:20         ♦ serial AllXbox|ml. 20> ml' ;
+all:inventory ♦  udp all|mr:20         ♦ serial AllXbox|mr. 20> mr' ;
+all:left ♦       udp all|sbl:20        ♦ serial AllXbox|sbl. 20> sbl' ;
+all:right ♦      udp all|sbr:20        ♦ serial AllXbox|sbr. 20> sbr' ;
+all:subleft ♦    udp all|tl:20         ♦ serial AllXbox|tl. 20> tl' ;
+all:subright ♦   udp all|tr:20         ♦ serial AllXbox|tr. 20> tr' ;
+all:arrowleft ♦  udp all|al:20         ♦ serial AllXbox|al. 20> al' ;
+all:arrowright ♦ udp all|ar:20         ♦ serial AllXbox|ar. 20> ar' ;
+all:validate ♦   udp all|a:20          ♦ serial AllXbox|a. 20> a' ;
+all:cancel ♦     udp all|b:20          ♦ serial AllXbox|b. 20> b' ;
+all:a ♦          udp all|a:20          ♦ serial AllXbox|a. 20> a' ;
+all:b ♦          udp all|b:20          ♦ serial AllXbox|b. 20> b' ;
+all:x ♦          udp all|x:20          ♦ serial AllXbox|x. 20> x' ;
+all:y ♦          udp all|y:20          ♦ serial AllXbox|y. 20> y' ;
+all:sbl ♦        udp all|sbl:20        ♦ serial AllXbox|sbl. 20> sbl' ;
+all:sbr ♦        udp all|sbr:20        ♦ serial AllXbox|sbr. 20> sbr' ;
+all:tl ♦         udp all|tl:20         ♦ serial AllXbox|tl. 20> tl' ;
+all:tr ♦         udp all|tr:20         ♦ serial AllXbox|tr. 20> tr' ;
+all:al ♦         udp all|al:20         ♦ serial AllXbox|al. 20> al' ;
+all:ar ♦         udp all|ar:20         ♦ serial AllXbox|ar. 20> ar' ;
+all:au ♦         udp all|au:20         ♦ serial AllXbox|au. 20> au' ;
+all:ad ♦         udp all|ad:20         ♦ serial AllXbox|ad. 20> ad' ;
+all:ml ♦         udp all|ml:20         ♦ serial AllXbox|ml. 20> ml' ;
+all:mr ♦         udp all|mr:20         ♦ serial AllXbox|mr. 20> mr' ;
+    
+all:power1start ♦     udp all|y_    ♦ serial AllXbox| y.  ;
+all:power2start ♦     udp all|sbr_    ♦ serial AllXbox| sbr.  ;
+all:power3start ♦     udp all|tl_    ♦ serial AllXbox| tl.  ;
+all:power4start ♦     udp all|tr_    ♦ serial AllXbox| tr.  ;
+all:power5start ♦     udp all|a_    ♦ serial AllXbox| a.  ;
+all:power6start ♦     udp all|x_    ♦ serial AllXbox| x.  ;
+   
+all:power1stop ♦     udp all|y-    ♦ serial AllXbox| y' ;
+all:power2stop ♦     udp all|sbr-    ♦ serial AllXbox| sbr' ;
+all:power3stop ♦     udp all|tl-    ♦ serial AllXbox| tl' ;
+all:power4stop ♦     udp all|tr-    ♦ serial AllXbox| tr' ;
+all:power5stop ♦     udp all|a-    ♦ serial AllXbox| a' ;
+all:power6stop ♦     udp all|x-    ♦ serial AllXbox| x' ;
+    
+all:dashstart ♦ udp all|b_    ♦ serial AllXbox| b. ;
+all:dashstop ♦ udp all|b-    ♦ serial AllXbox| b' ;
+
+
+
+
+all:tier4 ♦ udp all| al=200 250>  ml=200 250> lb=200  1000> ad=200 250> ad=200 250> ad=200  250> a=200 250> x=200 28000> ar=200 250> a=200 250> au=200 250> ad=200 250> ad=200 250> ad=200 250> ad=200 250> a=200 250> al=2000 250> a=200 250> lt=200
+all:tier3 ♦ udp all| al=200 250>  ml=200 250> lb=200  1000> ad=200 250> ad=200 250> ad=200  250> a=200 250> x=200 28000> ar=200 250> a=200 250> au=200 250> ad=200 250> ad=200 250> ad=200 250> ad=200 250> (au=200 20>) a=200 250> al=2000 250> a=200 250> lt=200
+all:tier2 ♦ udp all| al=200 250>  ml=200 250> lb=200  1000> ad=200 250> ad=200 250> ad=200  250> a=200 250> x=200 28000> ar=200 250> a=200 250> au=200 250> ad=200 250> ad=200 250> ad=200 250> ad=200 250> (au=200 20>) (au=200 20>) a=200 250> al=2000 250> a=200 250> lt=200
+all:tier1 ♦ udp all| al=200 250>  ml=200 250> lb=200  1000> ad=200 250> ad=200 250> ad=200  250> a=200 250> x=200 28000> ar=200 250> a=200 250> au=200 250> ad=200 250> ad=200 250> ad=200 250> ad=200 250> (au=200 20>) (au=200 20>)(au=200 20>) a=200 250> al=2000 250> a=200 250> lt=200
+
+all:tiertest ♦in 0| macro:all:tier1♦in 60000| macro:all:tier2♦in 120000| macro:all:tier3♦in 180000| macro:all:tier4
+all:rejoindown♦udp all| ad=100 28000> jl%0%-1 1400> jl%0%0   a=100 
+all:rejoinleft♦udp all| ad=100 28000> jl%-1%0 1400> jl%0%0   a=100
+all:rejoindownleft♦udp all| ad=100 28000> jl%-1%-1 1400> jl%0%0   a=100
+
+
+all:accepter ♦udp all| al=1000 20>  a=100 ♦serial allXbox| al. 1000> al' 20> a. 100> a' ;
+all:accepterdouble ♦udp all| al=1000 20>  a=100 2000> al=1000 20>  a=100
+all:123456 ♦udp all|jl=150 y=100 1000> sbr=100 1000> rt=100 1000> lt=100 1000> x=100 1000> a=100 jr=150
+all:123456fast ♦udp all|jl=150  100> a=20  y=100 300> rb=200 300>  rt=100 100> a=20 300> lt=100 300> x=100 100> a=20 300> a=100 jr=150 jlrandnorm 100> a=20 800> Y  100> a=20 800> Y  200> sbl
+all:heal ♦udp all| sbl=150   ♦serial allXbox| sbl. 150> sbl' ;
+all:showitem ♦udp all| jr=150  ♦serial allXbox| jt. 150> jt' ;
+
+
+
+
+
+
+xLeft:heal ♦        serial xLeft|sbl. 20> sbl' ;
+xLeft:mount ♦       serial xLeft|ar. 20> ar' ;
+xLeft:teleport ♦    serial xLeft|ad. 20> ad' ;
+xLeft:dash ♦        serial xLeft|b. 20> b' ;
+xLeft:power1 ♦      serial xLeft|y. 20> y' ;
+xLeft:power2 ♦      serial xLeft|sbr. 20> sbr' ;
+xLeft:power3 ♦      serial xLeft|tl. 20> tl' ;
+xLeft:power4 ♦      serial xLeft|tr. 20> tr' ;
+xLeft:power5 ♦      serial xLeft|a. 20> a' ;
+xLeft:power6 ♦      serial xLeft|x. 20> x' ;
+xLeft:map ♦         serial xLeft|ml. 20> ml' ;
+xLeft:inventory ♦   serial xLeft|mr. 20> mr' ;
+xLeft:left ♦        serial xLeft|sbl. 20> sbl' ;
+xLeft:right ♦       serial xLeft|sbr. 20> sbr' ;
+xLeft:subleft ♦     serial xLeft|tl. 20> tl' ;
+xLeft:subright ♦    serial xLeft|tr. 20> tr' ;
+xLeft:arrowleft ♦   serial xLeft|al. 20> al' ;
+xLeft:arrowright ♦  serial xLeft|ar. 20> ar' ;
+xLeft:validate ♦    serial xLeft|a. 20> a' ;
+xLeft:cancel ♦      serial xLeft|b. 20> b' ;
+xLeft:a ♦           serial xLeft|a. 20> a' ;
+xLeft:b ♦           serial xLeft|b. 20> b' ;
+xLeft:x ♦           serial xLeft|x. 20> x' ;
+xLeft:y ♦           serial xLeft|y. 20> y' ;
+xLeft:sbl ♦         serial xLeft|sbl. 20> sbl' ;
+xLeft:sbr ♦         serial xLeft|sbr. 20> sbr' ;
+xLeft:tl ♦          serial xLeft|tl. 20> tl' ;
+xLeft:tr ♦          serial xLeft|tr. 20> tr' ;
+xLeft:al ♦          serial xLeft|al. 20> al' ;
+xLeft:ar ♦          serial xLeft|ar. 20> ar' ;
+xLeft:au ♦          serial xLeft|au. 20> au' ;
+xLeft:ad ♦          serial xLeft|ad. 20> ad' ;
+xLeft:ml ♦          serial xLeft|ml. 20> ml' ;
+xLeft:mr ♦          serial xLeft|mr. 20> mr' ;
+xLeft:power1start ♦    serial xLeft| y.  ;
+xLeft:power2start ♦      serial xLeft| sbr.  ;
+xLeft:power3start ♦     serial xLeft| tl.  ;
+xLeft:power4start ♦     serial xLeft| tr.  ;
+xLeft:power5start ♦   serial xLeft| a.  ;
+xLeft:power6start ♦    serial xLeft| x.  ;
+xLeft:power1stop ♦    serial xLeft| y' ;
+xLeft:power2stop ♦      serial xLeft| sbr' ;
+xLeft:power3stop ♦     serial xLeft| tl' ;
+xLeft:power4stop ♦     serial xLeft| tr' ;
+xLeft:power5stop ♦    serial xLeft| a' ;
+xLeft:power6stop ♦    serial xLeft| x' ;
+
+
+xRight:heal ♦        serial xRight|sbl. 20> sbl' ;
+xRight:mount ♦       serial xRight|ar. 20> ar' ;
+xRight:teleport ♦    serial xRight|ad. 20> ad' ;
+xRight:dash ♦        serial xRight|b. 20> b' ;
+xRight:power1 ♦      serial xRight|y. 20> y' ;
+xRight:power2 ♦      serial xRight|sbr. 20> sbr' ;
+xRight:power3 ♦      serial xRight|tl. 20> tl' ;
+xRight:power4 ♦      serial xRight|tr. 20> tr' ;
+xRight:power5 ♦      serial xRight|a. 20> a' ;
+xRight:power6 ♦      serial xRight|x. 20> x' ;
+xRight:map ♦         serial xRight|ml. 20> ml' ;
+xRight:inventory ♦   serial xRight|mr. 20> mr' ;
+xRight:left ♦        serial xRight|sbl. 20> sbl' ;
+xRight:right ♦       serial xRight|sbr. 20> sbr' ;
+xRight:subleft ♦     serial xRight|tl. 20> tl' ;
+xRight:subright ♦    serial xRight|tr. 20> tr' ;
+xRight:arrowleft ♦   serial xRight|al. 20> al' ;
+xRight:arrowright ♦  serial xRight|ar. 20> ar' ;
+xRight:validate ♦    serial xRight|a. 20> a' ;
+xRight:cancel ♦      serial xRight|b. 20> b' ;
+xRight:a ♦           serial xRight|a. 20> a' ;
+xRight:b ♦           serial xRight|b. 20> b' ;
+xRight:x ♦           serial xRight|x. 20> x' ;
+xRight:y ♦           serial xRight|y. 20> y' ;
+xRight:sbl ♦         serial xRight|sbl. 20> sbl' ;
+xRight:sbr ♦         serial xRight|sbr. 20> sbr' ;
+xRight:tl ♦          serial xRight|tl. 20> tl' ;
+xRight:tr ♦          serial xRight|tr. 20> tr' ;
+xRight:al ♦          serial xRight|al. 20> al' ;
+xRight:ar ♦          serial xRight|ar. 20> ar' ;
+xRight:au ♦          serial xRight|au. 20> au' ;
+xRight:ad ♦          serial xRight|ad. 20> ad' ;
+xRight:ml ♦          serial xRight|ml. 20> ml' ;
+xRight:mr ♦          serial xRight|mr. 20> mr' ;
+xRight:power1start ♦    serial xRight| y.  ;
+xRight:power2start ♦      serial xRight| sbr.  ;
+xRight:power3start ♦     serial xRight| tl.  ;
+xRight:power4start ♦     serial xRight| tr.  ;
+xRight:power5start ♦   serial xRight| a.  ;
+xRight:power6start ♦    serial xRight| x.  ;
+xRight:power1stop ♦    serial xRight| y' ;
+xRight:power2stop ♦      serial xRight| sbr' ;
+xRight:power3stop ♦     serial xRight| tl' ;
+xRight:power4stop ♦     serial xRight| tr' ;
+xRight:power5stop ♦    serial xRight| a' ;
+xRight:power6stop ♦    serial xRight| x' ;

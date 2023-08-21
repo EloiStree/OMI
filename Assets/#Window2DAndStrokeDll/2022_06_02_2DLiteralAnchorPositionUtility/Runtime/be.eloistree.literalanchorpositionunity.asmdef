@@ -2,7 +2,7 @@
     "name": "be.eloistree.literalanchorpositionunity",
     "rootNamespace": "",
     "references": [
-        "GUID:cc56a7f591bc95445945c88084e471ff"
+        "be.eloistree.generaltoolbox"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

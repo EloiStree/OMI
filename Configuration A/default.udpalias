@@ -1,0 +1,12 @@
+//leftcomputer♦192.168.0.240♦2505
+//rightcomputer♦192.168.0.139♦2505
+//sidecomputer♦leftcomputer♦rightcomputer
+laptop♦192.168.1.45♦2504
+tower♦192.168.1.41♦2504
+shadow♦25.39.7.206♦2504
+xbox♦25.49.25.114♦2504
+
+
+
+//udp leftcomputer|jomi:a↓ 80> a↑
+//udp leftcomputer|ks:a

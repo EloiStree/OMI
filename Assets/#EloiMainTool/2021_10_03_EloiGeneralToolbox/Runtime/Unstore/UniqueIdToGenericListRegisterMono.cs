@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +9,15 @@ public class UniqueIdToGenericListRegisterMono<T> : MonoBehaviour
 
     public GroupOfUniqueIdToListObject<T> m_groupOfIdToListObject;
     public bool m_ignoreCase = true;
+    public void Clear()
+    {
+        m_groupOfIdToListObject.Clear();
+    }
 
-    public void AddComToList(string com, params T[] givenObject)
+    public void AddToList(string id, T value) {
+        AddToList(id , new T[] { value} );
+    }
+    public void AddToList(string com, params T[] givenObject)
     {
         m_groupOfIdToListObject.Get(com, m_ignoreCase, out bool found, out UniqueIdToListOfObject<T> link);
         if (found)
@@ -17,13 +25,18 @@ public class UniqueIdToGenericListRegisterMono<T> : MonoBehaviour
         else m_groupOfIdToListObject.m_registeredIdToList.Add(new UniqueIdToListOfObject<T>(com, givenObject));
 
     }
-    public void AddComToList(string com, IEnumerable<T> givenObject)
+    public void AddToList(string com, IEnumerable<T> givenObject)
     {
         m_groupOfIdToListObject.Get(com, m_ignoreCase, out bool found, out UniqueIdToListOfObject<T> link);
         if (found)
             link.m_linkedObject.AddRange(givenObject);
         else m_groupOfIdToListObject.m_registeredIdToList.Add(new UniqueIdToListOfObject<T>(com, givenObject));
 
+    }
+    public void Get(string lookingFor, bool ignoreCase, out bool found, out UniqueIdToListOfObject<T> link)
+    {
+
+        m_groupOfIdToListObject.Get(lookingFor, ignoreCase, out found, out link);
     }
 }
 
@@ -50,8 +63,10 @@ public class GroupOfUniqueIdToListObject<T>
         link = null;
     }
 
-
-
+    public void Clear()
+    {
+        m_registeredIdToList.Clear();
+    }
 }
 [System.Serializable]
 public class UniqueIdToListOfObject<T>

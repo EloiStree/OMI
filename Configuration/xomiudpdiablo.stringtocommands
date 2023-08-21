@@ -120,57 +120,57 @@ shadow:ml ♦         udp shadow|ml:20
 shadow:mr ♦         udp shadow|mr:20 
 
 
-all:heal ♦       udp all|sbl:20        ♦ serial AllXbox|sbl. 20> sbl' ;
-all:mount ♦      udp all|ar:20         ♦ serial AllXbox|ar. 20> ar' ;
-all:teleport ♦   udp all|ad:20         ♦ serial AllXbox|ad. 20> ad' ;
-all:dash ♦       udp all|b:20          ♦ serial AllXbox|b. 20> b' ;
-all:power1 ♦     udp all|y:20          ♦ serial AllXbox|y. 20> y' ;
-all:power2 ♦     udp all|sbr:20        ♦ serial AllXbox|sbr. 20> sbr' ;
-all:power3 ♦     udp all|tl:20         ♦ serial AllXbox|tl. 20> tl' ;
-all:power4 ♦     udp all|tr:20         ♦ serial AllXbox|tr. 20> tr' ;
-all:power5 ♦     udp all|a:20          ♦ serial AllXbox|a. 20> a' ;
-all:power6 ♦     udp all|x:20          ♦ serial AllXbox|x. 20> x' ;
-all:map ♦        udp all|ml:20         ♦ serial AllXbox|ml. 20> ml' ;
-all:inventory ♦  udp all|mr:20         ♦ serial AllXbox|mr. 20> mr' ;
-all:left ♦       udp all|sbl:20        ♦ serial AllXbox|sbl. 20> sbl' ;
-all:right ♦      udp all|sbr:20        ♦ serial AllXbox|sbr. 20> sbr' ;
-all:subleft ♦    udp all|tl:20         ♦ serial AllXbox|tl. 20> tl' ;
-all:subright ♦   udp all|tr:20         ♦ serial AllXbox|tr. 20> tr' ;
-all:arrowleft ♦  udp all|al:20         ♦ serial AllXbox|al. 20> al' ;
-all:arrowright ♦ udp all|ar:20         ♦ serial AllXbox|ar. 20> ar' ;
-all:validate ♦   udp all|a:20          ♦ serial AllXbox|a. 20> a' ;
-all:cancel ♦     udp all|b:20          ♦ serial AllXbox|b. 20> b' ;
-all:a ♦          udp all|a:20          ♦ serial AllXbox|a. 20> a' ;
-all:b ♦          udp all|b:20          ♦ serial AllXbox|b. 20> b' ;
-all:x ♦          udp all|x:20          ♦ serial AllXbox|x. 20> x' ;
-all:y ♦          udp all|y:20          ♦ serial AllXbox|y. 20> y' ;
-all:sbl ♦        udp all|sbl:20        ♦ serial AllXbox|sbl. 20> sbl' ;
-all:sbr ♦        udp all|sbr:20        ♦ serial AllXbox|sbr. 20> sbr' ;
-all:tl ♦         udp all|tl:20         ♦ serial AllXbox|tl. 20> tl' ;
-all:tr ♦         udp all|tr:20         ♦ serial AllXbox|tr. 20> tr' ;
-all:al ♦         udp all|al:20         ♦ serial AllXbox|al. 20> al' ;
-all:ar ♦         udp all|ar:20         ♦ serial AllXbox|ar. 20> ar' ;
-all:au ♦         udp all|au:20         ♦ serial AllXbox|au. 20> au' ;
-all:ad ♦         udp all|ad:20         ♦ serial AllXbox|ad. 20> ad' ;
-all:ml ♦         udp all|ml:20         ♦ serial AllXbox|ml. 20> ml' ;
-all:mr ♦         udp all|mr:20         ♦ serial AllXbox|mr. 20> mr' ;
+all:heal ♦            udp all|sbl:20     ♦ ble|all|sbl. 20> sbl' ;      ♦ serial AllXbox|sbl. 20> sbl' ;      
+all:mount ♦           udp all|ar:20      ♦ ble|all|ar. 20> ar' ;        ♦ serial AllXbox|ar. 20> ar' ;     
+all:teleport ♦        udp all|ad:20      ♦ ble|all|ad. 20> ad' ;       ♦ serial AllXbox|ad. 20> ad' ;    
+all:dash ♦            udp all|b:20       ♦ ble|all|b. 20> b' ;        ♦ serial AllXbox|b. 20> b' ;
+all:power1 ♦          udp all|y:20       ♦ ble|all|y. 20> y' ;        ♦ serial AllXbox|y. 20> y' ;
+all:power2 ♦          udp all|sbr:20     ♦ ble|all|sbr. 20> sbr' ;      ♦ serial AllXbox|sbr. 20> sbr' ;
+all:power3 ♦          udp all|tl:20      ♦ ble|all|tl. 20> tl' ;       ♦ serial AllXbox|tl. 20> tl' ;
+all:power4 ♦          udp all|tr:20      ♦ ble|all|tr. 20> tr' ;       ♦ serial AllXbox|tr. 20> tr' ;
+all:power5 ♦          udp all|a:20       ♦ ble|all|a. 20> a' ;    ♦ serial AllXbox|a. 20> a' ;
+all:power6 ♦          udp all|x:20       ♦ ble|all|x. 20> x' ;    ♦ serial AllXbox|x. 20> x' ;
+all:map ♦             udp all|ml:20      ♦ ble|all|ml. 20> ml' ;       ♦ serial AllXbox|ml. 20> ml' ;
+all:inventory ♦       udp all|mr:20      ♦ ble|all|mr. 20> mr' ;       ♦ serial AllXbox|mr. 20> mr' ;
+all:left ♦            udp all|sbl:20     ♦ ble|all|sbl. 20> sbl' ;      ♦ serial AllXbox|sbl. 20> sbl' ;
+all:right ♦           udp all|sbr:20     ♦ ble|all|sbr. 20> sbr' ;      ♦ serial AllXbox|sbr. 20> sbr' ;
+all:subleft ♦         udp all|tl:20      ♦ ble|all|tl. 20> tl' ;    ♦ serial AllXbox|tl. 20> tl' ;
+all:subright ♦        udp all|tr:20      ♦ ble|all|tr. 20> tr' ;    ♦ serial AllXbox|tr. 20> tr' ;
+all:arrowleft ♦       udp all|al:20      ♦ ble|all|al. 20> al' ;       ♦ serial AllXbox|al. 20> al' ;
+all:arrowright ♦      udp all|ar:20      ♦ ble|all|ar. 20> ar' ;       ♦ serial AllXbox|ar. 20> ar' ;
+all:validate ♦        udp all|a:20       ♦ ble|all|a. 20> a' ;       ♦ serial AllXbox|a. 20> a' ;
+all:cancel ♦          udp all|b:20       ♦ ble|all|b. 20> b' ;       ♦ serial AllXbox|b. 20> b' ;
+all:a ♦               udp all|a:20       ♦ ble|all|a. 20> a' ;       ♦ serial AllXbox|a. 20> a' ;
+all:b ♦               udp all|b:20       ♦ ble|all|b. 20> b' ;       ♦ serial AllXbox|b. 20> b' ;
+all:x ♦               udp all|x:20       ♦ ble|all|x. 20> x' ;       ♦ serial AllXbox|x. 20> x' ;
+all:y ♦               udp all|y:20       ♦ ble|all|y. 20> y' ;       ♦ serial AllXbox|y. 20> y' ;
+all:sbl ♦             udp all|sbl:20     ♦ ble|all|sbl. 20> sbl' ;     ♦ serial AllXbox|sbl. 20> sbl' ;
+all:sbr ♦             udp all|sbr:20     ♦ ble|all|sbr. 20> sbr' ;     ♦ serial AllXbox|sbr. 20> sbr' ;
+all:tl ♦              udp all|tl:20      ♦ ble|all|tl. 20> tl' ;   ♦ serial AllXbox|tl. 20> tl' ;
+all:tr ♦              udp all|tr:20      ♦ ble|all|tr. 20> tr' ;   ♦ serial AllXbox|tr. 20> tr' ;
+all:al ♦              udp all|al:20      ♦ ble|all|al. 20> al' ;   ♦ serial AllXbox|al. 20> al' ;
+all:ar ♦              udp all|ar:20      ♦ ble|all|ar. 20> ar' ;   ♦ serial AllXbox|ar. 20> ar' ;
+all:au ♦              udp all|au:20      ♦ ble|all|au. 20> au' ;   ♦ serial AllXbox|au. 20> au' ;
+all:ad ♦              udp all|ad:20      ♦ ble|all|ad. 20> ad' ;   ♦ serial AllXbox|ad. 20> ad' ;
+all:ml ♦              udp all|ml:20      ♦ ble|all|ml. 20> ml' ;   ♦ serial AllXbox|ml. 20> ml' ;
+all:mr ♦              udp all|mr:20      ♦ ble|all|mr. 20> mr' ;   ♦ serial AllXbox|mr. 20> mr' ;
+     
+all:power1start ♦     udp all|y_         ♦ ble|all| y.  ;         ♦ serial AllXbox| y.  ;
+all:power2start ♦     udp all|sbr_       ♦ ble|all| sbr.  ;       ♦ serial AllXbox| sbr.  ;
+all:power3start ♦     udp all|tl_        ♦ ble|all| tl.  ;         ♦ serial AllXbox| tl.  ;
+all:power4start ♦     udp all|tr_        ♦ ble|all| tr.  ;         ♦ serial AllXbox| tr.  ;
+all:power5start ♦     udp all|a_         ♦ ble|all| a.  ;         ♦ serial AllXbox| a.  ;
+all:power6start ♦     udp all|x_         ♦ ble|all| x.  ;         ♦ serial AllXbox| x.  ;
     
-all:power1start ♦     udp all|y_    ♦ serial AllXbox| y.  ;
-all:power2start ♦     udp all|sbr_    ♦ serial AllXbox| sbr.  ;
-all:power3start ♦     udp all|tl_    ♦ serial AllXbox| tl.  ;
-all:power4start ♦     udp all|tr_    ♦ serial AllXbox| tr.  ;
-all:power5start ♦     udp all|a_    ♦ serial AllXbox| a.  ;
-all:power6start ♦     udp all|x_    ♦ serial AllXbox| x.  ;
-   
-all:power1stop ♦     udp all|y-    ♦ serial AllXbox| y' ;
-all:power2stop ♦     udp all|sbr-    ♦ serial AllXbox| sbr' ;
-all:power3stop ♦     udp all|tl-    ♦ serial AllXbox| tl' ;
-all:power4stop ♦     udp all|tr-    ♦ serial AllXbox| tr' ;
-all:power5stop ♦     udp all|a-    ♦ serial AllXbox| a' ;
-all:power6stop ♦     udp all|x-    ♦ serial AllXbox| x' ;
+all:power1stop ♦     udp all|y-          ♦ ble|all| y' ;         ♦ serial AllXbox| y' ;
+all:power2stop ♦     udp all|sbr-        ♦ ble|all| sbr' ;        ♦ serial AllXbox| sbr' ;
+all:power3stop ♦     udp all|tl-         ♦ ble|all| tl' ;         ♦ serial AllXbox| tl' ;
+all:power4stop ♦     udp all|tr-         ♦ ble|all| tr' ;         ♦ serial AllXbox| tr' ;
+all:power5stop ♦     udp all|a-          ♦ ble|all| a' ;         ♦ serial AllXbox| a' ;
+all:power6stop ♦     udp all|x-          ♦ ble|all| x' ;         ♦ serial AllXbox| x' ;
     
-all:dashstart ♦ udp all|b_    ♦ serial AllXbox| b. ;
-all:dashstop ♦ udp all|b-    ♦ serial AllXbox| b' ;
+all:dashstart ♦ udp all|b_               ♦ ble|all| b. ;         ♦ serial AllXbox| b. ; 
+all:dashstop ♦ udp all|b-                ♦ ble|all| b' ;         ♦ serial AllXbox| b' ; 
 
 
 

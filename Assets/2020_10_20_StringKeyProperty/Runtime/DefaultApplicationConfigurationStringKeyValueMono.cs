@@ -129,7 +129,10 @@ public class DefaultApplicationConfigurationStringKeyValueMono : MonoBehaviour
     [ContextMenu("Import")]
     public  void Import()
     {
+
+        if (m_filePath == null) return;
         string path = GetPathToUse();
+        if (string.IsNullOrEmpty(path) ) return;
         string directoryName = Path.GetDirectoryName(path);
         if (!Directory.Exists(directoryName))
             Directory.CreateDirectory(directoryName);

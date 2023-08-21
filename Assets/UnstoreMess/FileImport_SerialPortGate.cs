@@ -161,7 +161,7 @@ public class FileImport_SerialPortGate : MonoBehaviour
     {
         Eloi.E_CodeTag.DirtyCode.Info("I am sleepy, it should be event with and aditionnal class to make the bridge");
         m_groupIdToTarget.Add(intent);
-        m_groupToSerialPort.AddComToList(intent.m_groupId, intent.m_comIdAndAlias);
+        m_groupToSerialPort.AddToList(intent.m_groupId, intent.m_comIdAndAlias);
     }
 
     public List<Intent_CreateWriteSerialPortGate> m_comConnection= new List<Intent_CreateWriteSerialPortGate>();
@@ -173,7 +173,7 @@ public class FileImport_SerialPortGate : MonoBehaviour
     {
         Eloi.E_CodeTag.DirtyCode.Info("I am sleepy, it should be event with and aditionnal class to make the bridge");
         m_aliasToCom.Add(intent);
-        m_comToAliasRegister.AddComToAlias(intent.m_comPortId, intent.m_aliasOfThePort );
+        m_comToAliasRegister.AddToAlias(intent.m_comPortId, intent.m_aliasOfThePort );
     }
     private void Add(Intent_CreateWriteSerialPortGate intent)
     {
@@ -185,7 +185,7 @@ public class FileImport_SerialPortGate : MonoBehaviour
     {
         Eloi.E_CodeTag.DirtyCode.Info("I am sleepy, it should be event with and aditionnal class to make the bridge");
         m_readCom.Add(intent);
-        m_comToChannelRedirection.AddComToList(intent.m_comOrAliasId, intent.m_channel);
+        m_comToChannelRedirection.AddToList(intent.m_comOrAliasId, intent.m_channel);
     }
 }
 

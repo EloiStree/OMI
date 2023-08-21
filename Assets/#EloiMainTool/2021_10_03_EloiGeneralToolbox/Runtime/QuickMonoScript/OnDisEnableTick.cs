@@ -14,9 +14,12 @@ public class OnDisEnableTick : MonoBehaviour
 
 
     }
+
     public void OnDisable()
     {
         if (m_disableTick != null)
             m_disableTick.Invoke();
+
+
     }
 }
