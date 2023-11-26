@@ -10,7 +10,8 @@ public class Interpreter_Network : AbstractInterpreterMono
     public override bool CanInterpreterUnderstand(ref ICommandLine command)
     {
         string s = command.GetLine().ToLower().Trim();
-       return s.IndexOf("udp ") == 0 && s.IndexOf("|") > 0 || s.IndexOf("udpfocus ") == 0 && s.IndexOf("|") > 0;
+        if (s.IndexOf("uudp ") == 0) return true;
+            return s.IndexOf("udp ") == 0 && s.IndexOf("|") > 0 || s.IndexOf("udpfocus ") == 0 && s.IndexOf("|") > 0;
     }
 
     public override string GetName()
@@ -22,8 +23,15 @@ public class Interpreter_Network : AbstractInterpreterMono
     {
         string s = command.GetLine().ToLower().Trim();
         int startIndex = 0;
+        bool useUnicode=false;
         if (s.IndexOf("udp ") == 0)
             startIndex = 4;
+        if (s.IndexOf("uudp ") == 0) { 
+            startIndex = 5;
+            useUnicode = true;
+        }
+       
+
         int endIndex = s.IndexOf("|");
        // Debug.Log("DD:" + s + "DD");
 
@@ -35,9 +43,10 @@ public class Interpreter_Network : AbstractInterpreterMono
             if (target == "all" || target.Trim().Length == 0)
                 m_sender.AddMessageToSendToAll(value);
             else { 
-                Debug.Log("TT: " + target +" "+ s + " TT");
-                m_sender.TryToSend(target, value);
-            
+                //Debug.Log("TT: " + target +" "+ s + " TT");
+               // m_sender.SendMessageTo(target, value, !useUnicode);
+                m_sender.TryToSend(target, value, useUnicode);
+
             }
         }
 

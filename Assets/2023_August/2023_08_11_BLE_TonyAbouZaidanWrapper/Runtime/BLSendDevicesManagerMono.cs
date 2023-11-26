@@ -40,7 +40,7 @@ public class BLSendDevicesManagerMono : MonoBehaviour
     {
         if (!IsDeviceConnectionExist(macAddress))
         {
-			BLDeviceConnectionNative device = new BLDeviceConnectionNative(macAddress);
+			BLDeviceConnectionNative device = new BLDeviceConnectionNative(macAddress, m_listenToReceivedMessage);
 			device.m_listenToException = m_useExceptionLog;
 			m_deviceBLE.Add(
 				macAddress,
@@ -55,13 +55,18 @@ public class BLSendDevicesManagerMono : MonoBehaviour
     {
         return m_deviceBLE.ContainsKey(macAddress);
     }
+	public bool m_listenToReceivedMessage=false;
 
+	public string m_lastAddress;
+	public string m_lastMessage;
 	public void SendMessageToDevice(string macAddress, string message)
 	{
 		if (m_autoCreate && !IsDeviceConnectionExist(macAddress))
 		{
 			CreateConnection(macAddress);
 		}
+		m_lastAddress = macAddress;
+		m_lastMessage = message;
 		m_deviceBLE[macAddress].SendMessageToDevice(message);
 	}
 	public void SendMessageToDevice( MacAddressBluetoothMessage message )
@@ -79,7 +84,22 @@ public class BLSendDevicesManagerMono : MonoBehaviour
         }
 	 
 	}
+	private void OnDisable()
+	{
+		DisconnectAll();
 
+	}
+	private void OnDestroy()
+	{
+		DisconnectAll();
+
+	}
+
+    private void OnApplicationQuit()
+	{
+		DisconnectAll();
+
+	}
 }
 
 
@@ -94,25 +114,35 @@ public class BLDeviceConnectionNative {
 	public bool m_listenToException=true;
 	public void SendMessageToDevice(string message)
 	{
+		m_lastReceivedMessage = message;
 		if (m_listenToException)
 			bluetoothHelper.SendData(message);
 		else {
 			try { bluetoothHelper.SendData(message); } catch { }
 		}
-	}
 
-	 public BLDeviceConnectionNative(string macAddress)
+	}
+	public bool m_isListening;
+
+	 public BLDeviceConnectionNative(string macAddress, bool listenToReceived)
 	{
-		m_deviceMacAddress = macAddress;
+		m_isListening= listenToReceived;
+		 m_deviceMacAddress = macAddress;
 		try
 		{
 			BluetoothHelper.BLE = false;
 			bluetoothHelper = BluetoothHelper.GetNewInstance();
+			//bluetoothHelper.setFixedLengthBasedStream(8);
 			bluetoothHelper.setDeviceAddress(m_deviceMacAddress);
+		
 			bluetoothHelper.OnConnected += OnConnected;
 			bluetoothHelper.OnConnectionFailed += OnConnectionFailed;
-			bluetoothHelper.OnDataReceived += OnMessageReceived;
-			bluetoothHelper.setTerminatorBasedStream("\n");
+			if(m_isListening)
+				bluetoothHelper.OnDataReceived += OnMessageReceived;
+
+			bluetoothHelper.setTerminatorBasedStream("");
+			//bluetoothHelper.setLengthBasedStream();
+			//bluetoothHelper.setFixedLengthBasedStream(4);
 			TriggerConnect();
 
 		}
@@ -142,9 +172,11 @@ public class BLDeviceConnectionNative {
 	{
 		try
 		{
-			helper.StartListening();
-			if (m_useDebugRelease)
-				Debug.Log("Start Listening: " + helper.getDeviceAddress());
+			if (m_isListening) { 
+				helper.StartListening();
+				if (m_useDebugRelease)
+					Debug.Log("Start Listening: " + helper.getDeviceAddress());
+			}
 		}
 		catch (Exception ex)
 		{
@@ -172,8 +204,17 @@ public class BLDeviceConnectionNative {
 	}
 	public void TriggerDiconnect()
 	{
-		if (bluetoothHelper != null )
-			bluetoothHelper.Disconnect();
+		if (bluetoothHelper != null)
+		{
+			try
+			{
+				bluetoothHelper.Disconnect();
+				bluetoothHelper.OnConnected -= OnConnected;
+				bluetoothHelper.OnConnectionFailed -= OnConnectionFailed;
+				bluetoothHelper.OnDataReceived -= OnMessageReceived;
+			}
+			catch (Exception e) { Debug.Log(e.StackTrace); }
+		}
 	}
 
 	

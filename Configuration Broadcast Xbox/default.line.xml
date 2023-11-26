@@ -1,0 +1,29 @@
+<omixml>
+    <midiconnectionin alias="Foot Left" uniqueid="" />
+    <midiconnectionin alias="Foot Left" midiName="Arduino Micro" />
+    <midiconnectionin alias="Piano" midiName="MPK mini play" />
+    <midiconnectionin  alias="Foot Board" midiName="Arduino Leonardo" />
+    <midiconnectionin  alias="" midiName="CircuitPython Audio" />
+    
+    <midiconnectionout  alias="Microsoft" midiName="Microsoft GS Wavetable Synth" />
+    <midiconnectionout alias="Foot Left" uniqueid="" />
+
+    <!-- This standar is one I created before learning midi -->
+    <!-- <analogdigitalcompressioncom comIdName="COM20" nomenclatureName="FootPattern" />-->
+
+
+
+
+    <!--
+        databits= 5 6 7 8
+        parity =  None Odd Mark Even 
+        stopbits= One Two OnePointFive 
+
+    -->
+    
+    <serialport alias="Arduino Uno" portname="COM60" baud="9600" bits="8" parity="None" stopbits="One" in="True" out="True" />
+    <serialport alias="Eight RC Car"  portname="COM11"  />
+    <!--<serialport alias="Digital Potentiometer" portname="EloiMega" baud="9600" bits="8" parity="None" stopbits="One"  />-->
+    <!--<serialport alias="RC Car" portname="EloiMega" baud="9600" bits="8" parity="None" stopbits="One"  />-->
+
+</omixml>

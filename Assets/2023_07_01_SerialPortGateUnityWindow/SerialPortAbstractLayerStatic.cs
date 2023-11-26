@@ -8,7 +8,7 @@ using UnityEngine;
 public class SerialPortAbstractLayerStatic
 {
 
-    public static string[] m_currentPort;
+    public static string[] m_currentPort = new string[0];
     /// <summary>
     /// Dont forget to put somewhere in you scene a code that refresh the lsit of port available.
     /// </summary>

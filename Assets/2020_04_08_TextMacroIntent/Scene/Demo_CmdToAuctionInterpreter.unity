@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -163,9 +163,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -199,12 +207,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582357566}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &598212500
 GameObject:
@@ -236,6 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -265,13 +275,25 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598212500}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1655203187 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3002068062009178839, guid: 97641e0ca873f8f4497a640cb2f8e606, type: 3}
+  m_PrefabInstance: {fileID: 3002068061462457339}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f12b288d67da204290614c8ca635e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1773332513
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,24 +380,57 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773332513}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1938975645 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4744769744363053361, guid: 97641e0ca873f8f4497a640cb2f8e606, type: 3}
+  m_PrefabInstance: {fileID: 3002068061462457339}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2005e21d7a1afda4baef3076403de6fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3002068061462457339
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3002068061782954816, guid: 97641e0ca873f8f4497a640cb2f8e606, type: 3}
+      propertyPath: m_Text
+      value: In 4.2 | Change camera background 100 100 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002068062433401956, guid: 97641e0ca873f8f4497a640cb2f8e606, type: 3}
+      propertyPath: m_Text
+      value: Change camera background 255 25 150
+      objectReference: {fileID: 0}
     - target: {fileID: 3002068062846172021, guid: 97641e0ca873f8f4497a640cb2f8e606, type: 3}
       propertyPath: m_linkedCamera
       value: 
       objectReference: {fileID: 582357568}
+    - target: {fileID: 3002068062954902495, guid: 97641e0ca873f8f4497a640cb2f8e606, type: 3}
+      propertyPath: m_executer
+      value: 
+      objectReference: {fileID: 1655203187}
+    - target: {fileID: 3002068062954902495, guid: 97641e0ca873f8f4497a640cb2f8e606, type: 3}
+      propertyPath: m_timeThread
+      value: 
+      objectReference: {fileID: 1938975645}
+    - target: {fileID: 3002068063143176995, guid: 97641e0ca873f8f4497a640cb2f8e606, type: 3}
+      propertyPath: m_Text
+      value: Change camera background 255 100 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3002068063416102778, guid: 97641e0ca873f8f4497a640cb2f8e606, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -425,4 +480,15 @@ PrefabInstance:
       value: CommandAuctionInterpreterWithUI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97641e0ca873f8f4497a640cb2f8e606, type: 3}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 582357569}
+  - {fileID: 1773332515}
+  - {fileID: 3002068061462457339}
+  - {fileID: 598212503}

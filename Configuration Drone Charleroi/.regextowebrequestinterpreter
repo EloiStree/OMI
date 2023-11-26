@@ -1,0 +1,4 @@
+SendToGoogle:♦https://translate.google.com/?hl=[[CMD]]
+CustomWebSitePost:♦POST♦WebsitePage.com/DoStuffWithCommand.php
+CustomWebSitePost:♦PUT♦WebsitePage.com/DoStuffWithCommand.php
+

@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/2023_05_12_LockFocusedApplication/Demo.unity
     guid: c6c36b0f45c0f424b9bd379b631b3ed1
-  m_configObjects: {}
-  m_UseUCBPForAssetBundles: 0
+  - enabled: 1
+    path: Assets/2022_07_12_LineCmdToShortcutCmd/Demo_FormToShotcut.unity
+    guid: c4ecce1f81130ba4392773c7064d1f3b
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: ce4f53dd434bb544a9f6065381ff2af0, type: 2}

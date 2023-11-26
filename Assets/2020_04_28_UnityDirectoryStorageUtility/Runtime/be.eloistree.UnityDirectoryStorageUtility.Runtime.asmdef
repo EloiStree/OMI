@@ -1,5 +1,6 @@
 {
     "name": "be.eloistree.unitydirectorystorageutility",
+    "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

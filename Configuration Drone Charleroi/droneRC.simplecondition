@@ -1,0 +1,603 @@
+/////////////// START | Foot to RC Cars Check up /////////////
+
+//// FRIST SPOT G H I J 
+//!afkfoot + leftupfoot ♦ serial CarsRCG1|J3  ♦ ☗TriggerOnFalse
+//!afkfoot + leftupfoot ♦ serial CarsRCG1|J2  ♦ ☗TriggerOnTrue
+//!afkfoot + leftdownfoot ♦ serial CarsRCG1|I3  ♦ ☗TriggerOnFalse 
+//!afkfoot + leftdownfoot ♦ serial CarsRCG1|I2  ♦ ☗TriggerOnTrue
+//!afkfoot + rightupfoot ♦ serial CarsRCG1|H3  ♦ ☗TriggerOnFalse
+//!afkfoot + rightupfoot ♦ serial CarsRCG1|H2  ♦ ☗TriggerOnTrue
+//!afkfoot + rightdownfoot ♦ serial CarsRCG1|G3  ♦ ☗TriggerOnFalse
+//!afkfoot + rightdownfoot ♦ serial CarsRCG1|G2  ♦ ☗TriggerOnTrue
+
+// Second SPOT K L M N
+//!afkfoot + leftupfoot ♦ serial CarsRCG1|N3  ♦ ☗TriggerOnFalse
+//!afkfoot + leftupfoot ♦ serial CarsRCG1|N2  ♦ ☗TriggerOnTrue
+//!afkfoot + leftdownfoot ♦ serial CarsRCG1|M3  ♦ ☗TriggerOnFalse 
+//!afkfoot + leftdownfoot ♦ serial CarsRCG1|M2  ♦ ☗TriggerOnTrue
+//!afkfoot + rightupfoot ♦ serial CarsRCG1|L3  ♦ ☗TriggerOnFalse
+//!afkfoot + rightupfoot ♦ serial CarsRCG1|L2  ♦ ☗TriggerOnTrue
+//!afkfoot + rightdownfoot ♦ serial CarsRCG1|K3  ♦ ☗TriggerOnFalse
+//!afkfoot + rightdownfoot ♦ serial CarsRCG1|K2  ♦ ☗TriggerOnTrue
+
+// Thirst SPOT S T U V
+//!afkfoot + leftupfoot ♦ serial CarsRCG1|T3  ♦ ☗TriggerOnTrue
+//!afkfoot + leftupfoot ♦ serial CarsRCG1|T2  ♦ ☗TriggerOnFalse
+//!afkfoot + leftdownfoot ♦ serial CarsRCG1|S3  ♦ ☗TriggerOnTrue 
+//!afkfoot + leftdownfoot ♦ serial CarsRCG1|S2  ♦ ☗TriggerOnFalse
+//!afkfoot + rightupfoot ♦ serial CarsRCG1|V3  ♦ ☗TriggerOnTrue
+//!afkfoot + rightupfoot ♦ serial CarsRCG1|V2  ♦ ☗TriggerOnFalse
+//!afkfoot + rightdownfoot ♦ serial CarsRCG1|U3  ♦ ☗TriggerOnTrue
+//!afkfoot + rightdownfoot ♦ serial CarsRCG1|U2  ♦ ☗TriggerOnFalse
+
+// Four SPOT  W a b c
+//!afkfoot + leftupfoot ♦ serial CarsRCG1|a3  ♦ ☗TriggerOnTrue
+//!afkfoot + leftupfoot ♦ serial CarsRCG1|a2  ♦ ☗TriggerOnFalse
+//!afkfoot + leftdownfoot ♦ serial CarsRCG1|c3  ♦ ☗TriggerOnTrue 
+//!afkfoot + leftdownfoot ♦ serial CarsRCG1|c2  ♦ ☗TriggerOnFalse
+//!afkfoot + rightupfoot ♦ serial CarsRCG1|b3  ♦ ☗TriggerOnTrue
+//!afkfoot + rightupfoot ♦ serial CarsRCG1|b2  ♦ ☗TriggerOnFalse
+//!afkfoot + rightdownfoot ♦ serial CarsRCG1|W3  ♦ ☗TriggerOnTrue
+//!afkfoot + rightdownfoot ♦ serial CarsRCG1|W2  ♦ ☗TriggerOnFalse
+
+
+
+//// FRIST SPOT I J K L
+!afkfoot + leftupfoot ♦ serial CarsRCG2|L3  ♦ ☗TriggerOnFalse
+!afkfoot + leftupfoot ♦ serial CarsRCG2|L2  ♦ ☗TriggerOnTrue
+!afkfoot + leftdownfoot ♦ serial CarsRCG2|K3  ♦ ☗TriggerOnFalse 
+!afkfoot + leftdownfoot ♦ serial CarsRCG2|K2  ♦ ☗TriggerOnTrue
+!afkfoot + rightupfoot ♦ serial CarsRCG2|J3  ♦ ☗TriggerOnFalse
+!afkfoot + rightupfoot ♦ serial CarsRCG2|J2  ♦ ☗TriggerOnTrue
+!afkfoot + rightdownfoot ♦ serial CarsRCG2|I3  ♦ ☗TriggerOnFalse
+!afkfoot + rightdownfoot ♦ serial CarsRCG2|I2  ♦ ☗TriggerOnTrue
+
+// Second SPOT M N O P
+!afkfoot + leftupfoot ♦ serial CarsRCG2|N3  ♦ ☗TriggerOnFalse
+!afkfoot + leftupfoot ♦ serial CarsRCG2|N2  ♦ ☗TriggerOnTrue
+!afkfoot + leftdownfoot ♦ serial CarsRCG2|M3  ♦ ☗TriggerOnFalse 
+!afkfoot + leftdownfoot ♦ serial CarsRCG2|M2  ♦ ☗TriggerOnTrue
+!afkfoot + rightupfoot ♦ serial CarsRCG2|P3  ♦ ☗TriggerOnFalse
+!afkfoot + rightupfoot ♦ serial CarsRCG2|P2  ♦ ☗TriggerOnTrue
+!afkfoot + rightdownfoot ♦ serial CarsRCG2|O3  ♦ ☗TriggerOnFalse
+!afkfoot + rightdownfoot ♦ serial CarsRCG2|O2  ♦ ☗TriggerOnTrue
+
+
+/////////////// END | Foot to RC Cars Check up /////////////
+
+//----------------------------------------------------------------------------//
+
+
+//----------------------------------------------------------------------------//
+//----------------------------------------------------------------------------//
+//----------------------------------------------------------------------------//
+
+
+
+
+
+
+/////////////// START | Management of the Foot beeing on the board /////////////
+RightUpFoot + LeftUpFoot + LeftDownFoot + RightDownFoot  ♦ bool:afkfoot:true ♦ ☗TriggerOnTrue
+RightUpFoot + LeftUpFoot + LeftDownFoot + RightDownFoot  ♦ bool:afkfoot:false ♦ ☗TriggerOnFalse
+LeftUpFoot + LeftDownFoot  ♦ bool:afkfootleft:true ♦ ☗TriggerOnTrue
+LeftUpFoot + LeftDownFoot   ♦ bool:afkfootleft:false ♦ ☗TriggerOnFalse
+RightUpFoot +  RightDownFoot  ♦ bool:afkfootright:true ♦ ☗TriggerOnTrue
+RightUpFoot +  RightDownFoot  ♦ bool:afkfootright:false ♦ ☗TriggerOnFalse
+/////////////// END | Management of the Foot beeing on the board /////////////
+
+
+/////////////// START | XBOX MASTER /////////////
+
+
+//// FRIST SPOT G H I J // USE action button of XBOX
+ xbu ♦ serial CarsRCG1|J3  ♦ ☗TriggerOnFalse
+ xbu ♦ serial CarsRCG1|J2  ♦ ☗TriggerOnTrue
+ xbl ♦ serial CarsRCG1|I3  ♦ ☗TriggerOnFalse 
+ xbl ♦ serial CarsRCG1|I2  ♦ ☗TriggerOnTrue
+ xbr ♦ serial CarsRCG1|H3  ♦ ☗TriggerOnFalse
+ xbr ♦ serial CarsRCG1|H2  ♦ ☗TriggerOnTrue
+ xbd ♦ serial CarsRCG1|G3  ♦ ☗TriggerOnFalse
+ xbd ♦ serial CarsRCG1|G2  ♦ ☗TriggerOnTrue
+
+// Second SPOT K L M N // USE FRONTAL BUTTON of XBOX
+ xsbl ♦ serial CarsRCG1|N3  ♦ ☗TriggerOnFalse
+ xsbl ♦ serial CarsRCG1|N2  ♦ ☗TriggerOnTrue
+ xtl ♦ serial CarsRCG1|M3  ♦ ☗TriggerOnFalse 
+ xtl ♦ serial CarsRCG1|M2  ♦ ☗TriggerOnTrue
+ xsbr ♦ serial CarsRCG1|L3  ♦ ☗TriggerOnFalse
+ xsbr ♦ serial CarsRCG1|L2  ♦ ☗TriggerOnTrue
+ xtr ♦ serial CarsRCG1|K3  ♦ ☗TriggerOnFalse
+ xtr ♦ serial CarsRCG1|K2  ♦ ☗TriggerOnTrue
+
+// Thirst SPOT S T U V /// USE ARROW OF XBOX
+xal ♦ serial CarsRCG1|T3 ♦ ☗TriggerOnTrue
+xal ♦ serial CarsRCG1|T2 ♦ ☗TriggerOnFalse
+xar ♦ serial CarsRCG1|V3  ♦ ☗TriggerOnTrue
+xar ♦ serial CarsRCG1|V2 ♦ ☗TriggerOnFalse
+xad ♦ serial CarsRCG1|S3 U3 ♦ ☗TriggerOnTrue
+xad ♦ serial CarsRCG1|S2 U2 ♦ ☗TriggerOnFalse
+xau ♦ serial CarsRCG1|T3 V3 ♦ ☗TriggerOnTrue
+xau ♦ serial CarsRCG1|T2 V2 ♦ ☗TriggerOnFalse
+//leftupfoot ♦ serial CarsRCG1|T3  ♦ ☗TriggerOnTrue
+//leftupfoot ♦ serial CarsRCG1|T2  ♦ ☗TriggerOnFalse
+//leftdownfoot ♦ serial CarsRCG1|S3  ♦ ☗TriggerOnTrue 
+//leftdownfoot ♦ serial CarsRCG1|S2  ♦ ☗TriggerOnFalse
+//rightupfoot ♦ serial CarsRCG1|V3  ♦ ☗TriggerOnTrue
+//rightupfoot ♦ serial CarsRCG1|V2  ♦ ☗TriggerOnFalse
+//rightdownfoot ♦ serial CarsRCG1|U3  ♦ ☗TriggerOnTrue
+//rightdownfoot ♦ serial CarsRCG1|U2  ♦ ☗TriggerOnFalse
+
+// Four SPOT  W a b c // Use Left Joystick to move on XBOX
+JoyLeftLeftBorder♦ serial CarsRCG1|a3  ♦ ☗TriggerOnTrue
+JoyLeftLeftBorder♦ serial CarsRCG1|a2  ♦ ☗TriggerOnFalse
+JoyLeftRightBorder♦ serial CarsRCG1|b3  ♦ ☗TriggerOnTrue
+JoyLeftRightBorder♦ serial CarsRCG1|b2  ♦ ☗TriggerOnFalse
+JoyLeftDownBorder♦ serial CarsRCG1|W3 c3  ♦ ☗TriggerOnTrue
+JoyLeftDownBorder♦ serial CarsRCG1|W2 c2  ♦ ☗TriggerOnFalse
+JoyLeftUpBorder♦ serial CarsRCG1|b3 a3 ♦ ☗TriggerOnTrue
+JoyLeftUpBorder♦ serial CarsRCG1|b2 a2  ♦ ☗TriggerOnFalse
+
+//!afkfoot + leftupfoot ♦ serial CarsRCG1|a3  ♦ ☗TriggerOnTrue
+//!afkfoot + leftupfoot ♦ serial CarsRCG1|a2  ♦ ☗TriggerOnFalse
+//!afkfoot + leftdownfoot ♦ serial CarsRCG1|c3  ♦ ☗TriggerOnTrue 
+//!afkfoot + leftdownfoot ♦ serial CarsRCG1|c2  ♦ ☗TriggerOnFalse
+//!afkfoot + rightupfoot ♦ serial CarsRCG1|b3  ♦ ☗TriggerOnTrue
+//!afkfoot + rightupfoot ♦ serial CarsRCG1|b2  ♦ ☗TriggerOnFalse
+//!afkfoot + rightdownfoot ♦ serial CarsRCG1|W3  ♦ ☗TriggerOnTrue
+//!afkfoot + rightdownfoot ♦ serial CarsRCG1|W2  ♦ ☗TriggerOnFalse
+
+
+
+//// FRIST SPOT I J K L // Use Right Joystick to move on XBOX
+JoyRightLeftBorder♦ serial CarsRCG2|L3  ♦ ☗TriggerOnFalse
+JoyRightLeftBorder♦ serial CarsRCG2|L2  ♦ ☗TriggerOnTrue
+JoyRightRightBorder♦ serial CarsRCG2|J3  ♦ ☗TriggerOnFalse
+JoyRightRightBorder♦ serial CarsRCG2|J2  ♦ ☗TriggerOnTrue
+JoyRightDownBorder♦ serial CarsRCG2|I3 K3  ♦ ☗TriggerOnFalse
+JoyRightDownBorder♦ serial CarsRCG2|I2 K2 ♦ ☗TriggerOnTrue
+JoyRightUpBorder♦ serial CarsRCG2|L3 J3  ♦ ☗TriggerOnFalse
+JoyRightUpBorder♦ serial CarsRCG2|L2 J2  ♦ ☗TriggerOnTrue
+//!afkfoot + leftupfoot ♦ serial CarsRCG2|L3  ♦ ☗TriggerOnFalse
+//!afkfoot + leftupfoot ♦ serial CarsRCG2|L2  ♦ ☗TriggerOnTrue
+//!afkfoot + leftdownfoot ♦ serial CarsRCG2|K3  ♦ ☗TriggerOnFalse 
+//!afkfoot + leftdownfoot ♦ serial CarsRCG2|K2  ♦ ☗TriggerOnTrue
+//!afkfoot + rightupfoot ♦ serial CarsRCG2|J3  ♦ ☗TriggerOnFalse
+//!afkfoot + rightupfoot ♦ serial CarsRCG2|J2  ♦ ☗TriggerOnTrue
+//!afkfoot + rightdownfoot ♦ serial CarsRCG2|I3  ♦ ☗TriggerOnFalse
+//!afkfoot + rightdownfoot ♦ serial CarsRCG2|I2  ♦ ☗TriggerOnTrue
+
+
+//// Second SPOT M N O P // Last car not assigned to the Xbox.
+//!afkfoot + leftupfoot ♦ serial CarsRCG2|N3  ♦ ☗TriggerOnFalse
+//!afkfoot + leftupfoot ♦ serial CarsRCG2|N2  ♦ ☗TriggerOnTrue
+//!afkfoot + leftdownfoot ♦ serial CarsRCG2|M3  ♦ ☗TriggerOnFalse 
+//!afkfoot + leftdownfoot ♦ serial CarsRCG2|M2  ♦ ☗TriggerOnTrue
+//!afkfoot + rightupfoot ♦ serial CarsRCG2|P3  ♦ ☗TriggerOnFalse
+//!afkfoot + rightupfoot ♦ serial CarsRCG2|P2  ♦ ☗TriggerOnTrue
+//!afkfoot + rightdownfoot ♦ serial CarsRCG2|O3  ♦ ☗TriggerOnFalse
+//!afkfoot + rightdownfoot ♦ serial CarsRCG2|O2  ♦ ☗TriggerOnTrue
+
+/////////////// END | XBOX MASTER /////////////
+
+
+
+
+
+/////////////// START | Four player one keyboard /////////////
+
+
+// Beat Quadra MPK Left Inverse
+MBILTL♦ serial CarsRCG1|J3  ♦ ☗TriggerOnFalse
+MBILTL♦ serial CarsRCG1|J2  ♦ ☗TriggerOnTrue
+MBILTR♦ serial CarsRCG1|H3  ♦ ☗TriggerOnFalse
+MBILTR♦ serial CarsRCG1|H2  ♦ ☗TriggerOnTrue
+MBILDL♦ serial CarsRCG1|I3  ♦ ☗TriggerOnFalse
+MBILDL♦ serial CarsRCG1|I2  ♦ ☗TriggerOnTrue
+MBILDR♦ serial CarsRCG1|G3  ♦ ☗TriggerOnFalse
+MBILDR♦ serial CarsRCG1|G2  ♦ ☗TriggerOnTrue
+
+// Beat Quadra MPK Right Inverse
+MBIRTL♦ serial CarsRCG1|N3  ♦ ☗TriggerOnFalse
+MBIRTL♦ serial CarsRCG1|N2  ♦ ☗TriggerOnTrue
+MBIRTR♦ serial CarsRCG1|L3  ♦ ☗TriggerOnFalse
+MBIRTR♦ serial CarsRCG1|L2  ♦ ☗TriggerOnTrue
+MBIRDL♦ serial CarsRCG1|M3  ♦ ☗TriggerOnFalse
+MBIRDL♦ serial CarsRCG1|M2  ♦ ☗TriggerOnTrue
+MBIRDR♦ serial CarsRCG1|K3  ♦ ☗TriggerOnFalse
+MBIRDR♦ serial CarsRCG1|K2  ♦ ☗TriggerOnTrue
+
+
+
+// 3 BLACK Left
+MRC0LL♦ serial CarsRCG1|S3  ♦ ☗TriggerOnTrue
+MRC0LL♦ serial CarsRCG1|S2  ♦ ☗TriggerOnFalse
+MRC0L♦ serial CarsRCG1|T3  ♦ ☗TriggerOnTrue
+MRC0L♦ serial CarsRCG1|T2  ♦ ☗TriggerOnFalse
+MRC0R♦ serial CarsRCG1|V3  ♦ ☗TriggerOnTrue
+MRC0R♦ serial CarsRCG1|V2  ♦ ☗TriggerOnFalse
+MRC0RR♦ serial CarsRCG1|U3  ♦ ☗TriggerOnTrue
+MRC0RR♦ serial CarsRCG1|U2  ♦ ☗TriggerOnFalse
+
+
+// 3 BLACK right
+MRC1LL♦ serial CarsRCG1|c3  ♦ ☗TriggerOnTrue
+MRC1LL♦ serial CarsRCG1|c2  ♦ ☗TriggerOnFalse
+MRC1L♦ serial CarsRCG1|a3  ♦ ☗TriggerOnTrue
+MRC1L♦ serial CarsRCG1|a2  ♦ ☗TriggerOnFalse
+MRC1R♦ serial CarsRCG1|b3  ♦ ☗TriggerOnTrue
+MRC1R♦ serial CarsRCG1|b2  ♦ ☗TriggerOnFalse
+MRC1RR♦ serial CarsRCG1|W3  ♦ ☗TriggerOnTrue
+MRC1RR♦ serial CarsRCG1|W2  ♦ ☗TriggerOnFalse
+
+
+
+///ADD ALTER IF I WANT SIX ON THE KEYBOARD
+//// FRIST SPOT I J K L
+//!afkfoot + leftupfoot ♦ serial CarsRCG2|L3  ♦ ☗TriggerOnFalse
+//!afkfoot + leftupfoot ♦ serial CarsRCG2|L2  ♦ ☗TriggerOnTrue
+//!afkfoot + leftdownfoot ♦ serial CarsRCG2|K3  ♦ ☗TriggerOnFalse 
+//!afkfoot + leftdownfoot ♦ serial CarsRCG2|K2  ♦ ☗TriggerOnTrue
+//!afkfoot + rightupfoot ♦ serial CarsRCG2|J3  ♦ ☗TriggerOnFalse
+//!afkfoot + rightupfoot ♦ serial CarsRCG2|J2  ♦ ☗TriggerOnTrue
+//!afkfoot + rightdownfoot ♦ serial CarsRCG2|I3  ♦ ☗TriggerOnFalse
+//!afkfoot + rightdownfoot ♦ serial CarsRCG2|I2  ♦ ☗TriggerOnTrue
+
+
+///ADD ALTER IF I WANT SIX ON THE KEYBOARD
+// Second SPOT M N O P
+//!afkfoot + leftupfoot ♦ serial CarsRCG2|N3  ♦ ☗TriggerOnFalse
+//!afkfoot + leftupfoot ♦ serial CarsRCG2|N2  ♦ ☗TriggerOnTrue
+//!afkfoot + leftdownfoot ♦ serial CarsRCG2|M3  ♦ ☗TriggerOnFalse 
+//!afkfoot + leftdownfoot ♦ serial CarsRCG2|M2  ♦ ☗TriggerOnTrue
+//!afkfoot + rightupfoot ♦ serial CarsRCG2|P3  ♦ ☗TriggerOnFalse
+//!afkfoot + rightupfoot ♦ serial CarsRCG2|P2  ♦ ☗TriggerOnTrue
+//!afkfoot + rightdownfoot ♦ serial CarsRCG2|O3  ♦ ☗TriggerOnFal//se
+//!afkfoot + rightdownfoot ♦ serial CarsRCG2|O2  ♦ ☗TriggerOnTrue
+
+
+/////////////// END | MIDI PIANO TO RC CAR /////////////
+
+
+
+
+
+
+
+
+/////////////// START | Generic Joystick /////////////
+
+//// FRIST SPOT G H I J 
+
+
+Arc0B0♦ serial CarsRCG1|J3  ♦ ☗TriggerOnFalse
+Arc0B0♦ serial CarsRCG1|J2  ♦ ☗TriggerOnTrue
+Arc0B1♦ serial CarsRCG1|I3  ♦ ☗TriggerOnFalse
+Arc0B1♦ serial CarsRCG1|I2  ♦ ☗TriggerOnTrue
+Arc0B2♦ serial CarsRCG1|H3  ♦ ☗TriggerOnFalse
+Arc0B2♦ serial CarsRCG1|H2  ♦ ☗TriggerOnTrue
+Arc0B3♦ serial CarsRCG1|G3  ♦ ☗TriggerOnFalse
+Arc0B3♦ serial CarsRCG1|G2  ♦ ☗TriggerOnTrue
+
+
+Arc1B0♦ serial CarsRCG1|N3  ♦ ☗TriggerOnFalse
+Arc1B0♦ serial CarsRCG1|N2  ♦ ☗TriggerOnTrue
+Arc1B1♦ serial CarsRCG1|M3  ♦ ☗TriggerOnFalse 
+Arc1B1♦ serial CarsRCG1|M2  ♦ ☗TriggerOnTrue
+Arc1B2♦ serial CarsRCG1|L3  ♦ ☗TriggerOnFalse
+Arc1B2♦ serial CarsRCG1|L2  ♦ ☗TriggerOnTrue
+Arc1B3♦ serial CarsRCG1|K3  ♦ ☗TriggerOnFalse
+Arc1B3♦ serial CarsRCG1|K2  ♦ ☗TriggerOnTrue
+
+Arc0B5♦ serial CarsRCG1|T3  ♦ ☗TriggerOnTrue
+Arc0B5♦ serial CarsRCG1|T2  ♦ ☗TriggerOnFalse
+Arc0B6♦ serial CarsRCG1|S3  ♦ ☗TriggerOnTrue 
+Arc0B6♦ serial CarsRCG1|S2  ♦ ☗TriggerOnFalse
+Arc0B7♦ serial CarsRCG1|V3  ♦ ☗TriggerOnTrue
+Arc0B7♦ serial CarsRCG1|V2  ♦ ☗TriggerOnFalse
+Arc0B8♦ serial CarsRCG1|U3  ♦ ☗TriggerOnTrue
+Arc0B8♦ serial CarsRCG1|U2  ♦ ☗TriggerOnFalse
+
+Arc1B5♦ serial CarsRCG1|a3  ♦ ☗TriggerOnTrue
+Arc1B5♦ serial CarsRCG1|a2  ♦ ☗TriggerOnFalse
+Arc1B6♦ serial CarsRCG1|c3  ♦ ☗TriggerOnTrue 
+Arc1B6♦ serial CarsRCG1|c2  ♦ ☗TriggerOnFalse
+Arc1B7♦ serial CarsRCG1|b3  ♦ ☗TriggerOnTrue
+Arc1B7♦ serial CarsRCG1|b2  ♦ ☗TriggerOnFalse
+Arc1B8♦ serial CarsRCG1|W3  ♦ ☗TriggerOnTrue
+Arc1B8♦ serial CarsRCG1|W2  ♦ ☗TriggerOnFalse
+
+
+//Arc0SLeft
+//Arc0SRight
+//Arc0SDown
+//Arc0SUp
+//Arc1SLeft
+//Arc1SRight
+//Arc1SDown
+//Arc1SUp
+/////////////// END | Generic Joystick /////////////
+
+
+/////////////// START | MIC Joystick /////////////
+
+
+MICB0♦ serial CarsRCG1|b3  ♦ ☗TriggerOnTrue
+MICB0♦ serial CarsRCG1|b2  ♦ ☗TriggerOnFalse
+MICB1♦ serial CarsRCG1|a3  ♦ ☗TriggerOnTrue
+MICB1♦ serial CarsRCG1|a2  ♦ ☗TriggerOnFalse
+MICLeft♦ serial CarsRCG1|a3  ♦ ☗TriggerOnTrue
+MICLeft♦ serial CarsRCG1|a2  ♦ ☗TriggerOnFalse
+MICRight♦ serial CarsRCG1|b3  ♦ ☗TriggerOnTrue
+MICRight♦ serial CarsRCG1|b2  ♦ ☗TriggerOnFalse
+MICDown ♦ serial CarsRCG1|c3 W3  ♦ ☗TriggerOnTrue
+MICDown ♦ serial CarsRCG1|c2 W2 ♦ ☗TriggerOnFalse
+MICUp♦ serial CarsRCG1|a3 b3  ♦ ☗TriggerOnTrue
+MICUp♦ serial CarsRCG1|a2 b2  ♦ ☗TriggerOnFalse
+
+
+/////////////// END | MIC Joystick /////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//// FRIST SPOT I J K L
+!afkfoot + leftupfoot ♦ serial CarsRCG2|L3  ♦ ☗TriggerOnFalse
+!afkfoot + leftupfoot ♦ serial CarsRCG2|L2  ♦ ☗TriggerOnTrue
+!afkfoot + leftdownfoot ♦ serial CarsRCG2|K3  ♦ ☗TriggerOnFalse 
+!afkfoot + leftdownfoot ♦ serial CarsRCG2|K2  ♦ ☗TriggerOnTrue
+!afkfoot + rightupfoot ♦ serial CarsRCG2|J3  ♦ ☗TriggerOnFalse
+!afkfoot + rightupfoot ♦ serial CarsRCG2|J2  ♦ ☗TriggerOnTrue
+!afkfoot + rightdownfoot ♦ serial CarsRCG2|I3  ♦ ☗TriggerOnFalse
+!afkfoot + rightdownfoot ♦ serial CarsRCG2|I2  ♦ ☗TriggerOnTrue
+
+// Second SPOT M N O P
+!afkfoot + leftupfoot ♦ serial CarsRCG2|N3  ♦ ☗TriggerOnFalse
+!afkfoot + leftupfoot ♦ serial CarsRCG2|N2  ♦ ☗TriggerOnTrue
+!afkfoot + leftdownfoot ♦ serial CarsRCG2|M3  ♦ ☗TriggerOnFalse 
+!afkfoot + leftdownfoot ♦ serial CarsRCG2|M2  ♦ ☗TriggerOnTrue
+!afkfoot + rightupfoot ♦ serial CarsRCG2|P3  ♦ ☗TriggerOnFalse
+!afkfoot + rightupfoot ♦ serial CarsRCG2|P2  ♦ ☗TriggerOnTrue
+!afkfoot + rightdownfoot ♦ serial CarsRCG2|O3  ♦ ☗TriggerOnFalse
+!afkfoot + rightdownfoot ♦ serial CarsRCG2|O2  ♦ ☗TriggerOnTrue
+
+
+
+
+
+
+
+
+//X2SBL ♦ ble|all|sbl.  ;♦ ☗TriggerOnTrue
+//X2SBL ♦ ble|all|sbl'  ;♦ ☗TriggerOnFalse
+//X2SBR♦  ble|all|sbr.  ;♦ ☗TriggerOnTrue
+//X2SBR♦  ble|all|sbr'  ;♦ ☗TriggerOnFalse
+//X2BL♦   ble|all|bl.  ;♦ ☗TriggerOnTrue
+//X2BL♦   ble|all|bl'  ;♦ ☗TriggerOnFalse
+//X2BR♦   ble|all|br.  ;♦ ☗TriggerOnTrue
+//X2BR♦   ble|all|br'  ;♦ ☗TriggerOnFalse
+//X2BU♦   ble|all|bu.  ;♦ ☗TriggerOnTrue
+//X2BU♦   ble|all|bu'  ;♦ ☗TriggerOnFalse
+//X2BD♦   ble|all|bd.  ;♦ ☗TriggerOnTrue
+//X2BD♦   ble|all|bd'  ;♦ ☗TriggerOnFalse
+//X2AL♦   ble|all|al.  ;♦ ☗TriggerOnTrue
+//X2AL♦   ble|all|al'  ;♦ ☗TriggerOnFalse
+//X2AR♦   ble|all|ar.  ;♦ ☗TriggerOnTrue
+//X2AR♦   ble|all|ar'  ;♦ ☗TriggerOnFalse
+//X2AU♦   ble|all|au.  ;♦ ☗TriggerOnTrue
+//X2AU♦   ble|all|au'  ;♦ ☗TriggerOnFalse
+//X2AD♦   ble|all|ad.  ;♦ ☗TriggerOnTrue
+//X2AD♦   ble|all|ad'  ;♦ ☗TriggerOnFalse
+//X2M♦    ble|all|ml.  ;♦ ☗TriggerOnTrue
+//X2M♦    ble|all|ml'  ;♦ ☗TriggerOnFalse
+//X2S♦    ble|all|mr.  ;♦ ☗TriggerOnTrue
+//X2S♦    ble|all|mr'  ;♦ ☗TriggerOnFalse
+//X2JL♦   ble|all|jl.  ;♦ ☗TriggerOnTrue
+//X2JL♦   ble|all|jl'  ;♦ ☗TriggerOnFalse
+//X2JR♦   ble|all|jr.  ;♦ ☗TriggerOnTrue
+//X2JR♦   ble|all|jr'  ;♦ ☗TriggerOnFalse
+//X2TL♦   ble|all|tl.  ;♦ ☗TriggerOnTrue
+//X2TL♦   ble|all|tl'  ;♦ ☗TriggerOnFalse
+//X2TR♦   ble|all|tr.  ;♦ ☗TriggerOnTrue
+//X2TR♦   ble|all|tr'  ;♦ ☗TriggerOnFalse
+//X2JoyLeftLeft ♦ ble|all|jlh%-1.0  ;♦ ☗TriggerOnTrue
+//X2JoyLeftRight ♦ ble|all|jlh%1.0  ;♦ ☗TriggerOnTrue
+//X2jlHNeutral ♦ ble|all|jlh%0  ;♦ ☗TriggerOnTrue
+//X2JoyLeftUp ♦ ble|all|jlv%1.0  ;♦ ☗TriggerOnTrue
+//X2JoyLeftDown♦ ble|all|jlv%-1.0  ;♦ ☗TriggerOnTrue
+//X2jlVNeutral♦ ble|all|jlv%0  ;♦ ☗TriggerOnTrue
+//X2JoyRightLeft ♦ ble|all|jrh%-1.0  ;♦ ☗TriggerOnTrue
+//X2JoyRightRight ♦ ble|all|jrh%1.0  ;♦ ☗TriggerOnTrue
+//X2jrHNeutral ♦ ble|all|jrh%0  ;♦ ☗TriggerOnTrue
+//X2JoyRightUp ♦ ble|all|jrv%1.0  ;♦ ☗TriggerOnTrue
+//X2JoyRightDown♦ ble|all|jrv%-1.0  ;♦ ☗TriggerOnTrue
+//X2jrVNeutral♦ ble|all|jrv%0  ;♦ ☗TriggerOnTrue
+//
+//
+//keyj ♦ serial allxbox|a. ;  ♦ ☗TriggerOnTrue
+//keyj ♦ serial allxbox|a' ;  ♦ ☗TriggerOnFalse
+//
+//keyk ♦ serial allxbox|b. ;  ♦ ☗TriggerOnTrue
+//keyk ♦ serial allxbox|b' ;  ♦ ☗TriggerOnFalse
+//
+//keyl ♦ serial allxbox|Y. ;  ♦ ☗TriggerOnTrue
+//keyl ♦ serial allxbox|Y' ;  ♦ ☗TriggerOnFalse
+//
+//keym ♦ serial allxbox|x. ;  ♦ ☗TriggerOnTrue
+//keym ♦ serial allxbox|x' ;  ♦ ☗TriggerOnFalse
+//
+//
+////XBOX SERIAL
+//+ X2SBL ♦ serial allxbox|sbl. ;  ♦ ☗TriggerOnTrue
+// X2SBL ♦ serial allxbox|sbl' ;  ♦ ☗TriggerOnFalse
+// X2SBR♦ serial allxbox|sbr. ;  ♦ ☗TriggerOnTrue
+// X2SBR♦ serial allxbox|sbr' ;  ♦ ☗TriggerOnFalse
+// X2BL♦ serial allxbox|bl. ;  ♦ ☗TriggerOnTrue
+// X2BL♦ serial allxbox|bl' ;  ♦ ☗TriggerOnFalse
+// X2BR♦ serial allxbox|br. ;  ♦ ☗TriggerOnTrue
+// X2BR♦ serial allxbox|br' ;  ♦ ☗TriggerOnFalse
+// X2BU♦ serial allxbox|bu. ;  ♦ ☗TriggerOnTrue
+// X2BU♦ serial allxbox|bu' ;  ♦ ☗TriggerOnFalse
+// X2BD♦ serial allxbox|bd. ;  ♦ ☗TriggerOnTrue
+// X2BD♦ serial allxbox|bd' ;  ♦ ☗TriggerOnFalse
+// X2AL♦ serial allxbox|al. ;  ♦ ☗TriggerOnTrue
+// X2AL♦ serial allxbox|al' ;  ♦ ☗TriggerOnFalse
+// X2AR♦ serial allxbox|ar. ;  ♦ ☗TriggerOnTrue
+// X2AR♦ serial allxbox|ar' ;  ♦ ☗TriggerOnFalse
+// X2AU♦ serial allxbox|au. ;  ♦ ☗TriggerOnTrue
+// X2AU♦ serial allxbox|au' ;  ♦ ☗TriggerOnFalse
+// X2AD♦ serial allxbox|ad. ;  ♦ ☗TriggerOnTrue
+// X2AD♦ serial allxbox|ad' ;  ♦ ☗TriggerOnFalse
+// X2M♦ serial allxbox|ml. ;  ♦ ☗TriggerOnTrue
+// X2M♦ serial allxbox|ml' ;  ♦ ☗TriggerOnFalse
+// X2S♦ serial allxbox|mr. ;  ♦ ☗TriggerOnTrue
+// X2S♦ serial allxbox|mr' ;  ♦ ☗TriggerOnFalse
+// X2JL♦ serial allxbox|jl. ;  ♦ ☗TriggerOnTrue
+// X2JL♦ serial allxbox|jl' ;  ♦ ☗TriggerOnFalse
+// X2JR♦ serial allxbox|jr. ;  ♦ ☗TriggerOnTrue
+// X2JR♦ serial allxbox|jr' ;  ♦ ☗TriggerOnFalse
+// X2TL♦ serial allxbox|tl. ;  ♦ ☗TriggerOnTrue
+// X2TL♦ serial allxbox|tl' ;  ♦ ☗TriggerOnFalse
+// X2TR♦ serial allxbox|tr. ;  ♦ ☗TriggerOnTrue
+// X2TR♦ serial allxbox|tr' ;  ♦ ☗TriggerOnFalse
+// X2JoyLeftLeft ♦ serial allxbox|jlh%-1.0  ; ♦ ☗TriggerOnTrue
+// X2JoyLeftRight ♦ serial allxbox|jlh%1.0  ; ♦ ☗TriggerOnTrue
+// X2jlHNeutral ♦ serial allxbox|jlh%0  ; ♦ ☗TriggerOnTrue
+// X2JoyLeftUp ♦ serial allxbox|jlv%1.0  ; ♦ ☗TriggerOnTrue
+// X2JoyLeftDown♦ serial allxbox|jlv%-1.0  ; ♦ ☗TriggerOnTrue
+// X2jlVNeutral♦ serial allxbox|jlv%0  ; ♦ ☗TriggerOnTrue
+// X2JoyRightLeft ♦ serial allxbox|jrh%-1.0  ♦ ☗TriggerOnTrue
+// X2JoyRightRight ♦ serial allxbox|jrh%1.0  ♦ ☗TriggerOnTrue
+// X2jrHNeutral ♦ serial allxbox|jrh%0  ♦ ☗TriggerOnTrue
+// X2JoyRightUp ♦ serial allxbox|jrv%1.0  ♦ ☗TriggerOnTrue
+// X2JoyRightDown♦ serial allxbox|jrv%-1.0  ♦ ☗TriggerOnTrue
+// X2jrVNeutral♦ serial allxbox|jrv%0  ♦ ☗TriggerOnTrue
+//
+//
+//
+////↓100 ↑
+////XBOX SERIAL Left
+//LeftDownFoot + X2SBL  ♦ serial xLeft|sbl. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2SBL  ♦ serial xLeft|sbl' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2SBR ♦  serial xLeft|sbr. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2SBR ♦  serial xLeft|sbr' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2BL ♦   serial xLeft|bl. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2BL ♦   serial xLeft|bl' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2BR ♦   serial xLeft|br. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2BR ♦   serial xLeft|br' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2BU ♦   serial xLeft|bu. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2BU ♦   serial xLeft|bu' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2BD ♦   serial xLeft|bd. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2BD ♦   serial xLeft|bd' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2AL ♦   serial xLeft|al. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2AL ♦   serial xLeft|al' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2AR ♦   serial xLeft|ar. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2AR ♦   serial xLeft|ar' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2AU ♦   serial xLeft|au. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2AU ♦   serial xLeft|au' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2AD ♦   serial xLeft|ad. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2AD ♦   serial xLeft|ad' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2M ♦    serial xLeft|ml. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2M ♦    serial xLeft|ml' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2S ♦    serial xLeft|mr. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2S ♦    serial xLeft|mr' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2JL ♦   serial xLeft|jl. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2JL ♦   serial xLeft|jl' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2JR ♦   serial xLeft|jr. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2JR ♦   serial xLeft|jr' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2TL ♦   serial xLeft|tl. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2TL ♦   serial xLeft|tl' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2TR ♦   serial xLeft|tr. ;  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2TR ♦   serial xLeft|tr' ;  ♦ ☗TriggerOnFalse
+//LeftDownFoot + X2JoyLeftLeft  ♦ serial xLeft|jlh%-1.0  ; ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2JoyLeftRight  ♦ serial xLeft|jlh%1.0  ; ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2jlHNeutral  ♦ serial xLeft|jlh%0  ; ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2JoyLeftUp  ♦ serial xLeft|jlv%1.0  ; ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2JoyLeftDown ♦ serial xLeft|jlv%-1.0  ; ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2jlVNeutral ♦ serial xLeft|jlv%0  ; ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2JoyRightLeft  ♦ serial xLeft|jrh%-1.0  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2JoyRightRight  ♦ serial xLeft|jrh%1.0  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2jrHNeutral  ♦ serial xLeft|jrh%0  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2JoyRightUp  ♦ serial xLeft|jrv%1.0  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2JoyRightDown ♦ serial xLeft|jrv%-1.0  ♦ ☗TriggerOnTrue
+//LeftDownFoot + X2jrVNeutral ♦ serial xLeft|jrv%0  ♦ ☗TriggerOnTrue
+//
+//
+
+
+
+// 
+//
+////XBOX SERIAL Right
+//RightDownFoot + X2SBL  ♦ serial xRight|sbl. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2SBL  ♦ serial xRight|sbl' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2SBR ♦  serial xRight|sbr. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2SBR ♦  serial xRight|sbr' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2BL ♦   serial xRight|bl. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2BL ♦   serial xRight|bl' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2BR ♦   serial xRight|br. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2BR ♦   serial xRight|br' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2BU ♦   serial xRight|bu. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2BU ♦   serial xRight|bu' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2BD ♦   serial xRight|bd. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2BD ♦   serial xRight|bd' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2AL ♦   serial xRight|al. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2AL ♦   serial xRight|al' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2AR ♦   serial xRight|ar. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2AR ♦   serial xRight|ar' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2AU ♦   serial xRight|au. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2AU ♦   serial xRight|au' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2AD ♦   serial xRight|ad. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2AD ♦   serial xRight|ad' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2M ♦    serial xRight|ml. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2M ♦    serial xRight|ml' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2S ♦    serial xRight|mr. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2S ♦    serial xRight|mr' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2JL ♦   serial xRight|jl. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2JL ♦   serial xRight|jl' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2JR ♦   serial xRight|jr. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2JR ♦   serial xRight|jr' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2TL ♦   serial xRight|tl. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2TL ♦   serial xRight|tl' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2TR ♦   serial xRight|tr. ;  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2TR ♦   serial xRight|tr' ;  ♦ ☗TriggerOnFalse
+//RightDownFoot + X2JoyLeftLeft  ♦ serial xRight|jlh%-1.0  ; ♦ ☗TriggerOnTrue
+//RightDownFoot + X2JoyLeftRight  ♦ serial xRight|jlh%1.0  ; ♦ ☗TriggerOnTrue
+//RightDownFoot + X2jlHNeutral  ♦ serial xRight|jlh%0  ; ♦ ☗TriggerOnTrue
+//RightDownFoot + X2JoyLeftUp  ♦ serial xRight|jlv%1.0  ; ♦ ☗TriggerOnTrue
+//RightDownFoot + X2JoyLeftDown ♦ serial xRight|jlv%-1.0  ; ♦ ☗TriggerOnTrue
+//RightDownFoot + X2jlVNeutral ♦ serial xRight|jlv%0  ; ♦ ☗TriggerOnTrue
+//RightDownFoot + X2JoyRightLeft  ♦ serial xRight|jrh%-1.0  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2JoyRightRight  ♦ serial xRight|jrh%1.0  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2jrHNeutral  ♦ serial xRight|jrh%0  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2JoyRightUp  ♦ serial xRight|jrv%1.0  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2JoyRightDown ♦ serial xRight|jrv%-1.0  ♦ ☗TriggerOnTrue
+//RightDownFoot + X2jrVNeutral ♦ serial xRight|jrv%0  ♦ ☗TriggerOnTrue

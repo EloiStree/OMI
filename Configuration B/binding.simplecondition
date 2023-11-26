@@ -1,0 +1,68 @@
+
+isaac + NP0♦ udp 127.0.0.1:2501|sc:(S↓ 100> S↑) x 10 ♦ ☗TriggerOnTrue
+isaac + NP1♦ udp 127.0.0.1:2501|sc:Enter↓ 100> [[Eloi]] 100> Enter↑ ♦ ☗TriggerOnTrue
+isaac + NP2♦ udp 127.0.0.1:2501|sc:(Down↓ 100> Down ↑ Left↓ 100> Left↑) x 10  ♦ ☗TriggerOnTrue
+isaac + NP3♦ udp 127.0.0.1:2501|sc: Down↕1000  10> Left↕1000  10> Up↕1000  10> Right↕1000 ♦ ☗TriggerOnTrue
+NP4♦ ♦ ☗TriggerOnTrue
+NP5♦ ♦ ☗TriggerOnTrue
+NP6♦ ♦ ☗TriggerOnTrue
+NP7♦ ♦ ☗TriggerOnTrue
+NP8♦ ♦ ☗TriggerOnTrue
+NP9♦ udp 127.0.0.1:2501|sc: (T↓19 E↓19 s↓19 t↓19 enter↓10) x 10 ♦ ☗TriggerOnTrue
+
+
+XSBL♦ uudp 127.0.0.1:2501| (S↓ 100 S↑) x 10 ♦ ☗TriggerOnTrue
+XSBR♦ winkey:p:q 100> winkey:r:q  ♦ ☗TriggerOnTrue
+XBL
+XBR
+XBU
+XBD
+XAL
+XAR
+XAU
+XAD
+XM
+XS
+XJL
+XJR
+XTL♦
+XTR♦
+
+XBD♦ winkey:p:a ♦ ☗TriggerOnTrue
+XBD♦ winkey:r:a ♦ ☗TriggerOnFalse
+XTL♦ winkey:p:e ♦ ☗TriggerOnTrue
+XTL♦ winkey:r:e ♦ ☗TriggerOnFalse
+XTR♦ winkey:p:space ♦ ☗TriggerOnTrue
+XTR♦ winkey:r:space ♦ ☗TriggerOnFalse
+
+
+JoyRightRight♦ winkey:p:d ♦ ☗TriggerOnTrue
+JoyRightRight♦ winkey:r:d ♦ ☗TriggerOnFalse
+JoyRightLeft♦ winkey:p:q ♦ ☗TriggerOnTrue
+JoyRightLeft♦ winkey:r:q ♦ ☗TriggerOnFalse
+JoyRightDown♦ winkey:p:s ♦ ☗TriggerOnTrue
+JoyRightDown♦ winkey:r:s ♦ ☗TriggerOnFalse
+JoyRightUp♦ winkey:p:z ♦ ☗TriggerOnTrue
+JoyRightUp♦ winkey:r:z ♦ ☗TriggerOnFalse
+JoyLeftRight♦ winkey:p:right ♦ ☗TriggerOnTrue
+JoyLeftRight♦ winkey:r:right ♦ ☗TriggerOnFalse
+JoyLeftLeft♦ winkey:p:left ♦ ☗TriggerOnTrue
+JoyLeftLeft♦ winkey:r:left ♦ ☗TriggerOnFalse
+JoyLeftDown♦ winkey:p:down ♦ ☗TriggerOnTrue
+JoyLeftDown♦ winkey:r:down ♦ ☗TriggerOnFalse
+JoyLeftUp♦ winkey:p:up ♦ ☗TriggerOnTrue
+JoyLeftUp♦ winkey:r:up ♦ ☗TriggerOnFalse
+
+
+JoyLeftDown♦
+JoyLeftUp♦
+JoyRightRight♦
+JoyRightLeft♦
+JoyRightDown♦
+JoyRightUp♦
+XTLLow♦
+XTRLow♦
+XTLMedium♦
+XTRMedium♦
+XTLHight♦
+XTRHight♦

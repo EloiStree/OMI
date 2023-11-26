@@ -1,0 +1,275 @@
+//mordhau+leftupfoot↓1000  ♦ macro:DodgeLeft♦  ☗TriggerOnTrue ☗TriggerOnFalse
+//mordhau+rightupfoot↓1000  ♦ macro:DodgeRight♦  ☗TriggerOnTrue ☗TriggerOnFalse
+//mordhau+leftdownfoot↓1000  ♦ macro:DodgeBack ♦  ☗TriggerOnTrue ☗TriggerOnFalse
+//
+//mordhau+leftupfoot↓1000  ♦ macro:lookleft♦  ☗TriggerOnTrue ☗TriggerOnFalse
+//mordhau+rightupfoot↓1000  ♦ macro:lookright♦  ☗TriggerOnTrue ☗TriggerOnFalse
+//mordhau+leftdownfoot↓1000  ♦ macro:lookdown ♦  ☗TriggerOnTrue ☗TriggerOnFalse
+
+RightUpFoot + LeftUpFoot + LeftDownFoot + RightDownFoot  ♦ bool:afkfoot:true ♦ ☗TriggerOnTrue
+RightUpFoot + LeftUpFoot + LeftDownFoot + RightDownFoot  ♦ bool:afkfoot:false ♦ ☗TriggerOnFalse
+
+LeftUpFoot + LeftDownFoot  ♦ bool:afkfootleft:true ♦ ☗TriggerOnTrue
+LeftUpFoot + LeftDownFoot   ♦ bool:afkfootleft:false ♦ ☗TriggerOnFalse
+
+
+RightUpFoot +  RightDownFoot  ♦ bool:afkfootright:true ♦ ☗TriggerOnTrue
+RightUpFoot +  RightDownFoot  ♦ bool:afkfootright:false ♦ ☗TriggerOnFalse
+
+//!afkfoot + diablo + LeftUpFoot ♦ winkey:s:z ♦ ☗TriggerOnTrue
+//!afkfoot + diablo + RightUpFoot ♦ winkey:r:m ♦ ☗TriggerOnTrue
+//!afkfoot + diablo + RightUpFoot ♦ winkey:p:m ♦ ☗TriggerOnTrue
+//!afkfoot + diablo + LeftDownFoot ♦ winkey:stroke:q ♦ ☗TriggerOnTrue
+//!afkfoot + diablo + RightDownFoot ♦ winkey:stroke:space  ♦ ☗TriggerOnTrue
+
+ //diablo + LeftUpFoot ♦ macro:all:map  ♦ ☗TriggerOnTrue
+ //diablo + LeftDownFoot ♦ macro:all:power2 ♦ ☗TriggerOnTrue
+ //diablo + LeftDownFoot ♦ macro:all:dashstart ♦ ☗TriggerOnTrue
+ //diablo + LeftDownFoot ♦ macro:all:dashstop ♦ ☗TriggerOnFalse
+ 
+ // !afkfootright + diablo + RightUpFoot ♦ udp all|mr:20 ♦ ☗TriggerOnTrue
+ //// !afkfootright + diablo + RightDownFoot ♦ udp all|ml:20 ♦ ☗TriggerOnTrue
+ // diablo + RightUpFoot + RightDownFoot ♦ udp all|ml:20 ♦ ☗TriggerOnTrue
+ 
+
+
+//diablo + WMLeft♦ udp all|jlh%-1.0  ♦ ☗TriggerOnTrue
+//diablo + WMRight♦ udp all|jlh%1.0  ♦ ☗TriggerOnTrue
+//diablo + WMNeutralX ♦ udp all|jlh%0  ♦ ☗TriggerOnTrue
+//
+//diablo + WMUp ♦ udp all|jlv%1.0  ♦ ☗TriggerOnTrue
+//diablo + WMDown ♦ udp all|jlv%-1.0  ♦ ☗TriggerOnTrue
+//diablo + WMNeutralY♦ udp all|jlv%0  ♦ ☗TriggerOnTrue
+//diablo + WMNeutralY + WMNeutralX ♦ macro:all:showitem  ♦ ☗TriggerOnTrue
+//
+//
+//diablo + WMFullRight♦macro:all:heal♦ ☗TriggerOnTrue
+//diablo + WMFullLeft♦macro:all:heal♦ ☗TriggerOnTrue
+//diablo + WMBorderRight♦macro:all:dash♦ ☗TriggerOnTrue
+//diablo + WMBorderLeft♦macro:all:dash♦ ☗TriggerOnTrue
+//
+////diablo+ afkfootleft♦macro:all:mount ♦ ☗TriggerOnTrue
+//
+//diablo + WMFullUp♦macro:all:Y:200♦ ☗TriggerOnTrue
+//diablo + WMFullDown♦macro:all:power3♦ ☗TriggerOnTrue
+//
+////diablo + WMSpeedFullDown♦macro:all:accepter ♦ ☗TriggerOnTrue
+//diablo + WMSpeedDown♦macro:all:mount♦ ☗TriggerOnTrue ☗TriggerOnFalse
+////diablo + WMSpeedNeutral♦macro:all:showitem♦ ☗TriggerOnTrue
+//diablo + WMSpeedUp♦macro:all:teleport♦ ☗TriggerOnTrue
+//diablo + WMSpeedUp♦macro:all:dash♦ ☗TriggerOnFalse
+////diablo + WMSpeedFullUp♦macro:all:accepter♦ ☗TriggerOnTrue
+//diablo + WMThumbUp♦macro:all:power4start♦ ☗TriggerOnTrue
+//diablo + WMThumbUp♦macro:all:power4stop♦ ☗TriggerOnFalse
+//diablo + WMThumbFire♦macro:all:power5start♦ ☗TriggerOnTrue
+//diablo + WMThumbFire♦macro:all:power5stop♦ ☗TriggerOnFalse
+//diablo + WMThumbDown♦macro:all:power2start  ♦ ☗TriggerOnTrue
+//diablo + WMThumbDown♦macro:all:power2stop  ♦ ☗TriggerOnFalse
+////diablo + WMFire♦macro:all:power5start♦ ☗TriggerOnTrue
+////diablo + WMFire♦macro:all:power5stop♦ ☗TriggerOnFalse
+//diablo + WMOptionForward♦macro:all:map♦ ☗TriggerOnTrue
+//diablo + WMOptionBack♦macro:all:inventory♦ ☗TriggerOnTrue
+
+
+
+
+// LeftUpFoot ♦ macro:switchmainscreen ♦ ☗TriggerOnTrue
+// RightUpFoot ♦ macro:switchsecondaryscreen ♦ ☗TriggerOnTrue
+//
+//mordhau + Pedal  ♦ macro:fetchstolenorfist ♦ ☗TriggerOnTrue
+//mordhau + !Pedal  ♦ macro:fetchdistance ♦   ☗TriggerOnTrue
+//
+//mordhau + rightdownfoot  ♦  macro:feinattack  ♦☗TriggerOnTrue
+//mordhau + !rightdownfoot  ♦  macro:feinattack ♦   ☗TriggerOnTrue
+//
+//mordhau + rightupfoot  ♦  macro:kick  ♦☗TriggerOnTrue
+//mordhau + !rightupfoot  ♦  macro:kick ♦   ☗TriggerOnTrue
+
+//xbu ♦  macro:m2 ♦   ☗TriggerOnTrue
+//xbd ♦  macro:m3 ♦   ☗TriggerOnTrue
+//xbr ♦  macro:m4 ♦   ☗TriggerOnTrue
+
+
+
+
+//bonjour ♦  macro:playsomenote ♦   ☗TriggerOnTrue
+
+
+
+//BeatTopLeftLeft♦ macro:current:sbl ♦   ☗TriggerOnTrue
+//BeatTopLeft♦ macro:current:sbr ♦   ☗TriggerOnTrue
+//BeatDownLeftLeft♦ macro:current:tl ♦   ☗TriggerOnTrue
+//BeatDownLeft♦ macro:current:tr ♦   ☗TriggerOnTrue
+//BeatTopRightRight♦ macro:current:al ♦   ☗TriggerOnTrue
+//BeatTopRight♦ macro:current:ar ♦   ☗TriggerOnTrue
+//BeatDownRightRight♦ macro:current:validate ♦   ☗TriggerOnTrue
+//BeatDownRight♦ macro:current:cancel ♦   ☗TriggerOnTrue
+
+
+//LR0 ♦  macro:all:heal      ♦   ☗TriggerOnTrue
+//LR1 ♦  macro:all:mount      ♦   ☗TriggerOnTrue
+//LR2 ♦  macro:all:teleport  ♦   ☗TriggerOnTrue
+//LR3 ♦  macro:all:dash      ♦   ☗TriggerOnTrue
+//LR4 ♦  macro:all:power1    ♦   ☗TriggerOnTrue
+//LR5 ♦  macro:all:power2    ♦   ☗TriggerOnTrue
+//LR6 ♦  macro:all:power3    ♦   ☗TriggerOnTrue
+//LR7 ♦  macro:all:power4    ♦   ☗TriggerOnTrue
+//LR8 ♦  macro:all:power5    ♦   ☗TriggerOnTrue
+//LR9 ♦  macro:all:power6    ♦   ☗TriggerOnTrue
+//LR10♦  macro:all:map♦ ☗TriggerOnTrue
+//LR11♦  macro:all:inventory ♦   ☗TriggerOnTrue
+//LR12♦  macro:all:teleport ♦   ☗TriggerOnTrue
+//LR13♦  macro:all:ml ♦   ☗TriggerOnTrue
+//LR14♦  macro:all:mr ♦   ☗TriggerOnTrue
+
+//LR0 ♦  macro:all:heal      ♦   ☗TriggerOnTrue
+//LR1 ♦  macro:all:mount      ♦   ☗TriggerOnTrue
+//LR2 ♦  macro:all:teleport  ♦   ☗TriggerOnTrue
+//LR3 ♦  macro:all:dash      ♦   ☗TriggerOnTrue
+//LR4 ♦  macro:all:power1    ♦   ☗TriggerOnTrue
+//LR5 ♦  macro:all:power2    ♦   ☗TriggerOnTrue
+//LR6 ♦  macro:all:power3    ♦   ☗TriggerOnTrue
+//LR7 ♦  macro:all:power4    ♦   ☗TriggerOnTrue
+//LR8 ♦  macro:all:power5    ♦   ☗TriggerOnTrue
+//LR9 ♦  macro:all:power6    ♦   ☗TriggerOnTrue
+//LR10♦  macro:all:map♦ ☗TriggerOnTrue
+//LR11♦  macro:all:inventory ♦   ☗TriggerOnTrue
+//LR12♦  macro:all:teleport ♦   ☗TriggerOnTrue
+//LR13♦  macro:all:ml ♦   ☗TriggerOnTrue
+//LR14♦  macro:all:mr ♦   ☗TriggerOnTrue
+
+
+
+
+//LRB0 ♦   macro:all:power1start♦   ☗TriggerOnTrue
+//LRB1 ♦   macro:all:power2start♦   ☗TriggerOnTrue
+//LRB2 ♦   macro:all:power3start♦   ☗TriggerOnTrue
+//LRB3 ♦   macro:all:power4start♦   ☗TriggerOnTrue
+//LRB4 ♦   macro:all:power5start♦   ☗TriggerOnTrue
+//LRB5 ♦   macro:all:power6start♦   ☗TriggerOnTrue
+//LRB6♦   macro:all:heal    ♦   ☗TriggerOnTrue
+//LRB7♦   macro:all:dash    ♦   ☗TriggerOnTrue
+//LRB8♦   macro:all:teleport    ♦   ☗TriggerOnTrue
+//LRB9♦   macro:all:ml    ♦   ☗TriggerOnTrue
+
+//LRB0 ♦   macro:all:power1stop♦   ☗TriggerOnFalse
+//LRB1 ♦   macro:all:power2stop♦   ☗TriggerOnFalse
+//LRB2 ♦   macro:all:power3stop♦   ☗TriggerOnFalse
+//LRB3 ♦   macro:all:power4stop♦   ☗TriggerOnFalse
+//LRB4 ♦   macro:all:power5stop♦   ☗TriggerOnFalse
+//LRB5 ♦   macro:all:power6stop♦   ☗TriggerOnFalse
+//LRB6♦   macro:all:heal    ♦   ☗TriggerOnFalse
+//LRB7♦   macro:all:dash    ♦   ☗TriggerOnFalse
+//LRB8♦   macro:all:power5    ♦   ☗TriggerOnFalse
+//LRB9♦   macro:all:power6    ♦   ☗TriggerOnFalse
+
+
+LR0 ♦  macro:all:rejoindown  ♦   ☗TriggerOnTrue
+LR1 ♦  macro:all:accepterdouble  ♦   ☗TriggerOnTrue
+LR2 ♦  macro:all:heal  ♦   ☗TriggerOnTrue
+LR3 ♦  bool:autoattack:switch ♦   ☗TriggerOnTrue
+LR4 ♦  udp all|stop♦   ☗TriggerOnTrue
+LR5 ♦  udp all| jlh%0.5  jlv%0.5 a♦    ☗TriggerOnTrue
+LR6 ♦  udp all| jl%0.0%0.0    ♦   ☗TriggerOnTrue
+LR7 ♦  udp all| jl%-0.5%0.5♦   ☗TriggerOnTrue
+LR8 ♦  udp all| jl%0.5%-0.5 ♦   ☗TriggerOnTrue
+LR9 ♦  udp all| jl%0.5%0.5 ♦   ☗TriggerOnTrue
+LR10♦  udp all| jl%-0.5%-0.5 ♦   ☗TriggerOnTrue
+LR11♦ udp all| tl%0  200> tr%0 ♦   ☗TriggerOnFalse
+LR11♦ udp 127.0.0.1:2504|  ♦   ☗TriggerOnTrue
+
+//diablo + autoattack♦   macro:all:123456fast♦   ☗TriggerOnTrue  ☗LoopOnTrue 14000
+
+//Testing zone cancel menu
+LR13♦ udp all| ml ♦   ☗TriggerOnTrue
+//Testing zone menu
+LR14♦ udp all| ml 80> lb  500> jlv%-0.5 500> jlv%0 500> jlv%-0.5 500> jlv%0 ♦   ☗TriggerOnTrue
+
+
+LRB7♦ udp all|flush release ♦ ☗TriggerOnTrue
+
+//Change tier 3
+
+//LRB8♦ udp all|  ml 200> lb  200> ad 2000> flush 100> ad 100> ad 100>  a 15000> ar 100> a 100> au 100> ad 100> ad 100> ad 100> ad 100> a 100> al 100> a    ♦   ☗TriggerOnTrue
+//LRB8♦ udp all|  jl%1.0%1.0 200> jrh%1.0  A_ X_ ♦  ☗TriggerOnTrue
+//LRB8♦ udp all|  jl%1.0%1.0 ♦  ☗TriggerOnTrue
+
+//Change tier 4
+LRB4 ♦ macro:all:accepter ♦ ☗TriggerOnTrue
+LRB5 ♦ macro:all:refuser ♦ ☗TriggerOnTrue
+LRB5 ♦ macro:all:longb ♦ ☗TriggerOnTrue
+
+LRB6 ♦ macro:all:tier1 ♦ ☗TriggerOnTrue
+LRB7 ♦ macro:all:tier2 ♦ ☗TriggerOnTrue
+LRB8 ♦ macro:all:tier3 ♦ ☗TriggerOnTrue
+LRB9 ♦ macro:all:tier4 ♦ ☗TriggerOnTrue
+
+//LR12♦  macro:m12 ♦   ☗TriggerOnTrue
+//LR13♦  macro:m13 ♦   ☗TriggerOnTrue
+//LR14♦  macro:m14 ♦   ☗TriggerOnTrue
+//LRB0♦  macro:m15 ♦   ☗TriggerOnTrue
+//LRB1♦  macro:m16 ♦   ☗TriggerOnTrue
+//LRB2♦  macro:m17 ♦   ☗TriggerOnTrue
+//LRB3♦  macro:m18 ♦   ☗TriggerOnTrue
+//LRB4♦  macro:m19 ♦   ☗TriggerOnTrue
+//LRB5♦  macro:m20 ♦   ☗TriggerOnTrue
+//LRB6♦  macro:m21 ♦   ☗TriggerOnTrue
+//LRB7♦  macro:m22 ♦   ☗TriggerOnTrue
+//LRB8♦  macro:m23 ♦   ☗TriggerOnTrue
+//LRB9♦  macro:m24 ♦   ☗TriggerOnTrue
+
+
+
+//aoe4 +  xm↓1000 + xal ♦ winutility:savefocusas:bot2 ♦ ☗TriggerOnTrue
+//
+//wow +  xm↓1000 + xal ♦ winutility:savefocusas:bot2 ♦ ☗TriggerOnTrue
+//wow +  xm↓1000 +  xar ♦ winutility:savefocusas:bot3 ♦ ☗TriggerOnTrue
+//wow +  xm↓1000 + xad ♦ winutility:savefocusas:bot4 ♦ ☗TriggerOnTrue
+//wow +  xm↓1000 +  xau  ♦ winutility:savefocusas:bot5 ♦ ☗TriggerOnTrue
+//
+////FootPadLeft♦winutility:savefocusas:crash♦ ☗TriggerOnTrue
+////FootPadRight♦winutility:setfocuson:crash♦ ☗TriggerOnTrue
+//crash +  footsustain  ♦ jomi:a↓⌛250 a↑ ♦ ☗TriggerOnTrue
+//crash +  footsustain ♦ jomi:a↓ ⌛250 a↑ ♦ ☗TriggerOnFalse
+//crash +  FootPadrightdown  ♦jomi:space↓ ⌛400 space↑ ⌛40 space↓ ⌛400 space↑  e↓ ⌛250 e↑  ♦ ☗TriggerOnTrue
+//crash +  FootPadrightup  ♦jomi:space↓ ⌛40 space↑  e↓ ⌛250r e↑   ♦ ☗TriggerOnTrue
+//crash +  FootPadleftup ♦jomi: r↓ ⌛250 r↑  ♦ ☗TriggerOnTrue
+//crash +  footpadleftup  ♦jomi:r↓ ⌛250 r↑  ♦ ☗TriggerOnFalse
+//crash +  FootPadleftdown ♦jomi: r↓ ⌛250 r↑  ♦ ☗TriggerOnTrue
+//crash +  footpadleftdown  ♦jomi:r↓ ⌛250 r↑  ♦ ☗TriggerOnFalse
+//
+//
+//ftl +  footsustain  ♦ jomi:space↓⌛250 space↑ ♦ ☗TriggerOnTrue
+//ftl +  footsustain ♦ jomi: space↓ ⌛250 space↑ ♦ ☗TriggerOnFalse
+////ftl +  FootPadrightdown  ♦jomi:1↓ ⌛400 1↑   leftclick↓ ⌛250 leftclick↑  ♦ ☗TriggerOnTrue
+//ftl +  FootPadrightup  ♦jomi:space↓ ⌛40 space↑    ♦ ☗TriggerOnTrue
+//ftl +  FootPadrightup  ♦jomi:space↓ ⌛40 space↑    ♦ ☗TriggerOnFalse
+////ftl +  FootPadleftup ♦jomi: 3↓ ⌛250 3↑  leftclick↓ ⌛250 leftclick↑ ♦ ☗TriggerOnTrue
+////ftl +  FootPadleftdown ♦jomi: 4↓ ⌛250 4↑ leftclick↓ ⌛250 leftclick↑  ♦ ☗TriggerOnTrue
+//
+//ftl +  FootPadRight0  ♦jomi:1↓ ⌛4 1↑   leftclick↓ ⌛25 leftclick↑  ♦ ☗TriggerOnTrue
+//ftl +  FootPadRight1  ♦jomi:2↓ ⌛4 2↑    leftclick↓ ⌛25 leftclick↑  ♦ ☗TriggerOnTrue
+//ftl +  FootPadRight2 ♦jomi: 3↓ ⌛4 3↑  leftclick↓ ⌛20 leftclick↑ ♦ ☗TriggerOnTrue
+//ftl +  FootPadRight3 ♦jomi: 4↓ ⌛4 4↑ leftclick↓ ⌛25 leftclick↑  ♦ ☗TriggerOnTrue
+//
+////!xm + xal ♦ macro:bot:select2 ♦ ☗TriggerOnTrue
+////!xm + xar ♦ macro:bot:select3 ♦ ☗TriggerOnTrue
+////!xm + xad ♦ macro:bot:select4 ♦ ☗TriggerOnTrue
+////!xm + xau ♦ macro:bot:select5 ♦ ☗TriggerOnTrue
+//
+// // xsbl ♦macro:boxes:fivebotfollow ♦ ☗TriggerOnTrue
+// // xbr ♦macro:boxes:fivebotloadsoulattack♦ ☗TriggerOnTrue
+// // xbd ♦macro:boxes:fivebotquickattack♦ ☗TriggerOnTrue
+// // xbl ♦macro:boxes:fivebotloot♦ ☗TriggerOnTrue
+//  
+// // xsbr ♦macro:boxes:moveinline♦ ☗TriggerOnTrue
+//  //xbu ♦macro:boxes:fivebotinvokepet♦ ☗TriggerOnTrue
+// // xtr ♦macro:boxes:moveinpentagra♦ ☗TriggerOnTrue
+// // xs  ♦ macro:boxes:defaultfivebotposition♦ ☗TriggerOnTrue
+//
+//
+//
+//lol +  FootPadLD ♦jomi: 1↓ ⌛4 1↑ leftclick↓ ⌛25 leftclick↑  ♦ ☗TriggerOnTrue
+//lol +  FootPadLT ♦jomi: 2↓ ⌛4 2↑ leftclick↓ ⌛25 leftclick↑  ♦ ☗TriggerOnTrue
+//lol +  FootPadRD ♦jomi: s↓ ⌛4 s↑ ♦ ☗TriggerOnTrue
+//lol +  FootPadRT ♦jomi: 1↓ ⌛4 1↑ ♦ ☗TriggerOnTrue

@@ -141,7 +141,7 @@ in StopBits stopBits = StopBits.One)
     }
 
 
-
+    public bool m_useDebugLogForMessageSend = false;
     public void SentMessagetoSerialPort(string portName = "COM1", params string[] texts)
 {
     try
@@ -149,7 +149,8 @@ in StopBits stopBits = StopBits.One)
         for (int i = 0; i < texts.Length; i++)
         {
             m_openedPort[portName].WriteLine(" "+texts[i]+"\n");
-                //Debug.Log("YY|"+portName+"|"+texts[i]);
+                if(m_useDebugLogForMessageSend)
+               Debug.Log("YY|"+portName+"|"+texts[i]);
         }
     }
     catch (Exception e)

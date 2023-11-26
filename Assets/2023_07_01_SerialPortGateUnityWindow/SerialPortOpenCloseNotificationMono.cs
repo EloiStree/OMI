@@ -59,15 +59,18 @@ public class SerialPortOpenCloseNotificationMono : MonoBehaviour
 public class SerialPortOpenCloseNotification
 {
 
-    public string[] m_currentPort;
-    public string[] m_previousPort;
-    public string[] m_newPort;
-    public string[] m_lostPort;
+    public string[] m_currentPort= new string[0];
+    public string[] m_previousPort = new string[0];
+    public string[] m_newPort = new string[0];
+    public string[] m_lostPort = new string[0];
 
     public void RefreshComListInfo()
     {
         m_previousPort = m_currentPort.ToArray();
-        m_currentPort = SerialPortLayer.GetPortNames().Distinct().ToArray();
+        string [] ports = SerialPortLayer.GetPortNames();
+        if (ports != null)
+            m_currentPort = ports.Distinct().ToArray();
+        else m_currentPort = new string[0];
         m_newPort = (m_currentPort.ToArray().Except(m_previousPort)).ToArray();
         m_lostPort = (m_previousPort.ToArray().Except(m_currentPort)).ToArray();
     }

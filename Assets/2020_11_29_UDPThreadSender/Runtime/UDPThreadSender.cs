@@ -43,6 +43,13 @@ public class UDPThreadSender : MonoBehaviour
                 m_singleAlias[i].m_ref.m_port = port;
         }
     }
+
+
+    public void SetAsUnicode(bool useUnicode)
+    {
+        throw new NotImplementedException();
+    }
+
     public void SetAliasIp(string name, string ip)
     {
         for (int i = 0; i < m_singleAlias.Count; i++)
@@ -82,7 +89,7 @@ public class UDPThreadSender : MonoBehaviour
     {
         m_toSendPackageToTarget.Enqueue(message); 
     }
-    public void TryToSend(string target, string value)
+    public void TryToSend(string target, string value, bool useUnicode=false)
     {
         target = target.Trim();
         
@@ -110,7 +117,7 @@ public class UDPThreadSender : MonoBehaviour
         Debug.Log("O:" + target + " V:" + value + " A:" + alias + "<>");
 
         if (alias!=null)
-            AddMessageToSend(new MessageToIpPort(value, ref alias.m_ref));
+            AddMessageToSend(new MessageToIpPort(value, ref alias.m_ref, useUnicode));
         
     }
 
@@ -214,7 +221,7 @@ public class UDPThreadSender : MonoBehaviour
                 if (targetIp != null && targetIp.m_message.Trim().Length > 0)
                 {
 
-                    SendMessageTo(targetIp.m_ipPort, targetIp.m_message);
+                    SendMessageTo(targetIp.m_ipPort, targetIp.m_message, !targetIp.m_useUnicode);
                     //Debug.Log("O:" + targetIp.m_ipPort.m_ip+"|"+targetIp.m_ipPort.m_port+ " V:" + targetIp.m_message + "<>");
                 }
             }
@@ -274,26 +281,26 @@ public class UDPThreadSender : MonoBehaviour
     {
         return ip + '|' + port;
     }
-    public void SendMessageTo(TargetIpPort target, string message, bool isUtf8OrUnicode=true)
+    public void SendMessageTo(TargetIpPort target, string message, bool trueUtf8FalseUnicode =true)
     {
-        SendMessageTo(target.m_ip, target.m_port, message, isUtf8OrUnicode);
+        SendMessageTo(target.m_ip, target.m_port, message, trueUtf8FalseUnicode );
     }
-    public void SendMessageTo(string ipPort, string message, bool isUtf8OrUnicode = true)
+    public void SendMessageTo(string ipPort, string message, bool trueUtf8FalseUnicode = true)
     {
         string [] t =ipPort.Split(':');
         if (t.Length >= 2) {
             if (int.TryParse(t[1], out int port)) { 
-                SendMessageTo(t[0] , port , message, isUtf8OrUnicode);
+                SendMessageTo(t[0] , port , message, trueUtf8FalseUnicode);
             }
         }
     }
-    public void SendMessageTo(string ip, int port, string message, bool isUtf8OrUnicode)
+    public void SendMessageTo(string ip, int port, string message, bool trueUtf8FalseUnicode)
     {
         m_lastSent = message;
         m_lastIp = ip;
         m_lastPort = ""+port;
         UdpClientState client = GetClient(ip, port);
-        Byte[] sendBytes  = isUtf8OrUnicode ? Encoding.UTF8.GetBytes(message): Encoding.Unicode.GetBytes(message);
+        Byte[] sendBytes  = trueUtf8FalseUnicode ? Encoding.UTF8.GetBytes(message): Encoding.Unicode.GetBytes(message);
         try
         {
             client.m_client.Send(sendBytes, sendBytes.Length);
@@ -348,11 +355,18 @@ public class UdpClientState
 public class  MessageToIpPort{
     public string m_message;
     public TargetIpPort m_ipPort;
+    public bool m_useUnicode = false;
 
     public MessageToIpPort(string message, ref TargetIpPort ipPort)
     {
         m_message = message;
         m_ipPort = ipPort;
+    }
+    public MessageToIpPort(string message, ref TargetIpPort ipPort, bool useUnicode)
+    {
+        m_message = message;
+        m_ipPort = ipPort;
+        m_useUnicode = useUnicode;
     }
 }
 

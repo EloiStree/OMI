@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2131971713907790851}
   m_RootOrder: 1
@@ -40,11 +41,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2131971712499324494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd632f1ee2720ea4593f598fb12ff0f8, type: 3}
+  m_Script: {fileID: 11500000, guid: e3621e3901b46bf47acc2fe1432e3c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_directoryPath:
-    m_path: C:\Users\moi\Dropbox\Amazon Alexa
+    m_path: 
 --- !u!1 &2131971713021958901
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,6 +74,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2131971713376492478}
   m_RootOrder: 2
@@ -89,21 +91,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cdee7f51f3e9ee49a320f5953d86b44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_onFileLoaded:
+  m_lineLoadedFromFile:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UISet_TextAppendMaxLine, be.eloistree.generaltoolbox
-        m_MethodName: AppendEndWithLineReturn
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2131971713021958795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,12 +135,13 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 492.8882, y: 664.75635, z: 1.761795}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2131971713907790851}
   - {fileID: 2131971713390868741}
   - {fileID: 2131971713021958794}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2131971713376492473
 MonoBehaviour:
@@ -220,6 +211,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_deleteAfterInvoke: 0
+  m_toDelete: []
 --- !u!114 &2131971713376492476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +222,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2131971713376492472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff57391a89e41864e8e8eb6659b5b584, type: 3}
+  m_Script: {fileID: 11500000, guid: a1c3b2d5867708346a9ea7fabc93cda2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_startTime: 0
@@ -238,7 +231,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2131971713376492473}
-        m_TargetAssemblyTypeName: Experiment_ObserveCreatedFilesToCommands, Assembly-CSharp
+        m_TargetAssemblyTypeName: ObservedFilesInDirectoryMono, Assembly-CSharp
         m_MethodName: RefreshAll
         m_Mode: 1
         m_Arguments:
@@ -277,6 +270,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2131971713376492478}
   m_RootOrder: 1
@@ -347,6 +341,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2131971713907790851}
   m_RootOrder: 0
@@ -360,7 +355,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2131971713429673916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6dce9cb3cd9b2b4aa806382b8594c03, type: 3}
+  m_Script: {fileID: 11500000, guid: e0a9fa458072e3e48ba3f6149fd6e60b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_subfolders:
@@ -375,7 +370,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2131971713429673916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10aeac9b3f2f31046afae7c78e3d1bca, type: 3}
+  m_Script: {fileID: 11500000, guid: bc885f8a54a85f84fbb641e77f2d37a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_tick:
@@ -420,6 +415,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2131971713429673917}
   - {fileID: 2131971712499324495}
@@ -440,5 +436,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_observer: {fileID: 2131971713376492473}
   m_source:
-  - {fileID: 2131971713429673906}
-  - {fileID: 2131971712499324492}
+  - {fileID: 0}
+  - {fileID: 0}
