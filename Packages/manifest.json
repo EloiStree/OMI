@@ -1,7 +1,12 @@
 {
   "dependencies": {
+    "be.eloistree.generaltoolbox": "https://github.com/EloiStree/2021_10_03_EloiGeneralToolbox.git",
+    "be.eloistree.gittogiti": "https://github.com/EloiStree/2023_11_24_GitToGiti.git",
     "be.eloistree.license": "https://github.com/EloiStree/GeneralLicense.git",
+    "be.eloistree.monomemoryfix": "https://github.com/EloiStree/2023_11_26_MonoMemoryFix.git",
     "be.eloistree.quickgitutility": "https://github.com/eloistree/2019_07_21_QuickGitUtility.git",
+    "be.eloistree.shogitileline": "https://github.com/EloiStree/2023_08_10_ShogiTileLine.git",
+    "be.eloistree.timethread": "https://github.com/EloiStree/2020_11_14_TimeThread.git",
     "be.eloistree.unitypackagefacilitator": "https://github.com/eloistree/2019_07_21_UnityPackageFacilitator.git",
     "com.srcnalt.openai-unity": "https://github.com/srcnalt/OpenAI-Unity.git",
     "com.unity.2d.sprite": "1.0.0",

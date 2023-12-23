@@ -1,0 +1,1175 @@
+# Basic Info
+Path: `/Keyboard`  
+Display Name: `Keyboard`  
+Product Name: ``  
+Manufacurer: ``  
+Interface: `RawInput`  
+Buttons count: `115`  
+Axis count: `0`  
+##  All Buttons
+``` 
+anyKey escape space enter tab backquote quote semicolon comma period slash backslash leftBracket rightBracket minus equals upArrow downArrow leftArrow rightArrow a b c d e f g h i j k l m n o p q r s t u v w x y z 1 2 3 4 5 6 7 8 9 0 leftShift rightShift shift leftAlt rightAlt alt leftCtrl rightCtrl ctrl leftMeta rightMeta contextMenu backspace pageDown pageUp home end insert delete capsLock numLock printScreen scrollLock pause numpadEnter numpadDivide numpadMultiply numpadPlus numpadMinus numpadPeriod numpadEquals numpad1 numpad2 numpad3 numpad4 numpad5 numpad6 numpad7 numpad8 numpad9 numpad0 f1 f2 f3 f4 f5 f6 f7 f8 f9 f10 f11 f12 OEM1 OEM2 OEM3 OEM4 OEM5 IMESelected
+``` 
+##  All Axis
+``` 
+
+``` 
+##  All Buttons Ref
+``` 
+/Keyboard|>anyKey
+/Keyboard|>escape
+/Keyboard|>space
+/Keyboard|>enter
+/Keyboard|>tab
+/Keyboard|>backquote
+/Keyboard|>quote
+/Keyboard|>semicolon
+/Keyboard|>comma
+/Keyboard|>period
+/Keyboard|>slash
+/Keyboard|>backslash
+/Keyboard|>leftBracket
+/Keyboard|>rightBracket
+/Keyboard|>minus
+/Keyboard|>equals
+/Keyboard|>upArrow
+/Keyboard|>downArrow
+/Keyboard|>leftArrow
+/Keyboard|>rightArrow
+/Keyboard|>a
+/Keyboard|>b
+/Keyboard|>c
+/Keyboard|>d
+/Keyboard|>e
+/Keyboard|>f
+/Keyboard|>g
+/Keyboard|>h
+/Keyboard|>i
+/Keyboard|>j
+/Keyboard|>k
+/Keyboard|>l
+/Keyboard|>m
+/Keyboard|>n
+/Keyboard|>o
+/Keyboard|>p
+/Keyboard|>q
+/Keyboard|>r
+/Keyboard|>s
+/Keyboard|>t
+/Keyboard|>u
+/Keyboard|>v
+/Keyboard|>w
+/Keyboard|>x
+/Keyboard|>y
+/Keyboard|>z
+/Keyboard|>1
+/Keyboard|>2
+/Keyboard|>3
+/Keyboard|>4
+/Keyboard|>5
+/Keyboard|>6
+/Keyboard|>7
+/Keyboard|>8
+/Keyboard|>9
+/Keyboard|>0
+/Keyboard|>leftShift
+/Keyboard|>rightShift
+/Keyboard|>shift
+/Keyboard|>leftAlt
+/Keyboard|>rightAlt
+/Keyboard|>alt
+/Keyboard|>leftCtrl
+/Keyboard|>rightCtrl
+/Keyboard|>ctrl
+/Keyboard|>leftMeta
+/Keyboard|>rightMeta
+/Keyboard|>contextMenu
+/Keyboard|>backspace
+/Keyboard|>pageDown
+/Keyboard|>pageUp
+/Keyboard|>home
+/Keyboard|>end
+/Keyboard|>insert
+/Keyboard|>delete
+/Keyboard|>capsLock
+/Keyboard|>numLock
+/Keyboard|>printScreen
+/Keyboard|>scrollLock
+/Keyboard|>pause
+/Keyboard|>numpadEnter
+/Keyboard|>numpadDivide
+/Keyboard|>numpadMultiply
+/Keyboard|>numpadPlus
+/Keyboard|>numpadMinus
+/Keyboard|>numpadPeriod
+/Keyboard|>numpadEquals
+/Keyboard|>numpad1
+/Keyboard|>numpad2
+/Keyboard|>numpad3
+/Keyboard|>numpad4
+/Keyboard|>numpad5
+/Keyboard|>numpad6
+/Keyboard|>numpad7
+/Keyboard|>numpad8
+/Keyboard|>numpad9
+/Keyboard|>numpad0
+/Keyboard|>f1
+/Keyboard|>f2
+/Keyboard|>f3
+/Keyboard|>f4
+/Keyboard|>f5
+/Keyboard|>f6
+/Keyboard|>f7
+/Keyboard|>f8
+/Keyboard|>f9
+/Keyboard|>f10
+/Keyboard|>f11
+/Keyboard|>f12
+/Keyboard|>OEM1
+/Keyboard|>OEM2
+/Keyboard|>OEM3
+/Keyboard|>OEM4
+/Keyboard|>OEM5
+/Keyboard|>IMESelected
+``` 
+##  All Axis ref 
+``` 
+
+``` 
+----------------------------------# Basic Info
+Path: `/Mouse`  
+Display Name: `Mouse`  
+Product Name: ``  
+Manufacurer: ``  
+Interface: `RawInput`  
+Buttons count: `6`  
+Axis count: `18`  
+##  All Buttons
+``` 
+press leftButton rightButton middleButton forwardButton backButton
+``` 
+##  All Axis
+``` 
+position x position y delta x delta y scroll x scroll y pressure radius x radius y pointerId pointerId displayIndex displayIndex clickCount clickCount x y up down left right
+``` 
+##  All Buttons Ref
+``` 
+/Mouse|>press
+/Mouse|>leftButton
+/Mouse|>rightButton
+/Mouse|>middleButton
+/Mouse|>forwardButton
+/Mouse|>backButton
+``` 
+##  All Axis ref 
+``` 
+/Mouse|>position x
+/Mouse|>position y
+/Mouse|>delta x
+/Mouse|>delta y
+/Mouse|>scroll x
+/Mouse|>scroll y
+/Mouse|>pressure
+/Mouse|>radius x
+/Mouse|>radius y
+/Mouse|>pointerId pointerId
+/Mouse|>displayIndex displayIndex
+/Mouse|>clickCount clickCount
+/Mouse|>x
+/Mouse|>y
+/Mouse|>up
+/Mouse|>down
+/Mouse|>left
+/Mouse|>right
+``` 
+----------------------------------# Basic Info
+Path: `/1532-111`  
+Display Name: `1532-111`  
+Product Name: ``  
+Manufacurer: ``  
+Interface: `HID`  
+Buttons count: `28`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y rz ry rx z hat x hat y x y
+``` 
+##  All Buttons Ref
+``` 
+/1532-111|>trigger
+/1532-111|>button2
+/1532-111|>button3
+/1532-111|>button4
+/1532-111|>button5
+/1532-111|>button6
+/1532-111|>button7
+/1532-111|>button8
+/1532-111|>button9
+/1532-111|>button10
+/1532-111|>button11
+/1532-111|>button12
+/1532-111|>button13
+/1532-111|>button14
+/1532-111|>button15
+/1532-111|>button16
+/1532-111|>button17
+/1532-111|>button18
+/1532-111|>button19
+/1532-111|>button20
+/1532-111|>button21
+/1532-111|>button22
+/1532-111|>button23
+/1532-111|>button24
+/1532-111|>up
+/1532-111|>down
+/1532-111|>left
+/1532-111|>right
+``` 
+##  All Axis ref 
+``` 
+/1532-111|>stick x
+/1532-111|>stick y
+/1532-111|>rz
+/1532-111|>ry
+/1532-111|>rx
+/1532-111|>z
+/1532-111|>hat x
+/1532-111|>hat y
+/1532-111|>x
+/1532-111|>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick|>up
+/Shaul Eizikovich vJoy - Virtual Joystick|>down
+/Shaul Eizikovich vJoy - Virtual Joystick|>left
+/Shaul Eizikovich vJoy - Virtual Joystick|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick|>z
+/Shaul Eizikovich vJoy - Virtual Joystick|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick|>x
+/Shaul Eizikovich vJoy - Virtual Joystick|>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick1`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick1|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick1|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick1|>up
+/Shaul Eizikovich vJoy - Virtual Joystick1|>down
+/Shaul Eizikovich vJoy - Virtual Joystick1|>left
+/Shaul Eizikovich vJoy - Virtual Joystick1|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick1|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick1|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick1|>z
+/Shaul Eizikovich vJoy - Virtual Joystick1|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick1|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick1|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick1|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick1|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick1|>x
+/Shaul Eizikovich vJoy - Virtual Joystick1|>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick2`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick2|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick2|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick2|>up
+/Shaul Eizikovich vJoy - Virtual Joystick2|>down
+/Shaul Eizikovich vJoy - Virtual Joystick2|>left
+/Shaul Eizikovich vJoy - Virtual Joystick2|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick2|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick2|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick2|>z
+/Shaul Eizikovich vJoy - Virtual Joystick2|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick2|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick2|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick2|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick2|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick2|>x
+/Shaul Eizikovich vJoy - Virtual Joystick2|>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick3`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick3|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick3|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick3|>up
+/Shaul Eizikovich vJoy - Virtual Joystick3|>down
+/Shaul Eizikovich vJoy - Virtual Joystick3|>left
+/Shaul Eizikovich vJoy - Virtual Joystick3|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick3|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick3|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick3|>z
+/Shaul Eizikovich vJoy - Virtual Joystick3|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick3|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick3|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick3|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick3|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick3|>x
+/Shaul Eizikovich vJoy - Virtual Joystick3|>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick4`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick4|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick4|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick4|>up
+/Shaul Eizikovich vJoy - Virtual Joystick4|>down
+/Shaul Eizikovich vJoy - Virtual Joystick4|>left
+/Shaul Eizikovich vJoy - Virtual Joystick4|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick4|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick4|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick4|>z
+/Shaul Eizikovich vJoy - Virtual Joystick4|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick4|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick4|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick4|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick4|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick4|>x
+/Shaul Eizikovich vJoy - Virtual Joystick4|>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick5`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick5|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick5|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick5|>up
+/Shaul Eizikovich vJoy - Virtual Joystick5|>down
+/Shaul Eizikovich vJoy - Virtual Joystick5|>left
+/Shaul Eizikovich vJoy - Virtual Joystick5|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick5|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick5|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick5|>z
+/Shaul Eizikovich vJoy - Virtual Joystick5|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick5|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick5|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick5|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick5|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick5|>x
+/Shaul Eizikovich vJoy - Virtual Joystick5|>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick6`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick6|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick6|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick6|>up
+/Shaul Eizikovich vJoy - Virtual Joystick6|>down
+/Shaul Eizikovich vJoy - Virtual Joystick6|>left
+/Shaul Eizikovich vJoy - Virtual Joystick6|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick6|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick6|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick6|>z
+/Shaul Eizikovich vJoy - Virtual Joystick6|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick6|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick6|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick6|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick6|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick6|>x
+/Shaul Eizikovich vJoy - Virtual Joystick6|>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick7`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick7|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick7|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick7|>up
+/Shaul Eizikovich vJoy - Virtual Joystick7|>down
+/Shaul Eizikovich vJoy - Virtual Joystick7|>left
+/Shaul Eizikovich vJoy - Virtual Joystick7|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick7|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick7|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick7|>z
+/Shaul Eizikovich vJoy - Virtual Joystick7|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick7|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick7|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick7|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick7|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick7|>x
+/Shaul Eizikovich vJoy - Virtual Joystick7|>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick8`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick8|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick8|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick8|>up
+/Shaul Eizikovich vJoy - Virtual Joystick8|>down
+/Shaul Eizikovich vJoy - Virtual Joystick8|>left
+/Shaul Eizikovich vJoy - Virtual Joystick8|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick8|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick8|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick8|>z
+/Shaul Eizikovich vJoy - Virtual Joystick8|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick8|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick8|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick8|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick8|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick8|>x
+/Shaul Eizikovich vJoy - Virtual Joystick8|>y
+``` 
+----------------------------------# Basic Info
+Path: `/DragonRise Inc.   Generic   USB  Joystick  `  
+Display Name: `Generic   USB  Joystick  `  
+Product Name: `Generic   USB  Joystick  `  
+Manufacurer: `DragonRise Inc.  `  
+Interface: `HID`  
+Buttons count: `16`  
+Axis count: `9`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y rz z z1 hat x hat y x y
+``` 
+##  All Buttons Ref
+``` 
+/DragonRise Inc.   Generic   USB  Joystick  |>trigger
+/DragonRise Inc.   Generic   USB  Joystick  |>button2
+/DragonRise Inc.   Generic   USB  Joystick  |>button3
+/DragonRise Inc.   Generic   USB  Joystick  |>button4
+/DragonRise Inc.   Generic   USB  Joystick  |>button5
+/DragonRise Inc.   Generic   USB  Joystick  |>button6
+/DragonRise Inc.   Generic   USB  Joystick  |>button7
+/DragonRise Inc.   Generic   USB  Joystick  |>button8
+/DragonRise Inc.   Generic   USB  Joystick  |>button9
+/DragonRise Inc.   Generic   USB  Joystick  |>button10
+/DragonRise Inc.   Generic   USB  Joystick  |>button11
+/DragonRise Inc.   Generic   USB  Joystick  |>button12
+/DragonRise Inc.   Generic   USB  Joystick  |>up
+/DragonRise Inc.   Generic   USB  Joystick  |>down
+/DragonRise Inc.   Generic   USB  Joystick  |>left
+/DragonRise Inc.   Generic   USB  Joystick  |>right
+``` 
+##  All Axis ref 
+``` 
+/DragonRise Inc.   Generic   USB  Joystick  |>stick x
+/DragonRise Inc.   Generic   USB  Joystick  |>stick y
+/DragonRise Inc.   Generic   USB  Joystick  |>rz
+/DragonRise Inc.   Generic   USB  Joystick  |>z
+/DragonRise Inc.   Generic   USB  Joystick  |>z1
+/DragonRise Inc.   Generic   USB  Joystick  |>hat x
+/DragonRise Inc.   Generic   USB  Joystick  |>hat y
+/DragonRise Inc.   Generic   USB  Joystick  |>x
+/DragonRise Inc.   Generic   USB  Joystick  |>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick9`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick9|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick9|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick9|>up
+/Shaul Eizikovich vJoy - Virtual Joystick9|>down
+/Shaul Eizikovich vJoy - Virtual Joystick9|>left
+/Shaul Eizikovich vJoy - Virtual Joystick9|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick9|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick9|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick9|>z
+/Shaul Eizikovich vJoy - Virtual Joystick9|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick9|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick9|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick9|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick9|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick9|>x
+/Shaul Eizikovich vJoy - Virtual Joystick9|>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick10`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick10|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick10|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick10|>up
+/Shaul Eizikovich vJoy - Virtual Joystick10|>down
+/Shaul Eizikovich vJoy - Virtual Joystick10|>left
+/Shaul Eizikovich vJoy - Virtual Joystick10|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick10|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick10|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick10|>z
+/Shaul Eizikovich vJoy - Virtual Joystick10|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick10|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick10|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick10|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick10|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick10|>x
+/Shaul Eizikovich vJoy - Virtual Joystick10|>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick11`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick11|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick11|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick11|>up
+/Shaul Eizikovich vJoy - Virtual Joystick11|>down
+/Shaul Eizikovich vJoy - Virtual Joystick11|>left
+/Shaul Eizikovich vJoy - Virtual Joystick11|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick11|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick11|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick11|>z
+/Shaul Eizikovich vJoy - Virtual Joystick11|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick11|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick11|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick11|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick11|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick11|>x
+/Shaul Eizikovich vJoy - Virtual Joystick11|>y
+``` 
+----------------------------------# Basic Info
+Path: `/Shaul Eizikovich vJoy - Virtual Joystick12`  
+Display Name: `vJoy - Virtual Joystick`  
+Product Name: `vJoy - Virtual Joystick`  
+Manufacurer: `Shaul Eizikovich`  
+Interface: `HID`  
+Buttons count: `36`  
+Axis count: `10`  
+##  All Buttons
+``` 
+trigger button2 button3 button4 button5 button6 button7 button8 button9 button10 button11 button12 button13 button14 button15 button16 button17 button18 button19 button20 button21 button22 button23 button24 button25 button26 button27 button28 button29 button30 button31 button32 up down left right
+``` 
+##  All Axis
+``` 
+stick x stick y z rx ry rz slider dial x y
+``` 
+##  All Buttons Ref
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick12|>trigger
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button2
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button3
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button4
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button5
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button6
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button7
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button8
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button9
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button10
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button11
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button12
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button13
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button14
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button15
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button16
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button17
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button18
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button19
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button20
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button21
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button22
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button23
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button24
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button25
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button26
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button27
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button28
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button29
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button30
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button31
+/Shaul Eizikovich vJoy - Virtual Joystick12|>button32
+/Shaul Eizikovich vJoy - Virtual Joystick12|>up
+/Shaul Eizikovich vJoy - Virtual Joystick12|>down
+/Shaul Eizikovich vJoy - Virtual Joystick12|>left
+/Shaul Eizikovich vJoy - Virtual Joystick12|>right
+``` 
+##  All Axis ref 
+``` 
+/Shaul Eizikovich vJoy - Virtual Joystick12|>stick x
+/Shaul Eizikovich vJoy - Virtual Joystick12|>stick y
+/Shaul Eizikovich vJoy - Virtual Joystick12|>z
+/Shaul Eizikovich vJoy - Virtual Joystick12|>rx
+/Shaul Eizikovich vJoy - Virtual Joystick12|>ry
+/Shaul Eizikovich vJoy - Virtual Joystick12|>rz
+/Shaul Eizikovich vJoy - Virtual Joystick12|>slider
+/Shaul Eizikovich vJoy - Virtual Joystick12|>dial
+/Shaul Eizikovich vJoy - Virtual Joystick12|>x
+/Shaul Eizikovich vJoy - Virtual Joystick12|>y
+``` 

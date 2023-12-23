@@ -1,11 +1,32 @@
 {
   "dependencies": {
+    "be.eloistree.generaltoolbox": {
+      "version": "https://github.com/EloiStree/2021_10_03_EloiGeneralToolbox.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "0e09905e637df5c58ab53c756037415aca6ac43e"
+    },
+    "be.eloistree.gittogiti": {
+      "version": "https://github.com/EloiStree/2023_11_24_GitToGiti.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "e7bcfe6328848b8510e9f0358d4cbde087a4c571"
+    },
     "be.eloistree.license": {
       "version": "https://github.com/EloiStree/GeneralLicense.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
       "hash": "c6f2d723bd9dae1c48bb1b56b27ef80bd57a5628"
+    },
+    "be.eloistree.monomemoryfix": {
+      "version": "https://github.com/EloiStree/2023_11_26_MonoMemoryFix.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "8b7072d76d1a6449176221c516ba127a5850cd3d"
     },
     "be.eloistree.quickgitutility": {
       "version": "https://github.com/eloistree/2019_07_21_QuickGitUtility.git",
@@ -15,6 +36,20 @@
         "be.eloistree.license": "0.0.1"
       },
       "hash": "dec85943fd5e2f5500350229643ec10665f5f1ac"
+    },
+    "be.eloistree.shogitileline": {
+      "version": "https://github.com/EloiStree/2023_08_10_ShogiTileLine.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "464ca548491ce25b0fb4900bc586d64f9e7f63e7"
+    },
+    "be.eloistree.timethread": {
+      "version": "https://github.com/EloiStree/2020_11_14_TimeThread.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "642177193601c571529ae43c95c40759065ab09f"
     },
     "be.eloistree.unitypackagefacilitator": {
       "version": "https://github.com/eloistree/2019_07_21_UnityPackageFacilitator.git",
