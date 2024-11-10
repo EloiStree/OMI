@@ -77,7 +77,7 @@ public class IFTTTUtility
         private static IEnumerator PushURLWithJsonTripleValue(string url, string value0, string value1 = "", string value2 = "")
         {
             string json = GetJsonTripleValue(value0, value1, value2);
-            using (UnityWebRequest request = UnityWebRequest.Post(url, json))
+            using (UnityWebRequest request = UnityWebRequest.PostWwwForm(url, json))
             {
                 byte[] jsonToSend = new UTF8Encoding().GetBytes(json);
                 request.uploadHandler = new UploadHandlerRaw(jsonToSend);
